@@ -17,7 +17,9 @@
 }
 
 
-
+html{
+    scroll-behavior: smooth;
+}
 
 
 

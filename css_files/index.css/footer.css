@@ -55,7 +55,7 @@ transition: 700ms;
 align-items: center;
 justify-content: center;
 flex-direction: column;
-margin:0px  100px;
+margin:15px  100px;
 border: 2px aliceblue solid;
 border-radius: 20px;
 background-color: var(--dark);
