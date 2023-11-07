@@ -1,6 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Open+Sans:ital,wght@0,400;1,300&family=Rubik:ital,wght@0,300;0,400;1,300&family=Space+Grotesk:wght@300;400;500&display=swap');
+
+:root{
+    --dark: rgb(0, 1, 1);
+    --darks: rgba(0, 1, 1, 0.543);
+    --red:rgb(173, 39, 39);
+    --white:rgb(238, 239, 240);
+   
+
+    --reds:rgb(191, 64, 64);
+    
+}
+*{
+    box-sizing: border-box;
+}
+
 body{
     display: flex;
     justify-content: center;
     align-items: center;
+
+}
+
+
+
+
+.login-form{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: var(--dark);
+    position: relative;
+    width: 50%;
+    padding: 30px;
+    translate: 0px 50px;
+}
+
+.login-form h2{
+    color: aliceblue;
+    background-color: var(--red) ;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-family: "Space Grotesk";
+    letter-spacing: 2px;
+    padding: 10px;
     
 }
+
+
+
+
+
+
+.divcon{
+   
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 20px;
+position: relative;
+margin-top: 20px;
+}
+
+
+
+
+
+.divcon input{
+    outline: none;
+    border: none;
+    flex-grow: 1;
+    flex-basis: 250px;
+   background-color:transparent;
+    padding: 13px;
+    text-transform: capitalize;
+    z-index: 10;
+    border-bottom: 2px var(--reds) solid;
+    margin-left: 10px;
+    font-size: 20px;
+    font-family:"Space Grotesk" ;
+    color: transparent;
+    letter-spacing: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.divcon input:focus,
+.divcon input:valid{
+    border-color:rgb(253, 102, 102) ;
+    color: aliceblue;
+}
+
+
+.slide{
+    background-color: rgba(173, 39, 39, 0.605);
+    width: 468px;
+    height: 0px;
+    position: absolute;
+    left: 92px;
+    bottom: 26px;
+    transition: 600ms;
+    border-radius: 50% 50% 0px 0px;
+}
+
+
+
+
+.divcon input:focus~.slide,
+.divcon input:valid~.slide{
+  height: 53px;
+  border-radius: 0px 0px 0px 0px;
+}
+
+
+
+
+
+
+.divcon p{
+    position: absolute;
+letter-spacing: 5px;
+color: aliceblue;
+z-index: 2;
+left: 100px;
+transition: 500ms;
+text-transform: capitalize;
+font-family:"Open Sans" ;
+font-size: 20px;
+}
+
+
+.divcon input:focus~p,
+.divcon input:valid~p{
+    translate:-5px -42px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
+
+
+
+
+.divcon i{
+    background-color: var(--red);
+    padding: 10px;
+    font-size: 25px;
+    margin: 10px;
+    border-radius: 10px;
+    color: var(--white);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.password input:nth-child(2){
+display: none;
+}
+
+.password i:nth-child(2){
+    display: none;
+}
+
+
+
+
+.password .slide{
+    width: 400px;
+    left: 92px;
+}
+
