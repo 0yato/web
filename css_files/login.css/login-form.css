@@ -178,9 +178,7 @@ font-size: 20px;
 
 
 
-.password input:nth-child(2){
-display: none;
-}
+
 
 .password i:nth-child(2){
     display: none;

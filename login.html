@@ -20,19 +20,19 @@
     </div>
 
 
-    <form action="" class="login-form">
+    <form action="login.php" method="post" class="login-form">
         <h2>login</h2>
         <div class="divcon username">
             <i class="fa-solid fa-user"></i> 
-            <input type="text" required>
+            <input type="text" name="userName" required>
             <p>UserName</p>
             <div class="slide"></div>
         </div>
 
         <div class="divcon password">
             <i class="fa-solid fa-lock"></i>
-            <input type="text" required>
-            <input type="password" required>
+           
+            <input type="password" name="password" required>
            
             <p>password</p>
             <div class="slide"></div>
@@ -48,7 +48,7 @@
             </p>
         </div>
         <div class="btn">
-            <button>login</button>
+            <button name="logbtn">login</button>
             <p>Don`t have an account?<a href="signup.html">Register now!</a></p>
         </div>
     </form>
