@@ -15,7 +15,11 @@
     --reds:rgb(191, 64, 64);
     
 }
+::selection{
+  color: var(--red);
+    background-color: rgba(255, 0, 0, 0.301);
 
+}
 
 html{
     scroll-behavior: smooth;
@@ -140,14 +144,15 @@ left: 0;
     text-align: center;
     margin-right: 15px;
     border-radius: 10px;
-    transition: 400ms;
+    transition: 700ms;
     cursor: pointer;
 }
 
 
 .login-btn:hover{
-
+    translate: 0px 10px;
     background-color: var(--red);
+    transition: 200ms;
 }
 
 
@@ -188,6 +193,7 @@ left: 0;
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
+    transition: 700ms;
 }
 
 
@@ -198,6 +204,9 @@ left: 0;
 
 .signup-btn:hover{
 background-color: var(--reds);
+translate: 0px 10px;
+background-color: var(--red);
+transition: 200ms;
 }
 
 

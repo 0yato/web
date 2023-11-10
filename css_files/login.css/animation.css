@@ -1,0 +1,78 @@
+
+
+.eye i{
+    translate: 0px -5px;
+    animation-name: moving;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+.password i{
+    translate: 0px -5px;
+    animation-name: moving;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.username i{
+    translate: 0px -5px;
+    animation-name: moving;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.username p{
+
+
+}
+@keyframes moving {
+    0%{
+
+    }
+    50%{
+        color: var(--red);
+        background-color: var(--dark);
+        
+      translate: 0px 10px;
+      box-shadow: 0px 0px 20px 0px var(--dark);
+    }
+    100%{
+
+    }
+}
+
+
+@keyframes spacing {
+    0%{
+
+    }
+    50%{
+      scale: 1.1;
+      translate: 0px -5px;
+    }
+    100%{
+
+    }
+}
+
+
+
+
+
+
+
+@keyframes color-change {
+    0%{
+
+    }
+    50%{
+     color: var(--red);
+     background-color: var(--dark);
+    }
+    100%{
+
+    }
+}

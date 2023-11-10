@@ -12,6 +12,7 @@
 }
 *{
     box-sizing: border-box;
+    
 }
 
 body{
@@ -77,7 +78,7 @@ margin-top: 20px;
     flex-basis: 250px;
    background-color:transparent;
     padding: 13px;
-    text-transform: capitalize;
+   
     z-index: 10;
     border-bottom: 2px var(--reds) solid;
     margin-left: 10px;
@@ -158,11 +159,14 @@ font-size: 20px;
 
 .divcon i{
     background-color: var(--red);
-    padding: 10px;
+    padding: 8px;
     font-size: 25px;
     margin: 10px;
     border-radius: 10px;
     color: var(--white);
+    
+    background-color: var(--dark);
+    border: var(--red) solid 2px;
 }
 
 
@@ -180,11 +184,15 @@ font-size: 20px;
 
 
 
-.password i:nth-child(2){
+
+.password .eye i:nth-child(1){
     display: none;
+    cursor: pointer;
 }
 
-
+.password .eye i:nth-child(2){
+    cursor: pointer;
+}
 
 
 .password .slide{
@@ -192,3 +200,99 @@ font-size: 20px;
     left: 92px;
 }
 
+
+
+
+
+
+
+
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: aliceblue;
+}
+
+
+.btn p:nth-child(1){
+   
+}
+
+.btn button{ 
+outline: none;
+border: none;
+padding: 10px;
+width: 250px;
+font-size: 25px;
+text-transform: uppercase;
+letter-spacing: 3px;
+margin: 10px;
+color: aliceblue;
+background-color: rgba(255, 0, 0, 0.237);
+}
+  
+
+
+
+.btn p{
+margin: 10px;
+text-transform: capitalize;
+}
+
+.btn p:nth-child(1){
+    color: rgba(255, 0, 0, 0.728);
+background-color: rgba(255, 0, 0, 0.306);
+padding: 2px;
+border-radius:5px ;
+}
+.btn p:nth-child(2){
+    color: red;
+}
+
+.btn p:nth-child(3){
+  display: block;
+  position: absolute;
+  bottom: 0;
+}
+
+#os{
+    color: aliceblue;
+}
+
+
+.btn p a{
+    color: var(--red);
+    margin-left: 5px;
+}
+
+
+
+
+
+@media (max-width:800px) {
+    body{
+        background-color: black;
+    }
+    .login-form{
+        width: 100%;
+    }
+    .slide{
+        width: 74%;
+    }
+}
+
+
+@media (max-width:1190px){
+.slide{
+    display:none;
+}
+.divcon input:valid,
+.divcon input:focus{
+    transition: 600ms;
+    background-color: rgba(255, 0, 0, 0.573);
+}
+
+}
