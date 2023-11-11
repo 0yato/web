@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Kanit:wght@300&family=Open+Sans:ital,wght@0,400;1,300&family=Rubik:ital,wght@0,300;0,400;1,300&family=Space+Grotesk:wght@300;400;500&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+
+}
+
+
+
+
+
+
+
+
+:root{
+    --dark: rgb(0, 1, 1);
+    --darks: rgba(0, 1, 1, 0.543);
+    --red:rgb(173, 39, 39);
+    --white:rgb(238, 239, 240);
+   
+     --red-back:rgba(173, 39, 39, 0.413);
+    --reds:rgb(191, 64, 64);
+    
+}
+
+
+
+
+
+
+
+
+
+hr{
+    width: 100%;
+    border: 2px var(--dark) solid;
+}
+
+
+.nav{
+    width: 70px;
+    height: 100%;
+    position: fixed;
+  
+    transition: 500ms;
+    background-color: var(--red);
+    box-shadow: 0px 0px 10px 0px var(--dark);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.nav:hover{
+    width:300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 80%;
+    height: 45px;
+    border-radius: 10px;
+    margin: 5px;
+    background-color: aliceblue;
+    box-shadow: 0px 0px 10px 0px aliceblue;
+}
+
+
+
+
+
+.logo #name{
+display: none;
+    color: var(--red);
+    font-family:"Kanit" ;
+    font-size:30px ;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+
+
+.nav:hover .logo #name{
+    display: block;
+    transition: 600ms;
+  
+}
+  
+
+
+
+
+
+
+
+.logo #x{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--red);
+ font-size: 45px;
+text-transform: uppercase;
+font-family:"Kanit" ;
+}
+
+
+
+.nav:hover .logo #x{
+    display: none;
+    transition: 600ms;
+}
+
+
+
+
+
+
+
+
+
+/*/////////////////////////////////// user///////////////////////////////////////////////////*/
+
+.user{
+display: flex;
+justify-content: start;
+align-items: center;
+width: 100%;
+padding: 10px;
+
+}
+
+
+
+
+
+.user img{
+  margin-left: 0px;
+    border-radius:50% ;
+    width: 50px;
+    border: 2px var(--dark) solid;
+}
+
+
+
+.user h2{
+  opacity: 0;
+    color: aliceblue;
+    width: 100%;
+    text-align: center;
+    font-family:"Kanit" ;
+    text-transform: capitalize;
+    transition: 1s;
+}
+
+
+.nav:hover .user h2{
+  opacity: 1;
+
+    transition: 1.5s;
+}
+
+
+/*    list           */
+
+
+
+.nav ul{
+    list-style: none;
+width: 100%;
+}
+
+.nav ul a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 99%;
+    color: aliceblue;
+    text-decoration: none;
+    background-color: aqua;
+ padding: 10px;
+    border-radius: 10px;
+    margin: 5px 0px;
+    border: 3px var(--red) solid;
+    background-color: var(--red-back);
+    transition: 500ms;
+    box-shadow: 0px 0px 5px 0px var(--dark);
+}
+
+.nav ul a:nth-child(1){
+    background-color: var(--darks);
+letter-spacing: 5px;
+}
+
+.nav ul a:nth-child(5){
+    position: absolute;
+    color: var(--red);
+    bottom: 0;
+    background-color: aliceblue;
+    transition: 500ms;
+}
+
+.nav ul a:nth-child(5):hover{
+    color: aliceblue;
+    transition: 100ms;
+}
+
+
+
+
+.nav ul a:hover{
+background-color: var(--darks);
+
+}
+
+
+
+
+
+
+
+
+.nav ul a i{
+    font-size: 30px;
+    margin: 5px;
+   
+    width: 50px;
+}
+.nav ul a li{
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    display: none;
+    transition: 1s;
+    font-family:"Kanit" ;
+ 
+}
+
+ul a:hover li{
+    letter-spacing: 4px;
+}
+
+.nav:hover ul a li{
+    display: block;
+    
+}
+
+
+.unclicked{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 99%;
+    color: aliceblue;
+    text-decoration: none;
+    background-color: aqua;
+ padding: 10px;
+    border-radius: 10px;
+    margin: 5px 0px;
+    border: 3px var(--red) solid;
+    background-color: var(--red-back);
+    transition: 500ms;
+    box-shadow: 0px 0px 5px 0px var(--dark);
+}
+
+.clicked{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 99%;
+    color: aliceblue;
+    text-decoration: none;
+    background-color: aqua;
+ padding: 10px;
+    border-radius: 10px;
+    margin: 5px 0px;
+    border: 3px var(--red) solid;
+    background-color: var(--red-back);
+    transition: 500ms;
+    box-shadow: 0px 0px 5px 0px var(--dark);
+    background-color: var(--darks);
+    letter-spacing: 5px;
+}
