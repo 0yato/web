@@ -13,7 +13,12 @@ include("nav.php")
       <link rel="stylesheet" href="css_files/car.css/cards.css">
 
 
-
+      <style>
+    #a3{
+    background-color: var(--darks);
+letter-spacing: 5px;
+}
+</style>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,9 +31,10 @@ include("nav.php")
     </div>
 
     <div class="cards">
-     <?php for($i=100;$i > 0;$i--){ ?>
-<div class="card">
-    content
+     <?php for($i=16;$i > 0;$i--){ ?>
+<div class="card" style="background-image: url('image/car<?php echo ($i+1)?>.jpg');">
+   
+
 </div>
 
      <?php

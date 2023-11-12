@@ -46,11 +46,11 @@ session_start();
    </div>
    <hr>
    <ul>
-    <a href="home.php" class="menu-item"><i class="fa-solid fa-house"></i><li>Home</li></a>
-    <a href="profile.php" class="menu-item"><i class="fa-solid fa-user"></i><li>Profile</li></a>
-    <a href="cars.php" class="menu-item"><i class="fa-solid fa-car"></i><li>Cars</li></a>
-    <a href="post-create.php" class="menu-item"><i class="fa-solid fa-image"></i><li>Generate Image</li></a>
-    <a href="admin.php" class="menu-item"   <?php 
+    <a href="home.php" id="a1" class="menu-item"><i class="fa-solid fa-house"></i><li>Home</li></a>
+    <a href="profile.php" id="a2" class="menu-item"><i class="fa-solid fa-user"></i><li>Profile</li></a>
+    <a href="cars.php" id="a3" class="menu-item"><i class="fa-solid fa-car"></i><li>Cars</li></a>
+    <a href="post.php" id="a4" class="menu-item"><i class="fa-solid fa-pen"></i><li>Create post</li></a>
+    <a href="admin.php" class="menu-item" id="a5"  <?php 
     
     if($_SESSION["username"]=="osama ammar"){
 
@@ -61,7 +61,7 @@ session_start();
     }
     ?>
     
-    ><i class="fa-solid fa-screwdriver-wrench"></i><li>Admin control</li></a>
+    ><i class="fa-solid fa-screwdriver-wrench" ></i><li>Admin control</li></a>
     <a href="index.html" class="menu-item" ><i class="fa-solid fa-right-from-bracket"></i><li>Logout</li></a>
    </ul>
 </div>
