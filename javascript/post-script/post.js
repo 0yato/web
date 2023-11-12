@@ -1,4 +1,4 @@
-const api="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";
+const api_key="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";
 const input =document.getElementById("input");
 const images =document.querySelector(".output-image");
 
@@ -8,7 +8,7 @@ const getImage= async()=>{
 method:"POST",
 headers:{
     "Content-Type":"application/json",
-    "Authorization":`Bearer ${api}`
+    "Authorization":`Bearer ${api_key}`
 },
 body:JSON.stringify(
     {
