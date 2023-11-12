@@ -246,7 +246,7 @@ width: 100%;
 letter-spacing: 5px;
 }
 
-.nav ul a:nth-child(5){
+.nav ul a:last-child{
     position: absolute;
     color: var(--red);
     bottom: 0;
