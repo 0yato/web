@@ -26,7 +26,7 @@ include("nav.php")
     </div>
 
     <div class="cards">
-     <?php for($i=10;$i > 0;$i--){ ?>
+     <?php for($i=100;$i > 0;$i--){ ?>
 <div class="card">
     content
 </div>

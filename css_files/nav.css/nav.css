@@ -54,6 +54,9 @@ hr{
     align-items: center;
     flex-direction: column;
     overflow: hidden;
+    animation-name: a;
+    animation-duration: 2s;
+
 }
 
 .nav:hover{
@@ -61,7 +64,14 @@ hr{
 }
 
 
+@keyframes a {
+    0%{
+width: 300px;
+    }
+    100%{
 
+    }
+}
 
 
 
@@ -234,7 +244,7 @@ width: 100%;
     background-color: aqua;
  padding: 10px;
     border-radius: 10px;
-    margin: 5px 0px;
+    margin: 7px 0px;
     border: 3px var(--red) solid;
     background-color: var(--red-back);
     transition: 500ms;
