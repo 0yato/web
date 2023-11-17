@@ -1,5 +1,5 @@
 <?php
-include("nav.php")
+//include("nav.php")
 ?>
 
 
@@ -7,8 +7,12 @@ include("nav.php")
 <html lang="en">
 <head>
     
+<script src="https://kit.fontawesome.com/2861b4e4c1.js" crossorigin="anonymous"></script>
 
-      <link rel="stylesheet" href="css_files/car.css/filter.css">
+
+
+
+      
       <link rel="stylesheet" href="css_files/car.css/card.css">
       <link rel="stylesheet" href="css_files/car.css/cards.css">
 
@@ -26,12 +30,13 @@ letter-spacing: 5px;
 </head>
 <body>
     <div class="body2">
-    <div class="filter">
-
-    </div>
+    <?php
+    include("car-filter.php");
+    ?>
 
     <div class="cards">
-     <?php for($i=16;$i > 0;$i--){ ?>
+     <?php 
+     for($i=16;$i > 0;$i--){ ?>
 <div class="card" style="background-image: url('image/car<?php echo ($i+1)?>.jpg');">
    
 

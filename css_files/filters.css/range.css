@@ -1,0 +1,33 @@
+:root{
+    --dark: rgb(0, 1, 1);
+    --darks: rgba(0, 1, 1, 0.543);
+    --red:rgb(173, 39, 39);
+    --white:rgb(238, 239, 240);
+   
+     --red-back:rgba(173, 39, 39, 0.413);
+    --reds:rgb(191, 64, 64);
+    
+}
+
+.range{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    margin: 10px;
+    padding: 10px;
+}
+
+.range label{
+    color: var(--red);
+    font-size: 18px;
+    font-weight: 600;
+    margin-right:20px ;
+}
+
+.range p{
+   color: aliceblue;
+    border-radius: 8px;
+    padding: 5px;
+    margin-right:5px ;
+}
