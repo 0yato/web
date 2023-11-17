@@ -56,7 +56,7 @@ hr{
     overflow: hidden;
     animation-name: a;
     animation-duration: 2s;
-
+z-index: 10;
 }
 
 .nav:hover{

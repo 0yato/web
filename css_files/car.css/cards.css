@@ -1,30 +1,6 @@
-
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+.hied{
+    display: none;
 }
-
-:root{
-    --dark: rgb(0, 1, 1);
-    --darks: rgba(0, 1, 1, 0.543);
-    --red:rgb(173, 39, 39);
-    --white:rgb(238, 239, 240);
-   
-     --red-back:rgba(173, 39, 39, 0.413);
-    --reds:rgb(191, 64, 64);
-    
-}
-
-
-
-body{
-height: 100vh;
-overflow-x: hidden;
-
-}
-
-
 
 
 .cards{
@@ -32,7 +8,6 @@ overflow-x: hidden;
     justify-content: space-evenly;
     flex-flow: row wrap;
     align-content: center;
-    
     width: 94.4%;
     margin-left: 4em;
     padding: 1em;

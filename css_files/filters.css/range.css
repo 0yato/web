@@ -31,3 +31,65 @@
     padding: 5px;
     margin-right:5px ;
 }
+
+.range .s2000{
+    color: var(--red);
+    font-size: 18px;
+    font-weight: 600;
+    margin-right:20px ;
+}
+
+.range label{
+    letter-spacing: 3px;
+}
+.range input{
+    width: 200px;
+}
+
+
+.button {
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.button button{
+outline: none;
+border: 2px var(--red) solid;
+padding: 10px;
+width: 100px;
+color: var(--red);
+background-color: transparent;
+margin: 10px;
+transition: 500ms;
+cursor: pointer;
+font-size: 20px;
+}
+
+.button button:hover{
+color: snow;
+background-color: var(--red);
+letter-spacing: 3px;
+}
+
+
+.button input{
+    outline: none;
+    border: 2px var(--red) solid;
+    padding: 10px;
+    width: 100px;
+    color: snow;
+    background-color: var(--red);
+    margin: 10px;
+    transition: 500ms;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.button input:hover{
+   background-color:  rgb(135, 31, 31);
+   letter-spacing: 3px;
+   
+}

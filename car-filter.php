@@ -1,13 +1,6 @@
-<?php
-include("connection.php");
-$sql="SELECT * FROM type";
-$result=mysqli_query($con,$sql);
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 
 <link rel="stylesheet" href="css_files/filters.css/range.css">
 <link rel="stylesheet" href="css_files/filters.css/filter.css">
@@ -17,62 +10,105 @@ $result=mysqli_query($con,$sql);
     <title>Document</title>
 </head>
 <body>
-    <form action="cars.php" method="get">
+    <form id="form" action="cars.php" method="get">
         <div class="search">
           <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>  <input name="sss" autocomplete="off" type="text"  id="search">
         </div>
-        <div class="filter-icon"><i class="fa-solid fa-filter"></i>filter</div>
-<div class="filter">
+        <div class="filter-icon" id="filter"><i class="fa-solid fa-filter"></i>filter</div>
+<div class="filter" id="divv">
      
      <div class="opt">
         <div class="s">
         <label for="c">company</label>
         <select name="" id="c">
         <option value="none">None</option>
-        <?php
-        while ($row = $result->fetch_assoc()) {
-            echo "<option>{$row['type_description']}</option>";
-}
+     
+       
+           <option>here</option>
+
            
-            ?>
+        
         </select>
         </div>
+
+
+
+
+
+
+
         <div class="s">
-        <label for="t">company</label>
+        <label for="t">States</label>
         <select name="" id="t">
             <option value="none">None</option>
             <option value="Rent">Rent</option>
             <option value="Sell">Sell</option>
         </select>
         </div>
+
+
+
+
+
+
      </div>
+
+
+
+
+
+
+
      <div class="range">
         <label for="price">price:</label>
         <p id="prisep" style="background:green;">0$</p>
-     <input id="price" type="range" min="0" max="200000">
+     <input step="1000" id="price" value="0" type="range" min="0" max="200000">
+     <p class="s2000">+200,000$  </p>
      </div>
+
+
+
+
+
+
+
+
+
+
      <div class="range">
         <label for="drive">driven:</label>
         <p id="drivep" style="background:orange;">0km</p>
-     <input id="drive" type="range" min="0" max="200000"> 
+     <input step="1000" id="drive" value="0" type="range" min="0" max="200000"> 
+     <p class="s2000">+200000 km  </p>
      </div>
+
+
+
+
+
+
+
+
      <div class="button">
     <input type="submit" value="Search" name="d">
     <button>Reset</button>
 </div>
+
+
+
+
+
+
+
+
     </div>
 
 
     </form>
+
+
+
+    <script src="javascript/filter-script/filter.js"></script>
 </body>
 </html>
 
-<?php
-
-mysqli_close($con);
-
-if(isset($_GET['d'])){
-    echo $_GET['sss'];
-}
-
-?>
