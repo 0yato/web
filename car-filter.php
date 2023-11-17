@@ -17,9 +17,9 @@ $result=mysqli_query($con,$sql);
     <title>Document</title>
 </head>
 <body>
-    <form action="cars.php" method="post">
+    <form action="cars.php" method="get">
         <div class="search">
-          <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>  <input autocomplete="off" type="text" name="" id="search">
+          <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>  <input name="sss" autocomplete="off" type="text"  id="search">
         </div>
         <div class="filter-icon"><i class="fa-solid fa-filter"></i>filter</div>
 <div class="filter">
@@ -56,11 +56,12 @@ $result=mysqli_query($con,$sql);
         <p id="drivep" style="background:orange;">0km</p>
      <input id="drive" type="range" min="0" max="200000"> 
      </div>
-    </div>
-<div class="button">
-    <input type="submit" value="Search">
-    <input type="submit" value="Reset">
+     <div class="button">
+    <input type="submit" value="Search" name="d">
+    <button>Reset</button>
 </div>
+    </div>
+
 
     </form>
 </body>
@@ -69,4 +70,9 @@ $result=mysqli_query($con,$sql);
 <?php
 
 mysqli_close($con);
+
+if(isset($_GET['d'])){
+    echo $_GET['sss'];
+}
+
 ?>
