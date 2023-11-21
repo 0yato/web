@@ -16,12 +16,22 @@ include("nav.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        .nav{
+            background-image: linear-gradient(244deg, #e46962 16%, #b3261e 95%);
 
+}
+.nav ul a{
+    border: 3px var(--red) solid;
+    background-color: #b3261e;
+}
 
 
     #a4{
     background-color: var(--darks);
 letter-spacing: 5px;
+}
+#a4 >i{
+    color:#e46962 ;
 }
 
 
@@ -113,30 +123,3 @@ letter-spacing: 5px;
 <script src="javascript/post-script/upload-image.js"></script>
 </body>
 </html>
-<?php
-if(isset($_POST["create"])){
-$_SESSION["carId"]=19;
-$_SESSION["carImage"]=$_POST["carImage"];
-$_SESSION["carState"]=$_POST["carState"];
-$_SESSION["carMarka"]=$_POST["carMarka"];
-$_SESSION["carName"]=$_POST["carName"];
-$_SESSION["carPrice"]=$_POST["carPrice"];
-$_SESSION["carDriven"]=$_POST["carDriven"];
-$_SESSION["carModel"]=$_POST["carModel"];
-$_SESSION["carDesc"]=$_POST["carDesc"];
-$_SESSION["carContact"]=$_POST["carContact"];
-
-echo $_POST["carImage"]."<br>";
-echo $_POST["carState"]."<br>";
-echo $_POST["carMarka"]."<br>";
-echo $_POST["carName"]."<br>";
-echo $_POST["carPrice"]."<br>";
-echo $_POST["carDriven"]."<br>";
-echo $_POST["carModel"]."<br>";
-echo $_POST["carDesc"]."<br>";
-echo $_POST["carContact"]."<br>";
-
-}
-
-
-?>

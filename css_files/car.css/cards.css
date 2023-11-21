@@ -1,7 +1,11 @@
 .hied{
     display: none;
 }
-
+ body{
+    background-image: linear-gradient(180deg, #333333 5%, #222222 95%);
+    height: 100%;
+    background-repeat: no-repeat;
+ }
 
 .cards{
     display: flex;

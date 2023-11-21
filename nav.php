@@ -26,7 +26,7 @@ session_start();
 </head>
 <body>
    
-<div class="nav">
+<div class="nav" id="nav">
 
 
 
@@ -67,6 +67,8 @@ session_start();
 </div>
  
 <script src="javascript/nav-script/nav.js"></script>
+<script src="javascript/nav-script/color.js"></script>
+
 </body>
 </html>
 

@@ -1,0 +1,89 @@
+.design{
+    position: absolute;
+    width: 300px !important;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    animation-name: moving;
+    border-radius: none !important;
+    scale: 0.5;
+}
+.d1{
+    right:200px;
+    animation-name: moving;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+.d2{
+    animation-name: moving1;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    left:200px;
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%) ;
+}
+
+.d3{
+    right:40px;
+    animation-name: moving;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    scale: 0.6;
+    animation-delay: 1s;
+}
+
+.d4{
+    animation-name: moving1;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    left:40px;
+    scale: 0.6;
+    animation-delay: 1s;
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%) ;
+}
+@keyframes moving {
+    0%{
+
+    }
+    50%{
+       
+      translate: 40px 0px;
+    }
+    100%{
+
+    }
+}
+
+@keyframes moving1 {
+    0%{
+
+    }
+    50%{
+       
+      translate: -40px 0px;
+    }
+    100%{
+
+    }
+}
+
+
+@media (max-width:1150px) {
+    .d4,.d3{
+      z-index: -10;
+    }
+    .d1{
+right: 30px;
+    }
+    .d2{
+        left: 30px;
+    }
+}
+@media (max-width:830px){
+    .d1,.d2{
+        z-index: -10;
+            }
+           
+}

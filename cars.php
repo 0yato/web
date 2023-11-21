@@ -18,9 +18,23 @@ include("nav.php")
 
 
       <style>
+
+.nav{
+            background-image: linear-gradient(180deg, #222222 10%, #333333 90%);
+
+}
+.nav ul a{
+    border: none;
+    box-shadow: 0px 0px 2px 0px snow;
+    background-color: #222;
+}
+
     #a3{
     background-color: var(--darks);
 letter-spacing: 5px;
+}
+#a3 > i{
+    color: #5C5C5C;
 }
 </style>
 

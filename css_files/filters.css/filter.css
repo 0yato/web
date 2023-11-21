@@ -24,7 +24,7 @@ form{
     justify-content: center;
     flex-direction: column;
     margin-left: 70px;
-   background-color: #222;
+  
    padding: 10px;
 }
 
@@ -96,7 +96,7 @@ background-color: var(--red);
 
 .opt{
     margin: 0 auto;
-    background-color: #222;
+   
     width: 50%;
 }
 
@@ -105,7 +105,7 @@ background-color: var(--red);
 .filter{
     display: none;
     width: 100%;
-border: #222 solid 2px;
+
 }
 
 .opt{
@@ -149,7 +149,7 @@ border: none;
 
 
 option{
-   background-color: #222;
+  
     color: aliceblue;
 }
 option:hover{
@@ -157,7 +157,7 @@ option:hover{
 }
 
 .range{
-    background-color: #222;
+ 
     width: 50%;
     
 }
