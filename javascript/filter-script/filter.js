@@ -7,6 +7,15 @@ let price_input=document.getElementById("price");
 
 let drive_input=document.getElementById("drive");
 
+
+let reset=document.getElementById("reset");
+
+
+let s1=document.getElementById("t");
+let s2=document.getElementById("c");
+
+
+
 price_input.addEventListener("input",function(){
 price.innerHTML=price_input.value +"$";
 
@@ -39,3 +48,12 @@ divv.style.display="block";
         divv.style.display="none";
     }
 })
+
+
+
+reset.onclick=function(){
+    price_input.value=0;
+    drive_input.value=0;
+    s1.value="none";
+    s2.value="none";
+}

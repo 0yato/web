@@ -54,8 +54,14 @@
     align-items: center;
     justify-content: space-around;
 }
-
-.button button{
+.reset {
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.reset{
 outline: none;
 border: 2px var(--red) solid;
 padding: 10px;
@@ -67,6 +73,17 @@ transition: 500ms;
 cursor: pointer;
 font-size: 20px;
 }
+
+
+
+.reset:hover{
+    color: snow;
+    background-color: var(--red);
+    letter-spacing: 3px;
+    }
+
+
+
 
 .button button:hover{
 color: snow;

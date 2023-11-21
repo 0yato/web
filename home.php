@@ -18,3 +18,18 @@ letter-spacing: 5px;
     
 </body>
 </html>
+
+<?php
+
+echo $_POST["carImage"];
+echo $_POST["carId"];
+echo $_POST["carState"];
+echo $_POST["carMarka"];
+echo $_POST["carName"];
+echo $_POST["carPrice"];
+echo $_POST["carDriven"];
+echo $_POST["carModel"];
+echo $_POST["carDesc"];
+echo $_POST["carContact"];
+echo $_POST["user"];
+?>

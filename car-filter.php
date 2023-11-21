@@ -91,7 +91,7 @@
 
      <div class="button">
     <input type="submit" value="Search" name="d">
-    <button>Reset</button>
+    <div class="reset" id="reset">Reset</div>
 </div>
 
 
@@ -107,7 +107,7 @@
     </form>
 
 
-
+      
     <script src="javascript/filter-script/filter.js"></script>
 </body>
 </html>
