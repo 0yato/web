@@ -3,11 +3,11 @@
 :root{
     --dark: rgb(0, 1, 1);
     --darks: rgba(0, 1, 1, 0.543);
-    --red:rgb(173, 39, 39);
+    --red:#548FEF;
     --white:rgb(238, 239, 240);
    
 
-    --reds:rgb(191, 64, 64);
+    --reds:#a1c4fd;
     
 }
 *{
@@ -19,7 +19,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    height: 100vh;
 }
 
 
@@ -30,13 +30,13 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-radius: 20px;
+    border-radius: 25px;
     overflow: hidden;
-    background-color: var(--dark);
-    position: relative;
+    background-image: linear-gradient(180deg, #a1c4fd 10%, #548FEF 90%);
+        position: relative;
     width: 50%;
     padding: 30px;
-    translate: 0px 50px;
+    
 }
 
 .login-form h2{
@@ -80,7 +80,7 @@ margin-top: 20px;
     padding: 13px;
    
     z-index: 10;
-    border-bottom: 2px var(--reds) solid;
+    border-bottom: 4px var(--reds) solid;
     margin-left: 10px;
     font-size: 20px;
     font-family:"Space Grotesk" ;
@@ -101,14 +101,14 @@ margin-top: 20px;
 
 .divcon input:focus,
 .divcon input:valid{
-    border-color:rgb(253, 102, 102) ;
+    border-color:#2569D7;
     color: aliceblue;
 }
 
 
 .slide{
-    background-color: rgba(173, 39, 39, 0.605);
-    width: 468px;
+    background-color: #244375;
+    width: 453px;
     height: 0px;
     position: absolute;
     left: 92px;
@@ -196,7 +196,7 @@ font-size: 20px;
 
 
 .password .slide{
-    width: 400px;
+    width: 380px;
     left: 92px;
 }
 
@@ -231,7 +231,7 @@ text-transform: uppercase;
 letter-spacing: 3px;
 margin: 10px;
 color: aliceblue;
-background-color: rgba(255, 0, 0, 0.237);
+background-color: #2569D7;
 }
   
 

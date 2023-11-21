@@ -22,14 +22,7 @@ session_start();?>
     <title>Car X</title>
 </head>
 <body>
-    <div class="nav">
-        <img src="image/logo1.svg" alt="">
-      
-      <a href="index.html">  
-        <i class="fa-solid fa-arrow-left fa-bounce"></i>
-   
-</a>
-    </div>
+
 
 
     <form action="login.php" method="post" class="login-form">
