@@ -3,11 +3,11 @@
 :root{
     --dark: rgb(0, 1, 1);
     --darks: rgba(0, 1, 1, 0.543);
-    --red:#548FEF;
+    --red:rgb(173, 39, 39);
     --white:rgb(238, 239, 240);
    
 
-    --reds:#a1c4fd;
+    --reds:rgb(191, 64, 64);
     
 }
 *{
@@ -15,11 +15,30 @@
     
 }
 
-body{
+
+.bbb{
+    position: absolute;
+    background-color: aqua;
+    top: 50px;
+    left:20px;
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    clip-path: circle();
+    text-decoration: none;
+    font-size: 20px;
+    color: snow;
+    background-color: var(--red);
+}
+
+
+body{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    overflow: hidden;
 }
 
 
@@ -30,25 +49,25 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-radius: 25px;
+    height: 100%;
     overflow: hidden;
-    background-image: linear-gradient(180deg, #a1c4fd 10%, #548FEF 90%);
-        position: relative;
-    width: 50%;
+    background: rgba(0, 0, 0, 0.578);
+    position: relative;
+    width: 35%;
     padding: 30px;
-    
+  
 }
 
 .login-form h2{
     color: aliceblue;
-    background-color: var(--red) ;
+   text-transform: uppercase;
     width: 100%;
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
     font-family: "Space Grotesk";
-    letter-spacing: 2px;
+    letter-spacing: 10px;
     padding: 10px;
-    
+    margin-bottom: 20px;
 }
 
 
@@ -80,7 +99,7 @@ margin-top: 20px;
     padding: 13px;
    
     z-index: 10;
-    border-bottom: 4px var(--reds) solid;
+    border-bottom: 2px var(--reds) solid;
     margin-left: 10px;
     font-size: 20px;
     font-family:"Space Grotesk" ;
@@ -101,17 +120,17 @@ margin-top: 20px;
 
 .divcon input:focus,
 .divcon input:valid{
-    border-color:#2569D7;
+    border-color:rgb(253, 102, 102) ;
     color: aliceblue;
 }
 
 
 .slide{
-    background-color: #244375;
-    width: 453px;
+    background-color: rgba(173, 39, 39, 0.605);
+    width: 73.45%;
     height: 0px;
     position: absolute;
-    left: 92px;
+    left: 87px;
     bottom: 26px;
     transition: 600ms;
     border-radius: 50% 50% 0px 0px;
@@ -186,17 +205,18 @@ font-size: 20px;
 
 
 .password .eye i:nth-child(1){
-    display: none;
+   
     cursor: pointer;
 }
 
 .password .eye i:nth-child(2){
     cursor: pointer;
+    display: none;
 }
 
 
 .password .slide{
-    width: 380px;
+    width:73.4%;
     left: 92px;
 }
 
@@ -217,10 +237,6 @@ font-size: 20px;
 }
 
 
-.btn p:nth-child(1){
-   
-}
-
 .btn button{ 
 outline: none;
 border: none;
@@ -228,13 +244,18 @@ padding: 10px;
 width: 250px;
 font-size: 25px;
 text-transform: uppercase;
-letter-spacing: 3px;
+letter-spacing: 2px;
 margin: 10px;
 color: aliceblue;
-background-color: #2569D7;
+transition: 300ms;
+background-color: rgba(255, 0, 0, 0.237);
 }
   
-
+.btn button:hover{
+    cursor: pointer;
+    background-color: var(--red);
+    letter-spacing: 6px;
+}
 
 
 .btn p{
@@ -295,4 +316,10 @@ border-radius:5px ;
     background-color: rgba(255, 0, 0, 0.573);
 }
 
+}
+
+
+.welcome{
+    color: snow;
+   
 }

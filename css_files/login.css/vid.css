@@ -1,0 +1,25 @@
+.vid1{
+    position: absolute;
+}
+.ttt{
+    position: absolute;
+    z-index: 2;
+    left: 100px;
+    width:400px;
+  opacity: 0;
+  animation-name:ani ;
+  animation-duration: 7s;
+}
+
+@keyframes ani {
+    0%{
+
+    }
+    25%{
+        opacity: 1;
+    }
+    100%{
+    
+    }
+
+}

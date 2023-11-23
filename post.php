@@ -35,7 +35,13 @@ letter-spacing: 5px;
 }
 
 
-
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background-color:  #b3261e;
+    border-radius: 5px;
+}
 
 
 

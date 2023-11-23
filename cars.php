@@ -40,6 +40,13 @@ letter-spacing: 5px;
 #a3 > i{
     color: #5C5C5C;
 }
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #222;
+    border-radius: 5px;
+}
 </style>
 
     <meta charset="UTF-8">

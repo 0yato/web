@@ -37,6 +37,14 @@ border: 3px #243b5e solid;
 #a2 > i{
     color: #2a5298;
 }
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background-color:  #2a5298;
+    border-radius: 5px;
+}
 </style>
 </head>
 <body>

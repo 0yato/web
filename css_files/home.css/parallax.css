@@ -49,15 +49,20 @@ display: flex;
 }
 
 .info img{
-    width: 300px;
+    width: 500px;
     margin-right: 40px;
+    translate:-1000px 0px  ;
+    transition: 1.5s;
+    filter: blur(10px);
 }
 
 .info p{
+    opacity: 0;
     font-size: 30px;
     margin: 40px;
     text-transform: capitalize;
     color: snow;
+    transition: 1s;
 }
 
 
@@ -118,6 +123,7 @@ background-image: url("image/home-image/background.jpg");
 @keyframes intro2 {
     0%{
         translate: -1500px 40px;
+        filter: blur(50px);
     }
     50%{
         
@@ -132,6 +138,7 @@ background-image: url("image/home-image/background.jpg");
         translate: 0px 0px;
     }
     100%{
+        filter: blur(50px);
         translate: -1500px 40px;
     }
 }
@@ -211,4 +218,13 @@ height: 100%;
 transition: 400ms;
 
 z-index: -1;
+}
+
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #222;
+    border-radius: 5px;
 }
