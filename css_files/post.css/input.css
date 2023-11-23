@@ -229,15 +229,17 @@ border: 3px solid var(--color-ref-error10);
 
 select{
     background-color: orange;
-    padding: 15px;
+   
     font-size: 18px;
-    flex-grow: 1;
+    width: 150px !important;
     color: var(--color-ref-error40);
     background-color:var(--color-ref-error10) ;
-    border-radius: 10px;
+    padding: 10px;
+
     outline: none;
     margin-left:40px ;
     color: snow;
+  
 }
 option{
 border: 3px solid var(--color-ref-error10);

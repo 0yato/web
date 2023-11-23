@@ -1,5 +1,6 @@
 <?php
 include("nav.php");
+echo "ahmad";
 ?>
 
 <!DOCTYPE html>

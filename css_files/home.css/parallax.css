@@ -123,7 +123,7 @@ background-image: url("image/home-image/background.jpg");
 @keyframes intro2 {
     0%{
         translate: -1500px 40px;
-        filter: blur(50px);
+        filter: blur(100px);
     }
     50%{
         
@@ -138,7 +138,7 @@ background-image: url("image/home-image/background.jpg");
         translate: 0px 0px;
     }
     100%{
-        filter: blur(50px);
+        filter: blur(100px);
         translate: -1500px 40px;
     }
 }

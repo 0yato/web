@@ -1,6 +1,12 @@
 <?php 
 include("nav.php");
 
+if($_POST["create"]){
+
+}
+
+
+
 ?>
 
 <!DOCTYPE html>
@@ -62,7 +68,7 @@ letter-spacing: 5px;
     </div>
     <div class="input-image">
     <label id="label-for-input-image" for="input-file">Upload An Image</label>    
-    <input type="file" style="display: none;" name="carImage" id="input-file" accept="image/png ,image/jpg, img/svg, image/jpeg">
+    <input type="file" style="display: none;" required name="carImage" id="input-file" accept="image/png ,image/jpg, img/svg, image/jpeg">
 
     </div>
     <div class="inputs">
@@ -70,18 +76,18 @@ letter-spacing: 5px;
         <div class="r2">
          <div class="sell" id="sell">sell</div>
          <div class="rent" id="rent">rent</div>
-        <input type="text" value="none" id="state-of-sell-rent" name="carState" style="display: none;">
+        <input type="text" required  id="state-of-sell-rent" name="carState" style="display: none;">
          </div>
         </div>
         <div class="list">
             <h2>Company</h2>
-            <select name="carMarka" id="">
+            <select name="carMarka" id="company-select">
             <option value="none">none</option>
-                <option value="">mersedese</option>
-                <option value="">mosting</option>
-                <option value="">ferrari</option>
-                <option value="">Cadelac</option>
-                <option value="">BMW</option>
+                <option value="mersedese">mersedese</option>
+                <option value="mosting">mosting</option>
+                <option value="ferrari">ferrari</option>
+                <option value="Cadelac">Cadelac</option>
+                <option value="BMW">BMW</option>
             </select>
         </div>
         <div class="texts-input">
