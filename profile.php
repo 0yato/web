@@ -24,13 +24,14 @@ include("nav.php")
 .nav ul a{
     border: none;
     background-color: #1e3c72;
+    border: 3px #243b5e solid;
 }
 
 
     #a2{
     background-color: var(--darks);
 letter-spacing: 5px;
-border:  #101722 solid;
+border: 3px #243b5e solid;
 }
 
 #a2 > i{

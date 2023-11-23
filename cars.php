@@ -27,11 +27,15 @@ include("nav.php")
     border: none;
     box-shadow: 0px 0px 2px 0px snow;
     background-color: #222;
+    border: 3px solid snow;
 }
-
+.nav ul a:hover{
+    background-color: rgba(128, 128, 128, 0.651);
+}
     #a3{
-    background-color: var(--darks);
+    background-color: gray;
 letter-spacing: 5px;
+
 }
 #a3 > i{
     color: #5C5C5C;
