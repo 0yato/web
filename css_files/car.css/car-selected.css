@@ -215,7 +215,13 @@ color: var(--red);
 
 #close-btn{
     position: absolute;
-    top: 0px;
+    top: 280px;
     right: 150px;
+    background-color: snow;
+    padding: 15px;
+    rotate: 45deg;
+    font-size: 20px;
+    cursor: pointer;
+    clip-path: circle();
 
 }

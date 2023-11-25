@@ -84,7 +84,7 @@ letter-spacing: 5px;
    
 
 
-<i class="fa-solid fa-plus"></i>
+<i class="fa-solid fa-plus open-card"></i>
     <h2 class="car-name">name</h2>
 
 

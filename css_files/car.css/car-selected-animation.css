@@ -31,6 +31,7 @@ rotate: 0deg;
     /*animation-name: open1;*/
     animation-duration: 2s;
     animation-fill-mode: forwards;
+    
     rotate: 90deg;
     translate: 100px 0px ;
     scale:0;
