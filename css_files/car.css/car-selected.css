@@ -1,0 +1,221 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Kanit:wght@300&family=Montserrat:ital,wght@0,400;1,500&family=Open+Sans:ital,wght@0,400;1,300&family=Roboto&family=Roboto+Mono:wght@500&family=Rubik:ital,wght@0,300;0,400;1,300;1,400&family=Space+Grotesk:wght@300;400;500&family=Vina+Sans&display=swap');
+
+:root{
+    --dark: rgb(0, 1, 1);
+    --darks: rgba(0, 1, 1, 0.543);
+    --red:rgb(173, 39, 39);
+    --white:rgb(238, 239, 240);
+   
+     --red-back:rgba(173, 39, 39, 0.413);
+    --reds:rgb(191, 64, 64);
+    
+}
+
+
+
+.car-selected {
+    position: fixed;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 100%;
+    height: 100vh;
+    background-color:rgba(255, 255, 255, 0.103);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-selected{
+   width: 270px;
+   z-index: 1;
+   box-shadow: 0px 0px 15px 0px black;
+}
+
+
+
+.info-card{
+    background-color: snow;
+    height: 450px;
+    width: 0;
+    border-radius: 0px 5% 5% 0px;
+    padding: 15px;
+}
+
+
+
+.name-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+}
+
+
+
+
+
+.car-logo-info{
+    position: absolute;
+    right: 20px;
+    width: 40px;
+}
+.name-info-name{
+    text-transform: capitalize;
+    font-size: 28px;
+    color:var(--red) ;
+    font-family: "Rubik";
+}
+
+
+
+
+
+
+
+.info-selected{
+   
+    width: 90%;
+}
+.type-info-rent{
+    background-color: orange;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 8px;
+    color: snow;
+    font-family: "Rubik";
+    font-size: 16px;
+    margin: 5px;
+    box-shadow: 0px 0px 5px 0px black ;
+}
+
+.model-info{
+    color: #222;
+    margin: 7px;
+    font-size: 22px;
+    font-family: "Rubik";
+}
+
+
+
+.driven-info{
+    color: #222;
+    margin: 7px;
+    font-size: 22px;
+    font-family: "Rubik";
+}
+
+
+
+
+
+.description-info{
+    color: #222;
+    margin: 10px;
+background-color: rgba(128, 128, 128, 0.137);
+    box-shadow: 0px 0px 5px 0px black;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: "Rubik";
+    backdrop-filter: blur(5px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pay-info{
+    font-family: "Rubik";
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 7px;
+    padding: 5px;
+}
+.mony-info{
+    font-size: 25px;
+    color: green;
+    font-family: "Rubik";
+}
+
+.id-info{
+font-size: 22px;
+font-family: "Rubik";
+
+}
+.id-info > b{
+    color: var(--red);
+}
+
+
+
+
+
+
+
+
+
+
+
+.contact-info-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 7px;
+    padding: 5px;
+}
+
+
+.contact-info{
+
+width: 200px;
+text-align: center;
+padding: 10px;
+font-size: 22px;
+text-transform: capitalize;
+text-decoration: none;
+color: snow;
+border-radius: 10px;
+transition: 400ms;
+background-image: linear-gradient(45deg, #BF4044 10%, #c67171 90%);
+}
+
+.contact-info:hover{
+scale: 1.1;
+letter-spacing: 2px;
+}
+
+
+
+
+
+
+
+.owner-name{
+    order: 2;
+font-family: "rubik";
+}
+
+.owner-name > b{
+font-size: 22px;
+color: var(--red);
+}
+
+
+#close-btn{
+    position: absolute;
+    top: 0px;
+    right: 150px;
+
+}

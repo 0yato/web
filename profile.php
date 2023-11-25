@@ -54,8 +54,11 @@ border: 3px #243b5e solid;
            <img class="design d2" src="image/car101.jpg" alt="">
            <img class="design d3" src="image/car102.jpg" alt="">
            <img class="design d4" src="image/car103.jpg" alt="">
+           
             <img src="image/logo1.svg" alt="">
+            
             <button id="change-btn">change password</button>
+           
         </div>
         <div  class="scroll">
         <?php

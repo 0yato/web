@@ -23,8 +23,11 @@ session_start();?>
     <title>Car X</title>
 </head>
 <body>
-   
-  <video class="vid1" autoplay loop src="image/vid/login-vid.mp4"></video>
+   <div class="mute" id="cont">
+   <i class="fa-solid fa-volume-xmark" style="display: none;" id="mute"></i>
+   <i class="fa-solid fa-volume-high"  id="muted"></i>
+   </div>
+  <video class="vid1" id="vid1"   autoplay loop src="image/vid/login-vid.mp4"></video>
 
 
     <form action="login.php" method="post" class="login-form">
@@ -106,5 +109,6 @@ else{
 
 
     <script src="javascript/login-script/show/unshow-password.js"></script>
+    <script src="javascript/login-script/show/mute.js"></script>
 </body>
 </html>

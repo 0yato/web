@@ -126,13 +126,12 @@ letter-spacing: 5px;
 
 
 
-<div class="car-selected" id="car-selected" style="z-index: -1;">
-<i class="fa-solid fa-plus" id="close-btn"></i>
-<img src="image\home-image\c4.jpg" alt="" class="image-selected" id="image-selected">
+<div class="car-selected">
+<img src="image\home-image\c4.jpg" alt="" class="image-selected">
 
 
 
-<div class="info-card" id="info-card">
+<div class="info-card">
 
 
 

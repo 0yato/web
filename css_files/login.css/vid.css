@@ -23,3 +23,19 @@
     }
 
 }
+
+
+.mute{
+    position: absolute;
+    z-index: 100;
+    bottom: 30px;
+    left: 20px;
+    color: snow;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: circle();
+    background-color: rgb(173, 39, 39);
+    cursor: pointer;
+}

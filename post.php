@@ -1,11 +1,6 @@
 <?php 
 include("nav.php");
 
-if($_POST["create"]){
-
-}
-
-
 
 ?>
 
@@ -72,6 +67,7 @@ letter-spacing: 5px;
 
     </div>
     <div class="inputs">
+        <div class="contt">
         <div class="radio">
         <div class="r2">
          <div class="sell" id="sell">sell</div>
@@ -89,6 +85,7 @@ letter-spacing: 5px;
                 <option value="Cadelac">Cadelac</option>
                 <option value="BMW">BMW</option>
             </select>
+        </div>
         </div>
         <div class="texts-input">
         <div class="text-input">

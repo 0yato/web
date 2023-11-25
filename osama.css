@@ -1,0 +1,35 @@
+img{
+    width: 100px;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.first{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.first img{
+    flex-basis: 33%;
+}
+
+.second{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second p{
+    flex-basis: 60%;
+}
+
+.second img{
+    flex-basis: 40%;
+}

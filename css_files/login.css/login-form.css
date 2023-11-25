@@ -51,7 +51,7 @@ body{
     flex-direction: column;
     height: 100%;
     overflow: hidden;
-    background: rgba(0, 0, 0, 0.578);
+    background: rgba(0, 0, 0, 0.779);
     position: relative;
     width: 35%;
     padding: 30px;
@@ -127,10 +127,10 @@ margin-top: 20px;
 
 .slide{
     background-color: rgba(173, 39, 39, 0.605);
-    width: 73.45%;
+    width: 72%;
     height: 0px;
     position: absolute;
-    left: 87px;
+    left: 90px;
     bottom: 26px;
     transition: 600ms;
     border-radius: 50% 50% 0px 0px;
@@ -216,8 +216,8 @@ font-size: 20px;
 
 
 .password .slide{
-    width:73.4%;
-    left: 92px;
+    width:72%;
+    left: 93px;
 }
 
 
@@ -229,6 +229,7 @@ font-size: 20px;
 
 
 .btn{
+    margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
