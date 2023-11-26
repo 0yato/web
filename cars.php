@@ -80,17 +80,19 @@ letter-spacing: 5px;
     <div class="cards">
     <?php 
      for($i=16;$i > 0;$i--){ ?>
-<div class="card" style="background-image: url('image/car<?php echo ($i+1)?>.jpg');">
+     
+<div class="card" style="background-image: url('image/car<?php echo ($i)?>.jpg');">
    
 
 
-<i class="fa-solid fa-plus open-card"></i>
-    <h2 class="car-name">name</h2>
+<i class="fa-solid fa-plus open-card" ></i>
+<img id="card-image" style="display: none !important;"   src="image/car<?php echo ($i)?>.jpg" alt="" class="car-image hied">
+
+    <h2 class="car-name"><?php echo ($i)?></h2>
 
 
 <div class="anime"></div>
 <p class="id hied">id</p>
-<img  src="image/car-slide9.jpg" alt="" class="car-image hied">
 <p class="hied">description Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem illo impedit commodi perferendis saepe nam possimus fugit placeat ipsam autem voluptatibus sint veniam quae repudiandae non vel suscipit fuga ipsum, recusandae voluptatum, ducimus iste magni porro. Illo blanditiis facilis quia. Inventore consectetur, possimus quisquam delectus sapiente nisi. Accusantium animi, voluptate laudantium itaque neque odit iste expedita velit fuga illo delectus.</p>
    
    
@@ -127,7 +129,7 @@ letter-spacing: 5px;
 
 
 <div class="car-selected" id="car-selected" style="z-index: -1;">
-<i class="fa-solid fa-plus" id="close-btn"></i>
+<i class="fa-solid fa-plus" id="close-btn" style="display: none;"></i>
 <img src="image\home-image\c4.jpg" alt="" class="image-selected" id="image-selected">
 
 
@@ -138,7 +140,7 @@ letter-spacing: 5px;
 
 
 <div class="name-info">
-<h2 class="name-info-name">car name</h2>
+<h2  class="name-info-name">car name</h2>
 <img src="image/mercedec-logo.png" alt=""  class="car-logo-info">
 </div>
 
