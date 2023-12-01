@@ -24,18 +24,20 @@
 
 
 
-
+<video src="image\vid\signup.mp4" autoplay loop></video>
 
     <form action="" method="post">
-       
+    <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
      <h2>Sign Up</h2>
      <div class="id-div">
-        <p>your id will be :2000</p>
+        <p>your id Is : <b>2000</b> </p>
      </div>
      <div class="profile-image">
-        <img src="image/default-profile.jpg" alt="">
+        <div class="image">
+        <img src="image/default-profile.jpg" id="profile" alt="">
+        </div>
         <input id="profile-pic" type="file" style="display: none;">
-        <label for="profile-pic">Select a photo</label>
+        <label for="profile-pic"><i class="fa-solid fa-plus open-card" ></i></label>
      </div>
      
 

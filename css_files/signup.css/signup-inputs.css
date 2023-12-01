@@ -1,41 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Open+Sans:ital,wght@0,400;1,300&family=Rubik:ital,wght@0,300;0,400;1,300&family=Space+Grotesk:wght@300;400;500&display=swap');
 
 
-:root{
-    --first:red;
-    --second:green;
-    --the:blue;
-}
+
 .profile-image{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+   
+    position: relative;
+    margin-bottom: 20px;
 }
-.profile-image img{
-width: 100px;
-clip-path: circle();
 
+
+.profile-image .image{
+    box-shadow: 2px 2px 10px 0px #4b749f;
+height: 112px;
+width: 113px;
+border-radius: 50%;
+border: #4b749f 2px solid;
+overflow: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+
+.profile-image img{
+width: 110px;
+clip-path: circle();
 }
 
 
 .profile-image label{
-background-color: antiquewhite;
-margin: 10px;
+ background: linear-gradient(to top right ,#243748,#4b749f);
+box-shadow: 0px 2px 10px 2px  #4b749f;
 padding:10px 20px;
-border-radius: 10px;
-width: 60%;
+position: absolute;
+clip-path: circle();
 cursor: pointer;
-font-size: 20px;
+font-size: 24px;
 text-transform: capitalize;
-font-family: 'Open Sans';
-font-weight: 700;
+scale: 0.5;
+font-weight: 800;
+bottom: -22px;
 transition: 300ms;
+color: snow;
 }
-.profile-image label:hover{
-    translate: 0px 5px;
-    letter-spacing: 3px;
-}
+
 
 
 .id-div{
@@ -52,7 +65,16 @@ transition: 300ms;
     letter-spacing: 2px;
     font-family: "Rubik";
     text-transform: capitalize;
+   color: snow;
+   
 }
+.id-div p b{
+    background: linear-gradient(to top right ,#243748,#4b749f);
+padding: 5px;
+border-radius: 5px;
+}
+
+
 
 .input-div{
     display: flex;
@@ -60,7 +82,7 @@ transition: 300ms;
     justify-content: center;
     align-items: center;
     
-    margin: 10px;
+    margin: 25px;
     position: relative;
 }
 .input-div input{
@@ -68,22 +90,27 @@ transition: 300ms;
     outline: none;
     border: none;
     padding: 5px;
-    height: 40px;
+    height: 45px;
     transition: 300ms;
-    font-size: 20px;
+    font-size: 22px;
     margin-left: 10px;
+    border-radius: 8px;
+    
 }
 .input-div input:focus,
 .input-div input:valid{
-    border-left: 6px solid;
+    border-left: 8px solid rgba(109, 168, 231, 0.692);
     transition: 300ms;
 }
 
 .input-div i{
     position: absolute;
     left: 40px;
-    font-size: 24px;
+    font-size: 26px;
     cursor: pointer;
+    background: linear-gradient(to top right ,#243748,#4b749f);
+    -webkit-background-clip: text; 
+    color: transparent;
 }
 
 button{
@@ -95,8 +122,10 @@ button{
     transition: 400ms;
     width: 215px;
     outline: none;
-    border: solid 3px;
+   border :2px solid;
     border-radius: 10px;
+     background: linear-gradient(to top right ,#243748,#4b749f);
+   color: snow;
 }
 
 button:hover{
@@ -108,12 +137,39 @@ form > p{
     margin-top: 20px;
     font-size: 20px;
     text-transform: capitalize;
+    color: snow;
 }
 
 form > p > a{
     text-decoration: none;
     color: black;
     background-color: aqua;
-    border-radius: 4px;
-    padding: 2px;
+    border-radius: 5px;
+    padding: 4px;
+    background: linear-gradient(to top right ,#46637d,#4b749f);
+   color: snow;
+}
+
+
+video{
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+.fa-arrow-left{
+    position: absolute;
+    color: snow;
+    background: linear-gradient(to top right ,#243748,#4b749f);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: circle();
+    font-size: 20px;
+    transition: 400ms;
+}
+
+.fa-arrow-left:hover{
+    translate: 0px 3px;
 }

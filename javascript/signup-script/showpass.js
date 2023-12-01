@@ -27,15 +27,18 @@ show1.addEventListener("click",function(){
 
 
     let profile_image=document.getElementById("profile-pic");
+    let profile=document.getElementById("profile");
 
 
 
-    input_image.onchange = function() {
-        let url = URL.createObjectURL(input_image.files[0]);
-        console.log(url);
-        imageContainer[0].style.backgroundImage = `url(${url})`;
-        temp_img.src = url;
-        label.style.backgroundColor=" var(--color-ref-error40) ";
-        label.style.border="3px solid var(--color-ref-error10) ";
-    }
+    profile_image.onchange = function() {
+        if (profile_image.files.length > 0) {
+            let url = URL.createObjectURL(profile_image.files[0]);
+            console.log(url);
+           
+            profile.src =url;
+            
+            
+        }
+    };
     

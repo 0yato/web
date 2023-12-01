@@ -9,17 +9,22 @@
 body{
 height: 100vh;
 display: flex;
-justify-content: center;
+justify-content: start;
 align-items: center;
+overflow: hidden;
 }
 
 form{
     padding: 20px;
     text-align: center;
-    background-color:rgba(0, 0, 0, 0.491);
+  
     width: 40%;
-    height: 95%;
-    border-radius: 20px;
+    height: 100%;
+   
+    background:linear-gradient(135deg ,rgba(75, 116, 160,0.2), rgba(75, 116, 160,0));
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0px 8px 32px 0px rgba(0,0,0,0.37);
 }
 
 form > h2{
@@ -29,6 +34,9 @@ form > h2{
     margin: 10px;
     margin-bottom: 20px;
     color:var(--red) ;
+    background: linear-gradient(to top right ,#243748,#4b749f);
+    -webkit-background-clip: text; 
+    color: transparent;
 }
 
 
@@ -38,10 +46,17 @@ form > h2{
     form{
         width: 60%;
     }
+    video{
+        width: 170% !important;
+    }
 }
 
 @media (max-width:600px) {
     form{
         width: 90%;
+        
+    }
+    video{
+        width: 220% !important;
     }
 }
