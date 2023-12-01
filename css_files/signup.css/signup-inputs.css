@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Open+Sans:ital,wght@0,400;1,300&family=Rubik:ital,wght@0,300;0,400;1,300&family=Space+Grotesk:wght@300;400;500&display=swap');
+
+
+:root{
+    --first:red;
+    --second:green;
+    --the:blue;
+}
+.profile-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profile-image img{
+width: 100px;
+clip-path: circle();
+
+}
+
+
+.profile-image label{
+background-color: antiquewhite;
+margin: 10px;
+padding:10px 20px;
+border-radius: 10px;
+width: 60%;
+cursor: pointer;
+font-size: 20px;
+text-transform: capitalize;
+font-family: 'Open Sans';
+font-weight: 700;
+transition: 300ms;
+}
+.profile-image label:hover{
+    translate: 0px 5px;
+    letter-spacing: 3px;
+}
+
+
+.id-div{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.id-div p{
+    font-size: 25px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-family: "Rubik";
+    text-transform: capitalize;
+}
+
+.input-div{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 10px;
+    position: relative;
+}
+.input-div input{
+    width: 65%;
+    outline: none;
+    border: none;
+    padding: 5px;
+    height: 40px;
+    transition: 300ms;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.input-div input:focus,
+.input-div input:valid{
+    border-left: 6px solid;
+    transition: 300ms;
+}
+
+.input-div i{
+    position: absolute;
+    left: 40px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+button{
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: "Rubik";
+    text-transform: capitalize;
+    transition: 400ms;
+    width: 215px;
+    outline: none;
+    border: solid 3px;
+    border-radius: 10px;
+}
+
+button:hover{
+    letter-spacing: 2px;
+    scale: 1.07;
+}
+
+form > p{
+    margin-top: 20px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+form > p > a{
+    text-decoration: none;
+    color: black;
+    background-color: aqua;
+    border-radius: 4px;
+    padding: 2px;
+}

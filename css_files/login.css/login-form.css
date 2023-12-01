@@ -55,16 +55,28 @@ body{
     position: relative;
     width: 35%;
     padding: 30px;
-  
-}
 
+    translate: 500px 0px;
+    animation-fill-mode:forwards;
+animation-name: in;
+animation-delay: 3s;
+animation-duration: 2.5s;
+}
+@keyframes in {
+    0%{
+
+    }
+    100%{
+        translate: 0px 0px;
+    }
+}
 .login-form h2{
-    color: aliceblue;
+    color: var(--red);
    text-transform: uppercase;
     width: 100%;
     text-align: center;
     font-size: 50px;
-    font-family: "Space Grotesk";
+    font-family: "Agbalumo";
     letter-spacing: 10px;
     padding: 10px;
     margin-bottom: 20px;

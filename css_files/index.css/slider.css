@@ -64,6 +64,7 @@ animation-name: a1;
 animation-timing-function:ease;
 animation-iteration-count: infinite;
 animation-direction: alternate;
+object-fit: cover !important;
 }
 .s1 img:nth-child(3){
 	scale:1.25;

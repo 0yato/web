@@ -13,7 +13,7 @@ session_start();?>
     <link rel="stylesheet" href="css_files/login.css/animation.css">
     <link rel="stylesheet" href="css_files/login.css/login-form.css">
     <link rel="stylesheet" href="css_files/login.css/nav.css">
-    <link rel="shortcut icon" type="x-icon" href="image/logo1.png">
+    <link rel="shortcut icon" type="x-icon" href="image/logo1.svg">
 
 
 

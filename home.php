@@ -5,6 +5,7 @@ include("nav.php")
 <html lang="en">
 <head>
     <link rel="stylesheet" href="css_files/home.css/parallax.css">
+    <link rel="stylesheet" href="css_files/home.css/types.css">
 
     <link rel="stylesheet" href="css_files/home.css/body.css">
     <meta charset="UTF-8">
@@ -62,6 +63,13 @@ letter-spacing: 5px;
     <img id="i3" src="image/home-image/c4.jpg" alt="" class="imgs">
     <img id="i4" src="image/home-image/c5.jpg" alt="" class="imgs">
     </div>
+
+
+
+
+
+
+
 
     <div class="final">
 <img src="image/home-image/white-car.jpg" alt="">

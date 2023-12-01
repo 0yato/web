@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Open+Sans:ital,wght@0,400;1,300&family=Rubik:ital,wght@0,300;0,400;1,300&family=Space+Grotesk:wght@300;400;500&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+form{
+    padding: 20px;
+    text-align: center;
+    background-color:rgba(0, 0, 0, 0.491);
+    width: 40%;
+    height: 95%;
+    border-radius: 20px;
+}
+
+form > h2{
+    font-family: "Agbalumo";
+    font-size: 50px;
+    letter-spacing: 8px;
+    margin: 10px;
+    margin-bottom: 20px;
+    color:var(--red) ;
+}
+
+
+
+
+@media (max-width:1000px) {
+    form{
+        width: 60%;
+    }
+}
+
+@media (max-width:600px) {
+    form{
+        width: 90%;
+    }
+}
