@@ -1,10 +1,10 @@
-<?php  
+<?php
+include("connection.php");
 session_start();?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    
     <script src="https://kit.fontawesome.com/2861b4e4c1.js" crossorigin="anonymous"></script>
 
 
@@ -19,7 +19,7 @@ session_start();?>
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+
     <title>Car X</title>
 </head>
 <body>
@@ -33,8 +33,8 @@ session_start();?>
     <form action="login.php" method="post" class="login-form">
     <a href="index.html" class="bbb">  
         <i class="fa-solid fa-arrow-left"></i>
-   
-</a>   
+
+</a> 
     <h2>login</h2>
         <p class="welcome">welcome again login into your account</p>
         <div class="divcon username">
@@ -83,18 +83,39 @@ session_start();?>
 <!--check here--------------------------------------------------->
 
         <?php
+
+
+ 
+
         if(isset($_POST['login-btn'])){
-            
-$user=strtolower($_POST["userName"]);
-$pass = strtolower($_POST["password"]);
-if($user=="osama ammar" && $pass=="oossaammaa1234"){
-$_SESSION["username"]=$user;
-header("location:home.php");
+            $db_server="localhost";
+            $db_user="root";
+            $db_password="";
+            $db_name="web";
+            $conn=@ new mysqli( $db_server, $db_user, $db_password,$db_name);
+            $sql = "SELECT * FROM user";
+            $result = $conn->query($sql);
+
+$user=intval($_POST["userName"]);
+$password=$_POST["password"];
+
+while( $row = $result->fetch_assoc()){
+if($row['id']==$user && $row['password']==$password){
+    
+        $_SESSION['id']=$user;
+        $_SESSION['userName']=$row['name'];
+        $_SESSION['password']=$row['password'];
+        $_SESSION['image']=$row['image'];
+        header("location:home.php");
 }
-else{
-    echo "<p>your user name is not Registered or the password is incorrect </p>";
+
 }
+
+
+
 }
+
+ $conn->close();
 ?>
 
 

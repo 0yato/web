@@ -42,7 +42,7 @@ session_start();
 
    <div class="user">
     <img src="image/logo1.svg" alt="">
-    <h2>Osama</h2>
+    <h2><?php echo $_SESSION['userName'];?></h2>
    </div>
    <hr>
    <ul>

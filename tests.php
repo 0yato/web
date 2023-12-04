@@ -1,122 +1,85 @@
-<?php
-include("nav.php")
-?>
-
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+
+
 <script src="https://kit.fontawesome.com/2861b4e4c1.js" crossorigin="anonymous"></script>
+<link rel="shortcut icon" type="x-icon" href="image/logo1.svg">
 
 
 
-<link rel="stylesheet" href="css_files/car.css/car-selected-animation.css">
-
-<link rel="stylesheet" href="css_files/car.css/car-selected.css">
-      <link rel="stylesheet" href="css_files/car.css/card.css">
-      <link rel="stylesheet" href="css_files/car.css/cards.css">
+<link rel="stylesheet" href="css_files/signup.css/form.css">
+<link rel="stylesheet" href="css_files/signup.css/signup-inputs.css">
 
 
-      <style>
 
-.nav{
-            background-image: linear-gradient(180deg, #222222 10%, #333333 90%);
 
-}
-.nav ul a{
-    border: none;
-    box-shadow: 0px 0px 2px 0px snow;
-    background-color: #222;
-    border: 3px solid snow;
-}
-.nav ul a:hover{
-    background-color: rgba(128, 128, 128, 0.651);
-}
-    #a3{
-    background-color: gray;
-letter-spacing: 5px;
-
-}
-#a3 > i{
-    color: #5C5C5C;
-}
-::-webkit-scrollbar{
-    width: 12px;
-}
-::-webkit-scrollbar-thumb{
-    background-color: #222;
-    border-radius: 5px;
-}
-</style>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <title>Car X</title>
 </head>
 <body>
-    <div class="body2">
 
 
 
 
 
-
-
-    <?php
-    include("car-filter.php");
-    ?>
-
-
-
-
-
-
-
-
-
-
-
-    <div class="cards">
-    <?php 
-     for($i=16;$i > 0;$i--){ ?>
-<div class="card" style="background-image: url('image/car<?php echo ($i+1)?>.jpg');">
-   
-
-
-<i class="fa-solid fa-plus"></i>
-    <h2 class="car-name">name</h2>
-
-
-<div class="anime"></div>
-<p class="id hied">id</p>
-<img  src="image/car-slide9.jpg" alt="" class="car-image hied">
-<p class="hied">description Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem illo impedit commodi perferendis saepe nam possimus fugit placeat ipsam autem voluptatibus sint veniam quae repudiandae non vel suscipit fuga ipsum, recusandae voluptatum, ducimus iste magni porro. Illo blanditiis facilis quia. Inventore consectetur, possimus quisquam delectus sapiente nisi. Accusantium animi, voluptate laudantium itaque neque odit iste expedita velit fuga illo delectus.</p>
-   
-   
-   
-  
-    <h3 class="hied">price$</h3>
-    <h3 class="hied">drive km</h3>
-     <h3 class="hied">kind</h3>
-     <h3 class="hied">date</h3>
+    <form action="<?php $_SERVER["PHP_SELF"]?>" method="post" enctype="multipart/form-data">
+    <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+     <h2>Sign Up</h2>
+     <div class="id-div">
+        <p>your id Is : <b>2000</b> </p>
+     </div>
+     <div class="profile-image">
+        <div class="image">
+        <img src="image/default-profile.jpg" id="profile" alt="">
+        </div>
+     
+        <label for="profile-pic"><i class="fa-solid fa-plus open-card" ></i></label>
+     </div>
      
 
-    
-<a href="#" class="hied">contact</a>
+     <input id="profile-pic" name="image" required type="file" style="display: none;">
 
-     <h2 class="username hied">user name</h2>
+
+
+
+
+    <div class="input-div">
+    <i class="fa-solid fa-user"></i> 
     
-    <h4 class="hied">type</h4>
-    <img src="image/mercedec-logo.png" alt="" class="marka hied">
-    
- </div>
- <?php
-     }
- ?>
+    <input type="text" id="username" name="username" autocomplete="off" required>
     </div>
+
+    <div class="input-div">
+    <i class="fa-solid fa-eye" id="show1" style="display: none;"></i>
+    <i class="fa-solid fa-eye-slash" id="unshow1"></i>
+   
+    <input type="password" name="password" autocomplete="off" required id="password">
+    </div>
+
     
-</div>
+
+
+
+
+
+
+
+     <button name="create-btn">Create account</button>
+    
+
+
+
+     <p>Already have an account ?, <a href="login.php">Login</a> </p>
+
+
+
+
+
+    </form>
 
 
 
@@ -125,69 +88,33 @@ letter-spacing: 5px;
 
 
 
-
-<div class="car-selected">
-<img src="image\home-image\c4.jpg" alt="" class="image-selected">
-
-
-
-<div class="info-card">
-
-
-
-
-<div class="name-info">
-<h2 class="name-info-name">car name</h2>
-<img src="image/mercedec-logo.png" alt=""  class="car-logo-info">
-</div>
-
-
-
-
-<div class="info-selected">
-    <h3 class="type-info-rent">for Rent</h3>
-    <h3 class="model-info">model:2021</h3>
-<h3 class="driven-info"> Driven: 40,000km</h3>
-<p class="description-info">
-    <b>Description:</b> Lorem ipsum, dolor sit amet 
-    consectetur adipisicing elit. Aliquid itaque eum ut
-     labore deleniti ipsam, rerum alias, rem aperiam 
-     possimus nobis. Similique laborum, modi neque 
-     consequuntur illum pariatur quod cum ipsum cumque
-      sunt error, nisi nulla, veritatis unde quia ducimus.</p>
-
-</div>
-
-
-
-
-
-<div class="pay-info">
-    <h2 class="mony-info">$200,000</h2>
-    <h4 class="id-info"><b> ID</b> : 1507</h4>
-</div>
-
-
-<div class="contact-info-div">
-<h3 class="owner-name"><b> Owner </b>: osama ammar</h3>
-
-<a href="" class="contact-info">Contact Here !</a>
-
-</div>
-
-</div>
-
-<!--close of info card-->
-
-
-
-
-
-
-
-
-</div>
-
-<script src="javascript/cars-script/open.js"></script>
+<script src="javascript/signup-script/showpass.js"></script>
 </body>
 </html>
+
+
+<?php
+
+ $db_server="localhost";
+ $db_user="root";
+ $db_password="";
+ $db_name="web";
+if(isset($_POST['create-btn'])){
+    if(!empty($_POST['username'])&&!empty($_POST['password'])){
+     $username=$_POST['username'];
+     $password=$_POST['password'];
+     $image = addslashes(file_get_contents($_FILES["image"]["tmp_name"]));
+   $db=@new mysqli($db_server,$db_user,$db_password,$db_name);
+   $sql="INSERT INTO `user` (`id`, `name`, `password`, `image`) VALUES (NULL, '$username', '$password', '$image')";
+
+$db->query($sql);
+$db->commit();
+$db->close();
+echo "sucsess";
+    }
+    else{
+        echo "fill all info";
+    }
+}
+
+?>

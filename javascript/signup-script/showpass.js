@@ -42,3 +42,14 @@ show1.addEventListener("click",function(){
         }
     };
     
+
+   let errormsg=document.getElementById("success");
+   errormsg.onclick=function(){
+    errormsg.style.display="none";
+   }
+
+
+   let sucssess=document.getElementById("sucssess");
+   sucssess.onclick=function(){
+    sucssess.style.display="none";
+   }
