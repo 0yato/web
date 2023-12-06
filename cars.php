@@ -1,5 +1,5 @@
 <?php
-include("nav.php")
+include("nav.php");
 ?>
 
 
@@ -79,21 +79,34 @@ letter-spacing: 5px;
 
     <div class="cards">
     <?php 
-     for($i=16;$i > 0;$i--){ ?>
+    $db_server='localhost';
+    $db_user='root';
+    $db_password='';
+    $db_name='web';
+    $conn=@ new mysqli( $db_server, $db_user, $db_password,$db_name);
+    $sql = "SELECT * FROM car";
+    $result = $conn->query($sql);
      
-<div class="card" style="background-image: url('image/car<?php echo ($i)?>.jpg');">
+    while($row=$result->fetch_assoc()){
+     
+//
+
+ ?>
+     <div class="card" style="background-image: url(<?php echo'data:image/png;base64,' .base64_encode($row['car_image']);?>">
    
 
 
 <i class="fa-solid fa-plus open-card" ></i>
-<img id="card-image" style="display: none !important;"   src="image/car<?php echo ($i)?>.jpg" alt="" class="car-image hied">
+<?php
+echo '<img id="card-image" class="car-image hied" src="data:image/png;base64 ,'.base64_encode($row['car_image']).'">';
 
-    <h2 class="car-name"><?php echo ($i)?></h2>
+?>
+    <h2 class="car-name"><?php echo $row['car_name'];?></h2>
 
 
 
-<p class="id hied">id</p>
-<p class="hied descc"> ctus.</p>
+<p class="id hied"><?php echo  $row['car_id']  ;?></p>
+<p class="hied descc"> <?php  echo $row['description'] ;?></p>
    
    
    

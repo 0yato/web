@@ -59,7 +59,7 @@ if($_SESSION['you-login'] ==false){
     <a href="post.php" id="a4" class="menu-item"><i class="fa-solid fa-pen"></i><li>Create post</li></a>
     <a href="admin.php" class="menu-item" id="a5"  <?php 
     
-    if($_SESSION["userName"]=="osama amma"){
+    if( $_SESSION['user-state']=='admin'){
 
     }
     else{

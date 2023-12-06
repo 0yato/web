@@ -14,6 +14,7 @@ if(isset($_POST['create-btn'])){
      $image = addslashes(file_get_contents($_FILES["image"]["tmp_name"]));
     $id=$_SESSION['num_of_users'];
     $state="user";
+    
    $db=@new mysqli($db_server,$db_user,$db_password,$db_name);
    try{
 
