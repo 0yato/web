@@ -1,6 +1,7 @@
 <?php
 session_start();
 $_SESSION['state']='none';
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,12 +26,23 @@ $_SESSION['state']='none';
 </head>
 <body>
 
+<?php 
 
+if ($_SESSION['signup-state']==true) {
+    echo '
+        <div class="success" id="successMessage">
+            <i class="fa-solid fa-check"></i>
+            <p>Your account could not be created (click anywhere to continue)</p>
+        </div>';
+    $_SESSION['signup-state'] = false;
+}
 
-<video src="image\vid\signup.mp4"  loop></video>
+?>
 
-    <form action="<?php $_SERVER["PHP_SELF"]?>" method="post" enctype="multipart/form-data">
-    <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+<video src="image\vid\signup.mp4" autoplay  loop></video>
+
+    <form action="signup-backend.php" method="post" enctype="multipart/form-data">
+    <a href="index.php"><i class="fa-solid fa-arrow-left"></i></a>
      <h2>Sign Up</h2>
      <div class="id-div">
         <p>your id Is : <b>
@@ -48,6 +60,7 @@ $_SESSION['state']='none';
  $result=$conn2->query($sql);
  $row=$result->fetch_assoc();
  $num=$row['num']+1000;
+ $_SESSION['num_of_users']=$num;
  echo $num;
  $conn2->close();
 
@@ -108,50 +121,7 @@ $_SESSION['state']='none';
 
     </form>
 
-<?php
 
- $db_server="localhost";
- $db_user="root";
- $db_password="";
- $db_name="web";
-if(isset($_POST['create-btn'])){
-  
-    if(!empty($_POST['username'])&&!empty($_POST['password'])  ){
-        $_SESSION['state']='true';
-     $username=$_POST['username'];
-     $password=sha1($_POST['password']);
-     $image = addslashes(file_get_contents($_FILES["image"]["tmp_name"]));
-    
-   $db=@new mysqli($db_server,$db_user,$db_password,$db_name);
-   try{
-   $sql="INSERT INTO `user` (`id`, `name`, `password`, `image`) VALUES ('$num', '$username', '$password', '$image')";
-
-   $db->query($sql);
-   $db->commit();
-   $db->close();
-   echo '
-   
-           <div class="success" id="success" >
-       <i class="fa-solid fa-check"></i>
-       <p>Your account could not be created (click anywhere to continue)</p>
-   </div>';
-   }
-   catch(Exception $e){
-    $_SESSION['state']='false';
-    echo '<div class="error" id="errormsg" >
-    <i class="fa-solid fa-x-mark"></i>
-    <p>Your account could not be created (click anywhere to continue)</p>
-</div>';
-}
-
-    }
-    else{
-      
-
-    }
-}
-
-?>
 
 
 <script src="javascript/signup-script/showpass.js"></script>

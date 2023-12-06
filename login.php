@@ -1,6 +1,10 @@
 <?php
 include("connection.php");
-session_start();?>
+
+session_start();
+$_SESSION['valid-user']=false;
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,7 +35,7 @@ session_start();?>
 
 
     <form action="login.php" method="post" class="login-form">
-    <a href="index.html" class="bbb">  
+    <a href="index.php" class="bbb">  
         <i class="fa-solid fa-arrow-left"></i>
 
 </a> 
@@ -101,21 +105,24 @@ $password=$_POST["password"];
 
 while( $row = $result->fetch_assoc()){
 if($row['id']==$user && $row['password']==sha1($password)){
-    
+        $_SESSION['valid-user']=true;
         $_SESSION['id']=$user;
         $_SESSION['userName']=$row['name'];
         $_SESSION['password']=$row['password'];
         $_SESSION['image']=$row['image'];
+        $_SESSION['you-login'] =true;
         header("location:home.php");
 }
 
 }
-
+if(!$_SESSION['valid-user']){
+    echo '<p class="error">Please enter a valid user name and password.</p>';
+  }
 
 
 }
-
  $conn->close();
+
 ?>
 
 
