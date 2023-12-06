@@ -52,9 +52,9 @@ letter-spacing: 5px;
 
 
 
-<form action="post.php" method="post">
+<form action="post.php" method="post" enctype="multipart/form-data">
     <div class="car-id">
-        <h2>The car id will be: 19</h2>
+        <h2>The car id will be: <?php ?></h2>
     </div>
 <div class="card" id="car-img">
 <i class="fa-solid fa-plus"></i>

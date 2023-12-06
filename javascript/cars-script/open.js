@@ -11,7 +11,8 @@ let close_btn=document.getElementById("close-btn");
 /* info transition*/ 
 let card_image_info=document.getElementById("image-selected");
 let card_name_info=document.querySelector(".name-info-name");
-
+let user_id=document.querySelector(".userid");
+let description_info= document.querySelector(".description-info2");
 
 
 
@@ -21,11 +22,14 @@ cards_btn.forEach(element => {
 {
     let card_image= element.nextElementSibling;
     let card_name=card_image.nextElementSibling;
+    let card_user_id=card_name.nextElementSibling;
+    let card_description=card_user_id.nextElementSibling;
 /*here transition*/
 card_name_info.innerHTML=card_name.innerHTML;
 card_image_info.src = card_image.src;
 
-
+user_id.innerHTML=card_user_id.innerHTML;
+description_info.innerHTML= card_description.innerHTML;
 /*here transition*/
 
     car_selected.style.zIndex=1000;

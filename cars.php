@@ -91,9 +91,9 @@ letter-spacing: 5px;
     <h2 class="car-name"><?php echo ($i)?></h2>
 
 
-<div class="anime"></div>
+
 <p class="id hied">id</p>
-<p class="hied">description Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem illo impedit commodi perferendis saepe nam possimus fugit placeat ipsam autem voluptatibus sint veniam quae repudiandae non vel suscipit fuga ipsum, recusandae voluptatum, ducimus iste magni porro. Illo blanditiis facilis quia. Inventore consectetur, possimus quisquam delectus sapiente nisi. Accusantium animi, voluptate laudantium itaque neque odit iste expedita velit fuga illo delectus.</p>
+<p class="hied descc"> ctus.</p>
    
    
    
@@ -102,8 +102,10 @@ letter-spacing: 5px;
     <h3 class="hied">drive km</h3>
      <h3 class="hied">kind</h3>
      <h3 class="hied">date</h3>
-     
-
+     <h3 class="hied">fuel</h3>
+     <h3 class="hied">Engine size</h3>
+     <h3 class="hied">color</h3>
+     <h3 class="hied">Vin</h3>
     
 <a href="#" class="hied">contact</a>
 
@@ -148,17 +150,25 @@ letter-spacing: 5px;
 
 
 <div class="info-selected">
-    <h3 class="type-info-rent">for Rent</h3>
+<h3 class="type-info-rent">for Rent</h3>
+    <div class="continar">
+    
     <h3 class="model-info">model:2021</h3>
-<h3 class="driven-info"> Driven: 40,000km</h3>
+    <h3 class="color-info">color: <div class="color-of-car"></div></h3>
+
+<h3 class="fuel-info">fuel:</h3>
+     <h3 class="Engine-size-info">Engine size:</h3>
+     <h3 class="driven-info"> Driven: <b>40,000km</b> </h3>
+     <h3 class="Vin-info"> Vin: 12112257</h3>
+     </div>
 <p class="description-info">
-    <b>Description:</b> Lorem ipsum, dolor sit amet 
+    <b>Description:</b> <span class="description-info2"> Lorem ipsum, dolor sit amet 
     consectetur adipisicing elit. Aliquid itaque eum ut
      labore deleniti ipsam, rerum alias, rem aperiam 
      possimus nobis. Similique laborum, modi neque 
      consequuntur illum pariatur quod cum ipsum cumque
       sunt error, nisi nulla, veritatis unde quia ducimus.</p>
-
+      </span>
 </div>
 
 
@@ -166,18 +176,18 @@ letter-spacing: 5px;
 
 
 <div class="pay-info">
-    <h2 class="mony-info">$200,000</h2>
-    <h4 class="id-info"><b> ID</b> : 1507</h4>
+<h4 class="id-info"><b>Account ID</b>: <span class="userid">1507</span> </h4>
+<h3 class="owner-name"><b> Owner</b>: osama ammar</h3>
+    
 </div>
 
 
 <div class="contact-info-div">
-<h3 class="owner-name"><b> Owner </b>: osama ammar</h3>
-
-<a href="" class="contact-info">Contact Here !</a>
+<h2 class="mony-info">$200,000</h2>
+<br>
 
 </div>
-
+<div class="btnnn"><a href="" class="contact-info">Contact Here !</a></div>
 </div>
 
 <!--close of info card-->

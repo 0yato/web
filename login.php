@@ -100,7 +100,7 @@ $user=intval($_POST["userName"]);
 $password=$_POST["password"];
 
 while( $row = $result->fetch_assoc()){
-if($row['id']==$user && $row['password']==$password){
+if($row['id']==$user && $row['password']==sha1($password)){
     
         $_SESSION['id']=$user;
         $_SESSION['userName']=$row['name'];

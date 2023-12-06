@@ -56,7 +56,7 @@ rotate: 0deg;
         
     }
     100%{
-        width: 550px;
+       width: 550px;
        opacity: 1;
     }
 }

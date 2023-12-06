@@ -41,7 +41,11 @@ session_start();
 
 
    <div class="user">
-    <img src="image/logo1.svg" alt="">
+    <?php
+ 
+  echo '<img src="data:image/png;base64 ,'.base64_encode($_SESSION['image']).'">';
+    ?>
+    
     <h2><?php echo $_SESSION['userName'];?></h2>
    </div>
    <hr>
@@ -52,7 +56,7 @@ session_start();
     <a href="post.php" id="a4" class="menu-item"><i class="fa-solid fa-pen"></i><li>Create post</li></a>
     <a href="admin.php" class="menu-item" id="a5"  <?php 
     
-    if($_SESSION["username"]=="osama amma"){
+    if($_SESSION["userName"]=="osama amma"){
 
     }
     else{
@@ -62,7 +66,7 @@ session_start();
     ?>
     
     ><i class="fa-solid fa-screwdriver-wrench" ></i><li>Admin control</li></a>
-    <a href="index.html" class="menu-item" ><i class="fa-solid fa-right-from-bracket"></i><li>Logout</li></a>
+    <a href="destroy.php" class="menu-item" ><i class="fa-solid fa-right-from-bracket"></i><li>Logout</li></a>
    </ul>
 </div>
  

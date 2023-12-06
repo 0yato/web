@@ -1,5 +1,6 @@
 <?php
 session_start();
+$_SESSION['state']='none';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -108,7 +109,7 @@ session_start();
     </form>
 
 <?php
-$_SESSION['state']='none';
+
  $db_server="localhost";
  $db_user="root";
  $db_password="";
@@ -118,27 +119,34 @@ if(isset($_POST['create-btn'])){
     if(!empty($_POST['username'])&&!empty($_POST['password'])  ){
         $_SESSION['state']='true';
      $username=$_POST['username'];
-     $password=$_POST['password'];
+     $password=sha1($_POST['password']);
      $image = addslashes(file_get_contents($_FILES["image"]["tmp_name"]));
+    
    $db=@new mysqli($db_server,$db_user,$db_password,$db_name);
+   try{
    $sql="INSERT INTO `user` (`id`, `name`, `password`, `image`) VALUES ('$num', '$username', '$password', '$image')";
 
-$db->query($sql);
-$db->commit();
-$db->close();
-echo '
-
-        <div class="success" id="success" >
-    <i class="fa-solid fa-check"></i>
+   $db->query($sql);
+   $db->commit();
+   $db->close();
+   echo '
+   
+           <div class="success" id="success" >
+       <i class="fa-solid fa-check"></i>
+       <p>Your account could not be created (click anywhere to continue)</p>
+   </div>';
+   }
+   catch(Exception $e){
+    $_SESSION['state']='false';
+    echo '<div class="error" id="errormsg" >
+    <i class="fa-solid fa-x-mark"></i>
     <p>Your account could not be created (click anywhere to continue)</p>
 </div>';
+}
+
     }
     else{
-        $_SESSION['state']='false';
-        echo '<div class="error" id="errormsg" >
-        <i class="fa-solid fa-x-mark"></i>
-        <p>Your account could not be created (click anywhere to continue)</p>
-    </div>';
+      
 
     }
 }
