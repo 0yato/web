@@ -9,7 +9,7 @@ if($_SESSION['you-login'] ==false){
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script src="https://kit.fontawesome.com/2861b4e4c1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 
 

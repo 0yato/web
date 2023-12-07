@@ -1,0 +1,29 @@
+table{
+    width: 90%;
+    margin-top: 10px;
+    border-collapse: separate;
+  border-spacing: 10px;
+}
+th{
+    color: snow;
+    background-color: #0481ff;
+    font-size: 22px;
+    letter-spacing: 2px;
+  height: 45px;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+td{
+    background-color: #123;
+    color: snow;
+    text-align: center;
+    height: 35px;
+    border-radius: 8px;
+    transition: 300ms ease;
+}
+td:hover{
+    scale: 1.02;
+    background-color: rgba(255, 250, 250, 0.368);
+    
+}

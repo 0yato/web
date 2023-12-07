@@ -191,7 +191,8 @@ justify-content: start;
 align-items: center;
 width: 100%;
 padding: 10px;
-
+overflow: hidden;
+height: 70px;
 }
 
 
@@ -200,9 +201,9 @@ padding: 10px;
 
 .user img{
   margin-left: 0px;
-    border-radius:50% ;
+    clip-path: circle();
     width: 50px;
-    border: 2px var(--dark) solid;
+    
 }
 
 
