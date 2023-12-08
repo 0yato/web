@@ -1,0 +1,60 @@
+.marka{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+.marka h2{
+    font-size: 50px;
+    font-weight: 600;
+    color: snow;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    font-family: "rubik";
+    letter-spacing: 2px;
+}
+
+
+.marka-list{
+    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.marka-list .marka-list-item{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-basis: 150px;
+    flex-grow: 1;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 400ms ease;
+}
+.marka-list .marka-list-item:hover{
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    scale: 1.01;
+}
+.marka-list .marka-list-item p{
+color: snow;
+margin-top: 15px;
+letter-spacing: 3px;
+text-transform: capitalize;
+font-family: 'rubik';
+}
+
+.marka-list .marka-list-item img{
+    width: 60px;
+}

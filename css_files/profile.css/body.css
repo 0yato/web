@@ -125,8 +125,24 @@ flex-direction: column;
  border-radius: 25px;
  transition: 600ms;
 }
-
-
+.top h2{
+    color: snow;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 15px;
+    letter-spacing: 3px;
+    font-family: "rubik";
+}
+.top h4{
+    color: snow;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+   margin-top: 15px;
+    letter-spacing: 3px;
+    font-family: "rubik"; 
+}
 
 .top button{
     margin-top: 20px;
@@ -163,7 +179,7 @@ form{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 200px;
+    height: 300px;
     width: 380px;
     margin: 200px 470px;
     top: 0;
@@ -232,4 +248,12 @@ form input{
 
 
 
-
+.text h2{
+    color: snow ;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 15px;
+    letter-spacing: 2px;
+    font-family: 'rubik';
+}

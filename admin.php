@@ -62,6 +62,8 @@ letter-spacing: 5px;
     <button name="user-btn" class="users"><i class="fa-solid fa-user"></i><div class="info"><h2>321</h2> <h3>user</h3></div></button>
     <button name="car-btn" class="car"><i class="fa-solid fa-car"></i><div class="info"><h2>200</h2> <h3>cars</h3></div></button>
     <button name="marka-btn" class="marka"><i class="fa-brands fa-superpowers"></i><div class="info"><h2>40</h2> <h3>marka</h3></div></button>
+    <button name="delete-btn" class="delete"><i class="fa-solid fa-trash"></i><div class="info"><h2>200</h2> <h3>deleted posts</h3></div></button>
+
 </form>
 
 
@@ -78,18 +80,81 @@ if(isset($_POST["user-btn"])){
 <table >
     <tr>
         <th style="width: 20%;">picture</th>
-        <th style="width: 30%;">name</th>
-        <th>car </th>
-        <th>dd</th>
+        <th style="width: 25%;">name</th>
+        <th style="width: 25%;">cars </th>
+        <th style="width: 10%;">id</th>
+        <th style="width: 10%;">type</th>
     </tr>
     <?php 
-    for( $i=10; $i>0;$i--){
+    $db_server="localhost";
+    $db_user="root";
+    $db_pass="";
+    $db_name="web";
+    $conn=@ new mysqli($db_server,$db_user,$db_pass,$db_name);
+    $sql="SELECT * FROM `user`";
+    $result =$conn->query($sql);
+    $conn->close();
+
+    while($row = $result->fetch_assoc()){
     ?>
     <tr>
-        <td> </td>
-        <td>aa</td>
-        <td>aa</td>
-        <td>aa</td>
+        <td><audio class="sound" style="" src="image/sounds/hover-effect.mp3" ></audio>
+        <div class="p-image">
+       <?php echo '<img src="data:image/png;base64 ,'.base64_encode($row['image']).'">';?>
+       </div>
+  
+  
+  
+  
+    </td>
+             <td><audio class="sound" style="" src="image/sounds/hover-effect.mp3" ></audio>
+  
+  
+            <?php  echo $row['name'];?>
+  
+  
+            </td>
+        <td class="col-show"><audio class="sound" style="" src="image/sounds/hover-effect.mp3" ></audio>
+       <?php 
+        $db_server="localhost";
+        $db_user="root";
+        $db_pass="";
+        $db_name="web";
+        $conn=@ new mysqli($db_server,$db_user,$db_pass,$db_name);
+        $sql="SELECT * FROM `car` WHERE `user_id`=?";
+        $stmt=$conn->prepare($sql);
+        $stmt->bind_param("s",$row['id']);
+        $stmt->execute();
+        $result2 = $stmt->get_result();
+        $num=$result2->num_rows;
+        echo $num;
+        
+        $stmt->close();
+        $conn->close();
+       ?>
+       <form action="">
+        <button class="show-btn">show</button>
+        <input style="display: none;" type="text" value="<?php echo $row['id'];?>"  >
+       </form>
+
+
+
+</td>
+        <td><audio class="sound" style="" src="image/sounds/hover-effect.mp3" ></audio>
+
+
+<?php  echo  $row['id']; ?>
+
+
+</td>
+</td>
+        <td><audio class="sound" style="" src="image/sounds/hover-effect.mp3" ></audio>
+     <?php echo  $row['state'];?>
+
+
+
+
+</td>
     </tr>
     <?php 
     }
@@ -103,7 +168,7 @@ if(isset($_POST["user-btn"])){
 
 
 
-
+<script src="javascript/admin-script/hover.js"></script>
 
 </body>
 </html>

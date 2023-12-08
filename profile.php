@@ -1,5 +1,6 @@
 <?php
-include("nav.php")
+include("nav.php");
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -55,11 +56,19 @@ border: 3px #243b5e solid;
            <img class="design d3" src="image/car102.jpg" alt="">
            <img class="design d4" src="image/car103.jpg" alt="">
            
-            <img src="image/logo1.svg" alt="">
-            
+         <?php  echo '<img src="data:image/png;base64 ,'.base64_encode($_SESSION['image']).'">';?>
+
+            <h2 class="name"><?php echo $_SESSION['userName'];?></h2>
+            <h4>id: <?php echo $_SESSION['id'] ;?></h4>
             <button id="change-btn">change password</button>
            
         </div>
+
+<div class="text">
+    <h2>Your cars</h2>
+</div>
+
+
         <div  class="scroll">
         <?php
          for ($i=0; 15 >$i  ; $i++) { 
@@ -81,8 +90,9 @@ border: 3px #243b5e solid;
     <form action="profile.php" method="post" id="form-password">
         <i id="xx" class="fa-solid fa-plus"></i>
             <h2>Change Password</h2>
-            <input type="text" required autocomplete="off" placeholder="New Password....">
-            <input type="submit" id="btn" value="Change">
+            <input type="text" name="confirm_password" required autocomplete="off" placeholder="Confirm password....">
+            <input type="text" name="new_password" required autocomplete="off" placeholder="New Password....">
+            <input type="submit" id="btn" value="Change" name="set_pass">
             
         </form>
 
@@ -93,3 +103,30 @@ border: 3px #243b5e solid;
     <script src="javascript/profile-script/password.js"></script>
 </body>
 </html>
+
+<?php 
+if(isset( $_POST['set_pass'])){
+    $confirm=$_POST['confirm_password'];
+if( sha1($confirm)==$_SESSION['password']){
+$db_server="localhost";
+$db_user="root";
+$db_pass="";
+$db_name="web";
+$new=sha1($_POST['new_password']);
+$conn=@ new mysqli($db_server,$db_user,$db_pass,$db_name);
+$id =$_SESSION['id'];
+$sql="UPDATE `user` SET `password` =?  WHERE `user`.`id` =? ";
+$stmt=$conn->prepare($sql);
+$stmt->bind_param("si", $new, $_SESSION['id']);
+$stmt->execute();
+
+
+$stmt->close();
+$conn->close();
+}
+else{
+    echo '<p class="error">Please enter a valid user name and password.</p>';
+}
+}
+
+?>

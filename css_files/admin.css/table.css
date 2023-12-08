@@ -17,13 +17,43 @@ th{
 td{
     background-color: #123;
     color: snow;
-    text-align: center;
+   text-align: center;
     height: 35px;
     border-radius: 8px;
     transition: 300ms ease;
+    
+    
+}
+td img{
+  width: 50px;
+  object-fit: cover;
+}
+.p-image{
+  overflow: hidden;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 5px auto;
+ 
 }
 td:hover{
     scale: 1.02;
     background-color: rgba(255, 250, 250, 0.368);
     
+}
+
+.col-show form{
+  float: right;
+  margin-right: 20px;
+
+} 
+.show-btn{
+  padding: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #0481ff;
+  color: snow;
+  font-family: 'rubik';
+  border-radius: 5px;
 }

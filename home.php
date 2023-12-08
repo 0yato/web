@@ -6,6 +6,7 @@ include("nav.php")
 <head>
     <link rel="stylesheet" href="css_files/home.css/parallax.css">
     <link rel="stylesheet" href="css_files/home.css/types.css">
+    <link rel="stylesheet" href="css_files/home.css/marka.css">
 
     <link rel="stylesheet" href="css_files/home.css/body.css">
     <meta charset="UTF-8">
@@ -56,6 +57,11 @@ letter-spacing: 5px;
 
 
 
+
+
+
+
+
     <div class="car-card">
     
     <img id="i1" src="image/car100.jpg" alt="" class="imgs">
@@ -67,7 +73,42 @@ letter-spacing: 5px;
 
 
 
+    <div class="marka">
+    <h2>Trending Brands on Our Platform</h2>
+    <div class="marka-list"> 
 
+
+<?php
+$db_server="localhost";
+$db_user="root";
+$db_pass="";
+$db_name="web";
+
+$conn=@ new mysqli($db_server,$db_user,$db_pass,$db_name);
+
+$sql = "SELECT * FROM `type`";
+$result=$conn->query($sql);
+
+while($row = $result->fetch_assoc()){
+?>
+
+
+
+
+     <div class="marka-list-item">
+        <?php 
+          echo '<img src="data:image/png;base64 ,'.base64_encode($row['type_image']).'">';
+
+        ?>
+        
+        <p><?php echo $row["type_description"];  ?></p>
+    </div>
+    <?php
+}
+$conn->close();
+    ?>
+    </div>
+</div>
 
 
 
