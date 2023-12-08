@@ -49,7 +49,9 @@ letter-spacing: 5px;
 
 
 <div class="container">
-<form action="admin-backend.php" method="get"></form>
+<form action="admin-backend.php" method="get">
+
+</form>
 
 
 <div class="dashboard"> 
@@ -77,7 +79,7 @@ letter-spacing: 5px;
 if(isset($_POST["user-btn"])){
 ?>
 
-<table >
+<table>
     <tr>
         <th style="width: 20%;">picture</th>
         <th style="width: 25%;">name</th>
@@ -115,7 +117,8 @@ if(isset($_POST["user-btn"])){
   
             </td>
         <td class="col-show"><audio class="sound" style="" src="image/sounds/hover-effect.mp3" ></audio>
-       <?php 
+      
+      <?php 
         $db_server="localhost";
         $db_user="root";
         $db_pass="";
@@ -142,12 +145,12 @@ if(isset($_POST["user-btn"])){
 </td>
         <td><audio class="sound" style="" src="image/sounds/hover-effect.mp3" ></audio>
 
-
+<p>
 <?php  echo  $row['id']; ?>
-
+</p>
 
 </td>
-</td>
+
         <td><audio class="sound" style="" src="image/sounds/hover-effect.mp3" ></audio>
      <?php echo  $row['state'];?>
 
@@ -161,6 +164,7 @@ if(isset($_POST["user-btn"])){
 }
     ?>
 </table>
+
 </div>
 
 

@@ -52,9 +52,19 @@ letter-spacing: 5px;
 
 
 
-<form action="post.php" method="post" enctype="multipart/form-data">
+<form action="post-backend.php" method="post" enctype="multipart/form-data">
     <div class="car-id">
-        <h2>The car id will be: <?php ?></h2>
+        <h2>The car id: <?php 
+        $db_server='localhost';
+        $db_user='root';
+        $db_pass='';
+        $db_name='web';
+        $conn=@ new mysqli($db_server,$db_user,$db_pass,$db_name);
+        $sql="SELECT * FROM `car`";
+        $result=$conn->query($sql);
+        $car_id=$result->num_rows +5001;
+        echo $car_id ;
+        ?></h2>
     </div>
 <div class="card" id="car-img">
 <i class="fa-solid fa-plus"></i>
@@ -79,11 +89,23 @@ letter-spacing: 5px;
             <h2>Company</h2>
             <select name="carMarka" id="company-select">
             <option value="none">none</option>
-                <option value="mersedese">mersedese</option>
-                <option value="mosting">mosting</option>
-                <option value="ferrari">ferrari</option>
-                <option value="Cadelac">Cadelac</option>
-                <option value="BMW">BMW</option>
+<?php
+
+    $sql="SELECT * FROM `type`";
+    $result=$conn->query($sql);
+$conn->close();
+
+while($row=$result->fetch_assoc()){
+?>
+
+
+                <option value="<?php $row['type_description']; ?>"><?php echo $row['type_description']; ?></option>
+
+                <?php
+}
+                ?>
+                
+              
             </select>
         </div>
         </div>
