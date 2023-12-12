@@ -222,12 +222,24 @@ font-family: "Rubik";
 
 .contact-info-div{
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    margin: 7px;
+    align-items: center;
+   
+    width: 100%;
+   
+    
     padding: 5px;
+    margin: 7px;
 }
-
+.contact-info-div h3 {
+    color: var(--red);
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    font-family: 'rubik';
+    font-size:22px ;
+    
+}
 
 .contact-info{
 
@@ -256,6 +268,9 @@ letter-spacing: 2px;
 
 .owner-name{
     order: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 font-family: "rubik";
 }
 

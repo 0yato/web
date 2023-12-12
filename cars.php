@@ -102,31 +102,67 @@ echo '<img id="card-image" class="car-image hied" src="data:image/png;base64 ,'.
 
 ?>
     <h2 class="car-name"><?php echo $row['car_name'];?></h2>
-
-
-
 <p class="id hied"><?php echo  $row['car_id']  ;?></p>
 <p class="hied descc"> <?php  echo $row['description'] ;?></p>
-   
-   
-   
-  
-    <h3 class="hied">price$</h3>
-    <h3 class="hied">drive km</h3>
-     <h3 class="hied">kind</h3>
-     <h3 class="hied">date</h3>
-     <h3 class="hied">fuel</h3>
-     <h3 class="hied">Engine size</h3>
-     <h3 class="hied">color</h3>
-     <h3 class="hied">Vin</h3>
-    
-<a href="#" class="hied">contact</a>
+    <h3 class="hied">Price : <?php echo $row['price']." $" ;?></h3>
+    <h3 class="hied">driven:<?php echo $row['driven']. "km";?></h3>
+    <?php 
+ $db_server = 'localhost';
+ $db_user = 'root';
+ $db_password = '';
+ $db_name = 'web';
+ $conn3 = new mysqli($db_server, $db_user, $db_password, $db_name);
+ $kind = intval($row['kind_id']);
+ $sql3 = "SELECT * FROM kind WHERE kind_id = $kind";
+ $result3 = $conn3->query($sql3);
+     $row3 = $result3->fetch_assoc();
+?>
+    <h3 class="hied">For <?php echo $row3['kind_description'];?></h3>
+    <?php 
+     $conn3->close();
+    ?>
+     <h3 class="hied">Modle: <?php echo $row['date'];?></h3>
+     <h3 class="hied">Fuel type: <?php echo $row['fuel'];?></h3>
+     <h3 class="hied">Engine Size: <?php echo $row['Engine size'];?></h3>
+     <h3 class="hied">Color: <?php echo $row['Color'];?></h3>
+     <h3 class="hied">VIN: <?php echo $row['VIN'];?></h3>
+<a href="#" class="hied"><?php echo $row['contact'] ;?></a>
+<?php 
+ $db_server = 'localhost';
+ $db_user = 'root';
+ $db_password = '';
+ $db_name = 'web';
+ $conn2 = new mysqli($db_server, $db_user, $db_password, $db_name);
+ $id = intval($row['user_id']);
+ $sql2 = "SELECT * FROM user WHERE id = $id";
+ $result2 = $conn2->query($sql2);
+     $row2 = $result2->fetch_assoc();
+?>
+    <h2 class=" hied"><?php echo $row2['name']; ?></h2>
+<?php
+ $conn2->close();
+?>
 
-     <h2 class="username hied">user name</h2>
-    
     <h4 class="hied">type</h4>
-    <img src="image/mercedec-logo.png" alt="" class="marka hied">
+    <?php 
+ $db_server = 'localhost';
+ $db_user = 'root';
+ $db_password = '';
+ $db_name = 'web';
+ $conn4 = new mysqli($db_server, $db_user, $db_password, $db_name);
+ $type = intval($row['type_id']);
+ $sql4 = "SELECT * FROM Type WHERE type_id = $type";
+ $result4 = $conn4->query($sql4);
+     $row4 = $result4->fetch_assoc();
+     echo '<img  class="marka hied" src="data:image/png;base64 ,'.base64_encode($row4['type_image']).'">';
+     $conn4->close();
+?>
+
     
+   
+    
+    
+    <h3 class="hied"><?php echo $row['user_id'];?></h3>
  </div>
  <?php
      }
@@ -156,7 +192,7 @@ echo '<img id="card-image" class="car-image hied" src="data:image/png;base64 ,'.
 
 <div class="name-info">
 <h2  class="name-info-name">car name</h2>
-<img src="image/mercedec-logo.png" alt=""  class="car-logo-info">
+<img id="car-logo" src="image/mercedec-logo.png" alt="" class="car-logo-info">
 </div>
 
 
@@ -172,7 +208,7 @@ echo '<img id="card-image" class="car-image hied" src="data:image/png;base64 ,'.
 <h3 class="fuel-info">fuel:</h3>
      <h3 class="Engine-size-info">Engine size:</h3>
      <h3 class="driven-info"> Driven: <b>40,000km</b> </h3>
-     <h3 class="Vin-info"> Vin: 12112257</h3>
+     <h3 class="Vin-info"> </h3>
      </div>
 <p class="description-info">
     <b>Description:</b> <span class="description-info2"> Lorem ipsum, dolor sit amet 
@@ -190,13 +226,14 @@ echo '<img id="card-image" class="car-image hied" src="data:image/png;base64 ,'.
 
 <div class="pay-info">
 <h4 class="id-info"><b>Account ID</b>: <span class="userid">1507</span> </h4>
-<h3 class="owner-name"><b> Owner</b>: osama ammar</h3>
+<h3 class="owner-name"><b> Owner</b>: <p class="username"></p></h3>
     
 </div>
 
 
 <div class="contact-info-div">
 <h2 class="mony-info">$200,000</h2>
+<h3><b>car id:</b> <p class="car_id_info"></p></h3>
 <br>
 
 </div>
