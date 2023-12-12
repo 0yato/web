@@ -30,3 +30,22 @@ closee.onmouseout=function(){
     closee.style.backgroundColor="#2a5298";
     closee.style.color="snow";
 }
+
+
+let close_btnn = document.getElementById("close-btnn");
+let nalert= document.getElementById("nalert");
+
+
+
+close_btnn.addEventListener("click",function(){
+    console.log("helo close");
+    
+    nalert.style.display='none';
+});
+
+
+
+    
+
+
+    

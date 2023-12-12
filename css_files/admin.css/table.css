@@ -43,17 +43,18 @@ td:hover{
 }
 
 .col-show form{
-  float: right;
-  margin-right: 20px;
+  
+
 
 } 
-.show-btn{
+.show-btn{width: 80%;
   padding: 5px;
   border: none;
   outline: none;
   cursor: pointer;
   background-color: #0481ff;
   color: snow;
+  font-size: 18px;
   font-family: 'rubik';
   border-radius: 5px;
 }

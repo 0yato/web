@@ -1,6 +1,6 @@
 <?php 
 include("nav.php");
-
+session_start();
 
 ?>
 
@@ -87,8 +87,8 @@ letter-spacing: 5px;
         </div>
         <div class="list">
             <h2>Company</h2>
-            <select name="carMarka" id="company-select">
-            <option value="none">none</option>
+            <select name="carMarka"  id="company-select">
+            <option class="choce" value="none">none</option>
 <?php
 
     $sql="SELECT * FROM `type`";
@@ -99,7 +99,7 @@ while($row=$result->fetch_assoc()){
 ?>
 
 
-                <option value="<?php $row['type_description']; ?>"><?php echo $row['type_description']; ?></option>
+                <option class="choce" value="<?php echo $row['type_id']; ?>"><?php echo $row['type_description']; ?></option>
 
                 <?php
 }
@@ -117,12 +117,12 @@ while($row=$result->fetch_assoc()){
         </div>
         <div class="text-input">
             <label for="price">Price</label>
-            <input autocomplete="off" name="carPrice" required type="text" id="price">
+            <input autocomplete="off" name="carPrice" required type="number" id="price">
             
         </div>      
           <div class="text-input">
             <label for="drive">distance travel</label>
-            <input autocomplete="off" name="carDriven" required type="text" id="drive">
+            <input autocomplete="off" name="carDriven" required type="number" id="drive">
             
         </div>       
          <div class="text-input">
@@ -130,21 +130,55 @@ while($row=$result->fetch_assoc()){
             <input autocomplete="off" required name="carModel"  id="model">
             <label for="model">model</label>
         </div>      
-          <div class="text-input">
-            <label for="description">description</label>
-           <textarea name="carDesc" required id="description"  cols="40" rows="6"></textarea>
-           <p id="des-count">/300</p>
-        </div>
+         
         <div class="text-input">
             <label for="contact">contact method</label>
             <input autocomplete="off" name="carContact" required type="url" id="contact">
             
         </div> 
+        <div class="text-input">
+            <label for="Engine">engine size</label>
+            <input autocomplete="off" name="carEngine" required type="text" id="Engine">
+            
+        </div> 
+        <div class="text-input">
+            <label for="vin">Vin</label>
+            <input autocomplete="off" name="carVin" required type="number" id="vin">
+            
+        </div> 
+        <div class="text-input">
+            <label for="fuel">fuel</label>
+            <input autocomplete="off" name="carFuel" required type="text" id="fuel">
+            
+        </div> 
+        <div class="text-input">
+            <label for="color">color</label>
+            <input autocomplete="off" name="carColor" required type="text" id="color">
+            
+        </div> 
+
+        <div class="text-input">
+            <label for="description">description</label>
+           <textarea name="carDesc" required id="description"  cols="40" rows="6"></textarea>
+           <p id="des-count">/300</p>
+        </div>
         </div>
     </div>
     <input name="create" type="submit" class="btn" value="POST">
 </form>
+<?php
+if($_SESSION['post_create']=='create'){
+    echo "<h2> hiiiiiiiiiiiiiiiiiiiiiiiiidkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</h2>";
+    $_SESSION['post_create']='nothing';
 
+}
+else if($_SESSION['post_create']=="not"){
+echo "not";
+    $_SESSION['post_create']='nothing';
+}
+
+
+?>
 
 
 
@@ -154,3 +188,4 @@ while($row=$result->fetch_assoc()){
 <script src="javascript/post-script/upload-image.js"></script>
 </body>
 </html>
+

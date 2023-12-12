@@ -112,6 +112,7 @@ if($row['id']==$user && $row['password']==sha1($password)){
         $_SESSION['image']=$row['image'];
         $_SESSION['you-login'] =true;
         $_SESSION['user-state']=$row['state'];
+        $_SESSION['post_create']='nothing';
         header("location:home.php");
 }
 

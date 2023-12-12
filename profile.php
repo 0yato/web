@@ -9,6 +9,7 @@ include("nav.php");
 
 <link rel="stylesheet" href="css_files/profile.css/design.css">
 <link rel="stylesheet" href="css_files/profile.css/scroll.css">
+<link rel="stylesheet" href="css_files/profile.css/alerts.css">
 
     <link rel="stylesheet" href="css_files/profile.css/body.css">
 
@@ -97,14 +98,7 @@ border: 3px #243b5e solid;
         </form>
 
 
-
-
-
-    <script src="javascript/profile-script/password.js"></script>
-</body>
-</html>
-
-<?php 
+        <?php 
 if(isset( $_POST['set_pass'])){
     $confirm=$_POST['confirm_password'];
 if( sha1($confirm)==$_SESSION['password']){
@@ -123,10 +117,36 @@ $stmt->execute();
 
 $stmt->close();
 $conn->close();
+?>
+<div class="alert" id="salert">
+    <div>
+<i class="fa-solid fa-check"></i>
+    <h2 class="textt">your password has been successfully changed</h2>
+    <button id="close-btn">close</button>
+    </div>
+</div>
+<?php
 }
 else{
-    echo '<p class="error">Please enter a valid user name and password.</p>';
+    ?>
+<div class="alert" id="nalert">
+    <div>
+<i class="fa-solid fa-x"></i>
+    <h2 class="texttt">your old password is not correct</h2>
+    <button id="close-btnn" class="close">close</button>
+    </div>
+</div>
+
+<?php
 }
 }
 
 ?>
+
+
+    <script src="javascript/profile-script/password.js"></script>
+    <script src="javascript/profile-script/alerts.js"></script>
+
+</body>
+</html>
+

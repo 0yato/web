@@ -21,8 +21,19 @@ else{
     company_select.style.border="3px solid var(--color-ref-error10)"
 }
 }
+let ch = document.querySelectorAll(".choce");
+ch.forEach(function (option) {
+    option.addEventListener('click', function () {
+        // Edit the value of the select element when a choice is clicked
+        company_select.value = option.value;
 
+        // Additional actions if needed
 
+        // Trigger the 'change' event to execute the onchange handler
+        const event = new Event('change');
+        company_select.dispatchEvent(event);
+    });
+});
 
 
 
@@ -38,3 +49,6 @@ input_image.onchange = function() {
     label.style.backgroundColor=" var(--color-ref-error40) ";
     label.style.border="3px solid var(--color-ref-error10) ";
 }
+
+
+

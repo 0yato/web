@@ -130,14 +130,15 @@ if(isset($_POST["user-btn"])){
         $stmt->execute();
         $result2 = $stmt->get_result();
         $num=$result2->num_rows;
-        echo $num;
+        
         
         $stmt->close();
         $conn->close();
+        echo "<p>".$num."</p>";
        ?>
        <form action="">
         <button class="show-btn">show</button>
-        <input style="display: none;" type="text" value="<?php echo $row['id'];?>"  >
+        <input style="display:none;" type="text" value="<?php echo $row['id'];?>"  >
        </form>
 
 
@@ -161,10 +162,48 @@ if(isset($_POST["user-btn"])){
     </tr>
     <?php 
     }
-}
     ?>
 </table>
+<?php }?>
+<?php if(isset($_POST['marka-btn'])){
+    ?>
+<table>
+    <tr>
+        <th>marka</th>
+        <th>name</th>
+        <th>count</th>
+        <th>show</th>
+    </tr>
+<?php 
+$db_server='localhost';
+$db_user='root';
+$db_pass='';
+$db_name='web';
 
+$conn=@ new mysqli($db_server,$db_user,$db_pass,$db_name);
+
+$sql="SELECT * FROM `type`";
+$result=$conn->query($sql);
+while ($row=$result->fetch_assoc()){
+?>
+    <tr>
+<td><audio class="sound" style="" src="image/sounds/hover-effect.mp3" ></audio>
+
+<?php echo '<img src="data:image/png;base64 ,'.base64_encode($row['type_image']).'">';?>
+</td>
+<td><audio class="sound" style="" src="image/sounds/hover-effect.mp3" ></audio>
+<?php echo $row['type_description'];?>
+</td>
+<td><audio class="sound" style="" src="image/sounds/hover-effect.mp3" ></audio>
+
+</td>
+<td><audio class="sound" style="" src="image/sounds/hover-effect.mp3" ></audio>
+    <button class="show-btn">show all</button>
+</td>
+    </tr>
+    <?php }?>
+</table>
+    <?php } ?>
 </div>
 
 
