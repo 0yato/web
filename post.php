@@ -64,6 +64,7 @@ letter-spacing: 5px;
         $result=$conn->query($sql);
         $car_id=$result->num_rows +5001;
         echo $car_id ;
+        $_SESSION['car_id']=$car_id;
         ?></h2>
     </div>
 <div class="card" id="car-img">

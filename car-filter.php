@@ -21,13 +21,27 @@
      <div class="opt">
         <div class="s">
         <label for="c">company</label>
-        <select name="" id="c">
+        <select name="" id="c" value="">
         <option value="none">None</option>
      
-       
-           <option>here</option>
-
+        <?php
+           $db_server="localhost";
+           $db_user="root";
+           $db_pass="";
+           $db_name="web";
            
+           $conn=@ new mysqli($db_server,$db_user,$db_pass,$db_name);
+           
+           $sql = "SELECT * FROM `type`";
+
+           $result=$conn->query($sql);
+           while ($row = $result->fetch_assoc()){
+           ?>
+         <option value="<?php echo $row['type_id'];?>"><?php echo $row['type_description'];?></option>
+
+           <?php 
+           }
+           ?>
         
         </select>
         </div>
@@ -42,8 +56,17 @@
         <label for="t">States</label>
         <select name="" id="t">
             <option value="none">None</option>
-            <option value="Rent">Rent</option>
-            <option value="Sell">Sell</option>
+          <?php 
+          $sql="SELECT * FROM `kind`";
+          $result=$conn->query($sql);
+          while($row=$result->fetch_assoc()){
+          ?>
+
+<option value="<?php echo $row['kind_id'];?>"><?php echo $row['kind_description'];?></option>
+
+<?php 
+          }
+?>
         </select>
         </div>
 
@@ -84,7 +107,30 @@
      </div>
 
 
+<div class="new-filter">
 
+<div class="date">
+<label for="date">model</label>
+<input type="number"  id="date" class="date">
+
+    </div>
+    
+    <div class="engine-size">
+        <label for="engine-size">engine size</label>
+        <input type="number" id="engine-size" class="engine-size">
+        <p>Cc</p>
+    </div>
+
+<div class="fuel-type">
+    <label for="fuel-type">Fuel</label>
+    <select name="" id="fuel-type">
+        <option value="none">none</option>
+        <option value="deziel">deziel</option>
+        <option value="electric">electric</option>
+        <option value="benzene">benzene</option>
+    </select>
+    </div>
+</div>
 
 
 

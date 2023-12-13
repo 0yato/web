@@ -37,6 +37,7 @@ letter-spacing: 5px;
     <title>Document</title>
 
 
+    <link rel="stylesheet" href="css_files/admin.css/prompt.css">
 
      <link rel="stylesheet" href="css_files/admin.css/blocks.css">
       <link rel="stylesheet" href="css_files/admin.css/table.css">
@@ -152,10 +153,10 @@ if(isset($_POST["user-btn"])){
 
 </td>
 
-        <td><audio class="sound" style="" src="image/sounds/hover-effect.mp3" ></audio>
+        <td class="prompt"><audio class="sound" style="" src="image/sounds/hover-effect.mp3" ></audio>
      <?php echo  $row['state'];?>
 
-
+     <input style="display: none;"  type="text" value="<?php echo$row['id'];?>">
 
 
 </td>
@@ -164,6 +165,25 @@ if(isset($_POST["user-btn"])){
     }
     ?>
 </table>
+
+<form action="prompt.php" method="get" class="promptt" id="prompt-form" ">
+<div class="prompt_window">
+<i class="fa-solid fa-x " id="prompt-icon" ></i>
+    <h2>Are you sure you want to make this user as admin?</h2>
+    <button>Confirm</button>
+</div>
+</form>
+
+
+
+
+
+
+
+
+
+
+
 <?php }?>
 <?php if(isset($_POST['marka-btn'])){
     ?>
@@ -195,7 +215,27 @@ while ($row=$result->fetch_assoc()){
 <?php echo $row['type_description'];?>
 </td>
 <td><audio class="sound" style="" src="image/sounds/hover-effect.mp3" ></audio>
-
+<?php
+$db_server='localhost';
+$db_user='root';
+$db_pass='';
+$db_name='web';
+$type_id=$row["type_id"];
+$conn10=@ new mysqli($db_server,$db_user,$db_pass,$db_name);
+$sql10="SELECT type_id, COUNT(*) as car_count
+FROM car
+Where type_id=$type_id
+GROUP BY type_id;";
+$result10=$conn10->query($sql10);
+$row10=$result10->fetch_assoc();
+if($row10 !==Null){
+echo  $row10['car_count'];
+}
+else{
+    echo 0;
+}
+$conn10->close();
+?>
 </td>
 <td><audio class="sound" style="" src="image/sounds/hover-effect.mp3" ></audio>
     <button class="show-btn">show all</button>
@@ -212,6 +252,7 @@ while ($row=$result->fetch_assoc()){
 
 
 <script src="javascript/admin-script/hover.js"></script>
+<script src="javascript/admin-script/prompt.js"></script>
 
 </body>
 </html>
