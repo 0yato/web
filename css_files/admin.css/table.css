@@ -58,3 +58,61 @@ td:hover{
   font-family: 'rubik';
   border-radius: 5px;
 }
+.price-data{
+ 
+}
+.price-data p{
+  font-size: 18px;
+  font-family: 'rubik';
+  color: snow;
+  text-align: center;
+  background-color: green;
+  padding: 6px;
+  width: fit-content;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+.driven-data p{
+  font-size: 18px;
+  font-family: 'rubik';
+  color: snow;
+  text-align: center;
+  background-color: orange;
+  padding: 6px;
+  width: fit-content;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+.search{
+  margin: 10px;
+  width: 90%;
+  padding: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  color: snow;
+  font-size: 18px;
+  font-family: 'rubik';
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search input{
+  padding: 5px;
+  font-size: 22px;
+  font-family: 'rubik';
+  width: 40%;
+  
+  outline: none;
+  border: 2px solid #0481ff;
+  border-radius: 8px;
+  
+}
+.search label{
+  margin-right: 6px;
+  font-size: 26px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}

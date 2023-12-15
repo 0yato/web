@@ -13,7 +13,7 @@
     <form id="form" action="cars.php" method="get">
         <div class="search">
           <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label> 
-           <input name="sss" autocomplete="off" type="text" placeholder="Search here..."  id="search">
+           <input name="search-text" autocomplete="off" type="text" placeholder="Search here..."  id="search">
         </div>
         <div class="filter-icon" id="filter"><i class="fa-solid fa-filter"></i>filter</div>
 <div class="filter" id="divv">
@@ -137,7 +137,7 @@
 
 
      <div class="button">
-    <input type="submit" value="Search" name="d">
+    <input type="submit" value="Search" name="search">
     <div class="reset" id="reset">Reset</div>
 </div>
 

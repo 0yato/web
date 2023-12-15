@@ -65,7 +65,6 @@ letter-spacing: 5px;
     <button name="user-btn" class="users"><i class="fa-solid fa-user"></i><div class="info"><h2>321</h2> <h3>user</h3></div></button>
     <button name="car-btn" class="car"><i class="fa-solid fa-car"></i><div class="info"><h2>200</h2> <h3>cars</h3></div></button>
     <button name="marka-btn" class="marka"><i class="fa-brands fa-superpowers"></i><div class="info"><h2>40</h2> <h3>marka</h3></div></button>
-    <button name="delete-btn" class="delete"><i class="fa-solid fa-trash"></i><div class="info"><h2>200</h2> <h3>deleted posts</h3></div></button>
 
 </form>
 
@@ -77,9 +76,14 @@ letter-spacing: 5px;
 <i class="fa-solid fa-chart-line"></i>
 </div>
 <?php 
-if(isset($_POST["user-btn"])){
+if(isset($_POST["user-btn"])||isset($_POST["search-user"])){
 ?>
-
+    <form action="<?php $_SERVER["PHP_SELF"]?>" method="post" class="search">
+        
+        <input id="search" type="text" autocomplete="off" name="search-value-user" value="<?php echo $_POST['search-value-user'];?>">
+        <input type="submit" name="search-user" value="SEARCH" style="flex-basis: 150px;
+        cursor:pointer; margin-left:10px; background-color:transparent;color:snow;">
+        </form>
 <table>
     <tr>
         <th style="width: 20%;">picture</th>
@@ -94,7 +98,16 @@ if(isset($_POST["user-btn"])){
     $db_pass="";
     $db_name="web";
     $conn=@ new mysqli($db_server,$db_user,$db_pass,$db_name);
-    $sql="SELECT * FROM `user`";
+    if(isset($_POST["search-user"])){
+        $userr=$_POST['search-value-user'];
+        $iddd=intval($_POST['search-value-user']);
+        $sql ="SELECT * FROM `user` WHERE  `name` LIKE '%$userr%' OR `state` LIKE '%$userr%'";
+
+    }
+    else{
+        $sql="SELECT * FROM `user`";
+}
+    
     $result =$conn->query($sql);
     $conn->close();
 
@@ -187,12 +200,13 @@ if(isset($_POST["user-btn"])){
 <?php }?>
 <?php if(isset($_POST['marka-btn'])){
     ?>
+    
 <table>
     <tr>
         <th>marka</th>
         <th>name</th>
         <th>count</th>
-        <th>show</th>
+      
     </tr>
 <?php 
 $db_server='localhost';
@@ -237,13 +251,84 @@ else{
 $conn10->close();
 ?>
 </td>
-<td><audio class="sound" style="" src="image/sounds/hover-effect.mp3" ></audio>
-    <button class="show-btn">show all</button>
-</td>
+
     </tr>
     <?php }?>
 </table>
     <?php } ?>
+
+
+
+    <?php 
+    if(isset($_POST['car-btn'])|| isset($_POST['search'])){
+    $db_server='localhost';
+    $db_user='root';
+    $db_pass='';
+    $db_name='web';
+    $conn=@ new mysqli($db_server,$db_user,$db_pass,$db_name);
+    if(isset($_POST['search'])){
+$value=$_POST['search-value'];
+$value2=intval($_POST['search-value']);
+        $sql="SELECT * FROM `car` WHERE `car_name` LIKE '%$value%' OR `car_id` LIKE '%$value2%' ";
+
+    }
+    else{
+    $sql="SELECT * FROM `car`";
+    }
+    ?>
+    <form action="<?php $_SERVER["PHP_SELF"]?>" method="post" class="search">
+        
+<input id="search" type="text" autocomplete="off" name="search-value" >
+<input type="submit" name="search" value="SEARCH" style="flex-basis: 150px;
+cursor:pointer; margin-left:10px; background-color:transparent;color:snow;">
+</form>
+<table>
+<tr>
+    <th style="width: 30%;">Name</th>
+    <th style="width:10%;">Marka</th>
+    <th style="width: 22.5%;">Price</th>
+    <th style="width: 22.5%;">Travel</th>
+    <th style="width: 15%;">fuel</th>
+
+</tr>
+<?php 
+
+ $result=$conn->query($sql);
+while($row=$result->fetch_assoc()){
+?>
+<tr>
+    <td><audio class="sound" style="" src="image/sounds/hover-effect.mp3" ></audio>
+        <?php  echo $row['car_name'] ;?></td>
+    <td><audio class="sound" style="" src="image/sounds/hover-effect.mp3" ></audio>
+        <?php 
+        $type_id=$row['type_id'];
+        $sql2="SELECT `type_image` FROM `type` WHERE `type_id` = '$type_id'";
+        $result2=$conn->query($sql2);
+        $answer=$result2->fetch_assoc();
+        echo '<img src="data:image/png;base64 ,'.base64_encode($answer['type_image']).'">';?></td>
+    <td class="price-data"><audio class="sound" style="" src="image/sounds/hover-effect.mp3" ></audio>
+       <p>
+    <?php  echo $row['price']." $" ;?>
+    </p>
+</td>
+    <td class="driven-data"><audio class="sound" style="" src="image/sounds/hover-effect.mp3" ></audio>
+    <p>  
+    <?php  echo $row['driven']. ' KM' ;?>
+    </p>
+</td>
+    <td><audio class="sound" style="" src="image/sounds/hover-effect.mp3" ></audio>
+        <?php  echo $row['fuel'] ;?></td>
+</tr>
+
+<?php }?>
+</table>
+
+
+
+
+<?php 
+}
+?>
 </div>
 
 

@@ -84,7 +84,15 @@ letter-spacing: 5px;
     $db_password='';
     $db_name='web';
     $conn=@ new mysqli( $db_server, $db_user, $db_password,$db_name);
+   if(isset($_GET['search'])){
+    $carSearch=strtolower($_GET['search-text']);
+   
+$sql="SELECT * FROM `car` WHERE `car_name` LIKE '%$carSearch%' OR `color` LIKE '%$carSearch%'";
+   }
+   else{
     $sql = "SELECT * FROM car";
+   }
+
     $result = $conn->query($sql);
      
     while($row=$result->fetch_assoc()){
