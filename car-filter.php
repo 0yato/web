@@ -70,7 +70,15 @@
         </select>
         </div>
 
-
+        <div class="s">
+    <label for="fuel-type">Fuel</label>
+    <select name="" id="fuel-type">
+        <option value="none">none</option>
+        <option value="deziel">deziel</option>
+        <option value="electric">electric</option>
+        <option value="benzene">benzene</option>
+    </select>
+    </div>
 
 
 
@@ -115,21 +123,13 @@
 
     </div>
     
-    <div class="engine-size">
-        <label for="engine-size">engine size</label>
+    <div class="date">
+        <label id="label-engine-size" for="engine-size">engine size</label>
         <input type="number" id="engine-size" class="engine-size">
-        <p>Cc</p>
+        <p id="cc">Cc</p>
     </div>
 
-<div class="fuel-type">
-    <label for="fuel-type">Fuel</label>
-    <select name="" id="fuel-type">
-        <option value="none">none</option>
-        <option value="deziel">deziel</option>
-        <option value="electric">electric</option>
-        <option value="benzene">benzene</option>
-    </select>
-    </div>
+
 </div>
 
 

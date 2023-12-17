@@ -116,3 +116,7 @@ td:hover{
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+#search-by-id{
+  width: 200px !important;
+  margin: 10px;
+}

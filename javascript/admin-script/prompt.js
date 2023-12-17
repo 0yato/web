@@ -6,7 +6,13 @@ let prompt_form=document.getElementById("prompt-form");
 prompt_btn.forEach(element => {
     element.addEventListener("click",function()
      {
+        if(element.innerHTML!="admin"){
      prompt_form.style.display="flex";
+     prompt_form.lastElementChild.value=element.lastElementChild.value
+     console.log (element.lastElementChild)
+     console.log (prompt_form.lastElementChild)
+        }
+
      });
  })
  

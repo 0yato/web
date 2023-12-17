@@ -59,12 +59,25 @@ letter-spacing: 5px;
     <p>dashboard</p>
 <i class="fa-solid fa-chart-line"></i>
 </div>
-
+<?php 
+$db_server="localhost";
+$db_user='root';
+$db_password='';
+$db_name='web';
+$conn=new mysqli($db_server,$db_user,$db_password,$db_name);
+ $sql1000="SELECT * FROM `user`";
+ $sql2000="SELECT * FROM `car`";
+ $sql3000="SELECT * FROM `type`";
+$result1000=$conn->query($sql1000);
+$result2000=$conn->query($sql2000);
+$result3000=$conn->query($sql3000);
+$conn->close();
+?>
 
 <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" class="blocks">
-    <button name="user-btn" class="users"><i class="fa-solid fa-user"></i><div class="info"><h2>321</h2> <h3>user</h3></div></button>
-    <button name="car-btn" class="car"><i class="fa-solid fa-car"></i><div class="info"><h2>200</h2> <h3>cars</h3></div></button>
-    <button name="marka-btn" class="marka"><i class="fa-brands fa-superpowers"></i><div class="info"><h2>40</h2> <h3>marka</h3></div></button>
+    <button name="user-btn" class="users"><i class="fa-solid fa-user"></i><div class="info"><h2 id="userNum"><?php echo $result1000->num_rows ?></h2> <h3>user</h3></div></button>
+    <button name="car-btn" class="car"><i class="fa-solid fa-car"></i><div class="info"><h2 id="carNum"><?php echo $result2000->num_rows ?></h2> <h3>cars</h3></div></button>
+    <button name="marka-btn" class="marka"><i class="fa-brands fa-superpowers"></i><div class="info"><h2 id="markaNum"><?php echo $result3000->num_rows ?></h2> <h3>marka</h3></div></button>
 
 </form>
 
@@ -77,10 +90,13 @@ letter-spacing: 5px;
 </div>
 <?php 
 if(isset($_POST["user-btn"])||isset($_POST["search-user"])){
+    
 ?>
     <form action="<?php $_SERVER["PHP_SELF"]?>" method="post" class="search">
         
-        <input id="search" type="text" autocomplete="off" name="search-value-user" value="<?php echo $_POST['search-value-user'];?>">
+        <input id="search" type="text" autocomplete="off" name="search-value-user" value="<?php if(isset($_POST["search-user"]))echo $_POST['search-value-user'];?>">
+        <input id="search-by-id" type="number" autocomplete="off" placeholder="search by id..." name="search-value-id" value="<?php if(isset($_POST["search-user"]))echo $_POST['search-value-id'];?>">
+
         <input type="submit" name="search-user" value="SEARCH" style="flex-basis: 150px;
         cursor:pointer; margin-left:10px; background-color:transparent;color:snow;">
         </form>
@@ -98,11 +114,15 @@ if(isset($_POST["user-btn"])||isset($_POST["search-user"])){
     $db_pass="";
     $db_name="web";
     $conn=@ new mysqli($db_server,$db_user,$db_pass,$db_name);
-    if(isset($_POST["search-user"])){
+    if(isset($_POST["search-user"])&&!empty($_POST["search-value-id"])){
+     $userid=$_POST["search-value-id"];
+        $sql ="SELECT * FROM `user` WHERE  `id` LIKE '%$userid%'";
+
+    }
+    else if(isset($_POST["search-user"])&&!empty($_POST["search-user"])){
         $userr=$_POST['search-value-user'];
         $iddd=intval($_POST['search-value-user']);
         $sql ="SELECT * FROM `user` WHERE  `name` LIKE '%$userr%' OR `state` LIKE '%$userr%'";
-
     }
     else{
         $sql="SELECT * FROM `user`";
@@ -152,7 +172,7 @@ if(isset($_POST["user-btn"])||isset($_POST["search-user"])){
        ?>
        <form action="">
         <button class="show-btn">show</button>
-        <input style="display:none;" type="text" value="<?php echo $row['id'];?>"  >
+        <input style="display:none;" name="" type="text" value="<?php echo $row['id'];?>"  >
        </form>
 
 
@@ -170,8 +190,6 @@ if(isset($_POST["user-btn"])||isset($_POST["search-user"])){
      <?php echo  $row['state'];?>
 
      <input style="display: none;"  type="text" value="<?php echo$row['id'];?>">
-
-
 </td>
     </tr>
     <?php 
@@ -183,8 +201,10 @@ if(isset($_POST["user-btn"])||isset($_POST["search-user"])){
 <div class="prompt_window">
 <i class="fa-solid fa-x " id="prompt-icon" ></i>
     <h2>Are you sure you want to make this user as admin?</h2>
+    
     <button>Confirm</button>
 </div>
+<input type="text" value="" name="idPrompt" style="display:none;">
 </form>
 
 
@@ -269,7 +289,7 @@ $conn10->close();
     if(isset($_POST['search'])){
 $value=$_POST['search-value'];
 $value2=intval($_POST['search-value']);
-        $sql="SELECT * FROM `car` WHERE `car_name` LIKE '%$value%' OR `car_id` LIKE '%$value2%' ";
+        $sql="SELECT * FROM `car` WHERE `car_name` LIKE '%$value%'  ";
 
     }
     else{
@@ -338,6 +358,6 @@ while($row=$result->fetch_assoc()){
 
 <script src="javascript/admin-script/hover.js"></script>
 <script src="javascript/admin-script/prompt.js"></script>
-
+<script src="javascript/admin-script/animation.js"></script>
 </body>
 </html>

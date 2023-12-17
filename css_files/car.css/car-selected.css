@@ -53,6 +53,8 @@
     align-items: center;
     position: relative;
     padding: 10px;
+    flex-wrap: wrap;
+    
 }
 
 
@@ -69,6 +71,7 @@
     font-size: 28px;
     color:var(--red) ;
     font-family: "Rubik";
+    flex-basis: 100px;
 }
 
 
