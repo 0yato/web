@@ -26,6 +26,7 @@ price.innerHTML=price_input.value +"$";
 
 
 
+
 drive_input.addEventListener("input",function(){
 drive.innerHTML=drive_input.value +"Km";
 

@@ -170,9 +170,9 @@ if(isset($_POST["user-btn"])||isset($_POST["search-user"])){
         $conn->close();
         echo "<p>".$num."</p>";
        ?>
-       <form action="">
-        <button class="show-btn">show</button>
-        <input style="display:none;" name="" type="text" value="<?php echo $row['id'];?>"  >
+       <form action="user-cars.php" method="post">
+        <button class="show-btn" name="edit-btn">Edit</button>
+        <input style="display:none;" name="userId" type="text" value="<?php echo $row['id'];?>"  >
        </form>
 
 
@@ -286,11 +286,15 @@ $conn10->close();
     $db_pass='';
     $db_name='web';
     $conn=@ new mysqli($db_server,$db_user,$db_pass,$db_name);
-    if(isset($_POST['search'])){
-$value=$_POST['search-value'];
+    if(isset($_POST['search'])&& !empty($_POST['search-value-id'])){
+$carId=$_POST['search-value-id'];
+$sql="SELECT * FROM `car` WHERE `car_id`=$carId ";
+
+    }
+    else if(isset($_POST['search'])){
+        $value=$_POST['search-value'];
 $value2=intval($_POST['search-value']);
         $sql="SELECT * FROM `car` WHERE `car_name` LIKE '%$value%'  ";
-
     }
     else{
     $sql="SELECT * FROM `car`";
@@ -299,6 +303,8 @@ $value2=intval($_POST['search-value']);
     <form action="<?php $_SERVER["PHP_SELF"]?>" method="post" class="search">
         
 <input id="search" type="text" autocomplete="off" name="search-value" >
+<input id="search-byId" type="text" autocomplete="off" name="search-value-id" style="width: 180px; margin:10px;" placeholder="search by id ...">
+
 <input type="submit" name="search" value="SEARCH" style="flex-basis: 150px;
 cursor:pointer; margin-left:10px; background-color:transparent;color:snow;">
 </form>

@@ -32,7 +32,7 @@ if ($_SESSION['signup-state']==true) {
     echo '
         <div class="success" id="successMessage">
             <i class="fa-solid fa-check"></i>
-            <p>Your account could not be created (click anywhere to continue)</p>
+            <p>Congratulations! Your account has been successfully created. Click anywhere to continue.</p>
         </div>';
     $_SESSION['signup-state'] = false;
 }

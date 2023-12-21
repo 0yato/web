@@ -72,12 +72,21 @@ border: 3px #243b5e solid;
 
         <div  class="scroll">
         <?php
-         for ($i=0; 15 >$i  ; $i++) { 
+        $db_server="localhost";
+        $db_user="root";
+        $db_pass="";
+        $db_name="web";
+        
+        $conn=@ new mysqli($db_server,$db_user,$db_pass,$db_name);
+        $iduser=$_SESSION['id'];
+        $sql="SELECT * FROM `car` WHERE `user_id` =$iduser";
+         $result=$conn->query($sql);
+         while ($row=$result->fetch_assoc()){
          ?>
 
 
 
-         <div class="card">
+         <div class="card" style="background-image: url(<?php echo'data:image/png;base64,' .base64_encode($row['car_image']);?>)">
 
          </div>
          <?php

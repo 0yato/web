@@ -7,7 +7,6 @@ include("nav.php");
 <html lang="en">
 <head>
     
-<script src="https://kit.fontawesome.com/2861b4e4c1.js" crossorigin="anonymous"></script>
 
 
 
@@ -84,23 +83,64 @@ letter-spacing: 5px;
     $db_password='';
     $db_name='web';
     $conn=@ new mysqli( $db_server, $db_user, $db_password,$db_name);
-   if(isset($_GET['search'])){
+    $flag=0;
+   if(isset($_GET['search'])&& !empty($_GET['search-text'])){
     $carSearch=strtolower($_GET['search-text']);
    
 $sql="SELECT * FROM `car` WHERE `car_name` LIKE '%$carSearch%' OR `color` LIKE '%$carSearch%'";
    }
+   else if(isset($_GET['search'])&& ($_GET['km']!=0||$_GET['pricee']!=0)){
+    $pricee=$_GET["pricee"];
+    $km=$_GET['km'];
+    $sql="SELECT * FROM `car` WHERE (price >= $pricee) AND (driven >= $km) ";
+
+   }
+   else if(isset($_GET['search'])&&((!empty($_GET['company'])&&$_GET['company']!="none")||(!empty($_GET['states']&&$_GET['states']!="none"))||(!empty($_GET['fuel'])&&$_GET['fuel']!="none")||(!empty($_GET['date']))||(!empty($_GET['es'])) )){
+
+$companyy= $_GET['company'];
+$fuell=$_GET['fuel'];
+$stetss=$_GET['states'];
+$es=$_GET['es'];
+$modell=$_GET['date'];
+
+
+$sql="SELECT * FROM `car` WHERE `type_id` = '$companyy' OR `fuel` LIKE '%$fuell%' OR `kind_id` like '%$stetss%' OR `date`= '$modell' OR `Engine size` ='$es'  ";
+   }
+   
+//   else if(isset($_GET['search'])){
+//$sql="SELECT * FROM `car` WHERE";
+//if($_GET['company']!="none"){
+//    $company=intval($_GET['company']);
+//    $flag=1;
+//$sql.="`type_id` = $company";
+//}
+//if($_GET['fuel']!="none"){
+//    $fuel=$_GET['fuel'];
+//    if($flag){
+//
+//        $sql.="AND `fuel` =$fuel";
+//    }
+//    else{
+//        $sql.="`fuel` = '%$fuel%'";
+ //       $flag=1;
+//    }
+//
+//}
+ //  }
    else{
     $sql = "SELECT * FROM car";
    }
 
     $result = $conn->query($sql);
-     
+     if(0==$result->num_rows){
+echo "<p id='nomatch'>There is no match of your search</p>";
+     }
     while($row=$result->fetch_assoc()){
      
 //
 
  ?>
-     <div class="card" style="background-image: url(<?php echo'data:image/png;base64,' .base64_encode($row['car_image']);?>">
+     <div class="card" style="background-image: url(<?php echo'data:image/png;base64,' .base64_encode($row['car_image']);?>)">
    
 
 

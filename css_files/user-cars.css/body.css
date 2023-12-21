@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Kanit:wght@300&family=Montserrat:ital,wght@0,400;1,500&family=Open+Sans:ital,wght@0,400;1,300&family=Roboto&family=Roboto+Mono:wght@500&family=Rubik:ital,wght@0,300;0,400;1,300;1,400&family=Space+Grotesk:wght@300;400;500&family=Vina+Sans&display=swap');
+*{
+    font-family: "rubik";
+}
+body{
+background-color: black;
+height: 100vh;
+}
+
+.fa-arrow-up{
+    width: 50px;
+    height: 50px;
+    
+    color: snow;
+    font-size: 30px;
+    cursor: pointer;
+    rotate: -90deg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+td img{
+    width: 100px;
+}
+
+.elements{}
+
+.eee{
+    display: flex;
+    
+    align-items: center;
+    height: 100%;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.eee .element{
+   
+    flex-basis: 100px;
+    padding: 5px;
+}
+.element input{
+border: 2px #0481ff solid;
+outline: none;
+font-size: 20px;
+border-radius: 4px;
+color: snow;
+background-color: #123;
+}
+.element label{
+    font-size: 22px;
+}
+
+.elements button{
+    border: 2px solid #0481ff;
+    background-color: #123;
+    color: snow;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-left: 10px;
+    flex-basis: 100px;
+transition: 300ms;
+}
+.elements button:hover{
+    letter-spacing: 2px;
+}
+
+
+.alert-div{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color:rgba(0, 0, 0, 0.189);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.alert{
+    background-color: #123;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+border: #0481ff 3px dashed;
+}
+.alert i{
+    background-color: green;
+    color: snow;
+    font-size: 22px;
+    padding: 10px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 20px;
+}
+.alert p{
+    color: snow;
+    font-size: 22px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin: 20px;
+}
