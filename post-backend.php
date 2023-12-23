@@ -25,7 +25,7 @@ $color=$_POST['carColor'];
 $fuel=$_POST['carFuel'];
 $owner=$_SESSION['id'];
 $car_id= $_SESSION['car_id'];
-
+$noneeeee=0;
 $sql="INSERT INTO `car` (`car_id`, `type_id`, `user_id`,`car_image`,`description`, `contact`, `car_name`, `price`, `kind_id`, `driven`, `date`, `fuel`, `Engine size`, `Color`, `VIN`)
  VALUES ('$car_id', '$type', '$owner', '$img','$description', '$contact',' $name', '$price', '$kind', '$distance', '$model', '$fuel', '$engine', '$color', '$vin')";
  try{
