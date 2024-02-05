@@ -164,19 +164,7 @@ $_SESSION['signup-state']=false;
 <div class="footer" id="footer">
     <h2>Developers</h2>
     <div class="creator">
-   <div class="card">
-        <h2 class="name">Rodaina Bassem</h2>
-        
-        <div class="ce">CE | 118</div>
-        <div class="line"></div>
-        <h2 class="social">social</h2>
 
-        <div class="icons">
-            <a target="_blank" href="https://www.facebook.com/rodaina.bassem.3"> <i class="fa-brands fa-facebook "></i></a>
-           
-           <a target="_blank" href="https://github.com/RodainaBasem"> <i class="fa-brands fa-github"></i></a>
-        </div>
-    </div>
 
     <div class="card">
         <h2 class="name">osama ammar</h2>

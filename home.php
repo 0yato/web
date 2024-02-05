@@ -52,7 +52,7 @@ letter-spacing: 5px;
 
     <div class="info" >
         <img id="info-img" src="image/home-image/info222.jpg" alt="">
-<p id="p1">In this time, cars have become a necessity in this life, but searching for the right car can sometimes be difficult, so here we are to save your time and find your personal car.</p>
+<p id="p1">In this time, cars have become a necessity in this life, but searching for the right car can sometimes be difficult, so here we are to save your time and find your personal car. <br>Discover a wide range of vehicles that cater to every taste and budget – your perfect match is just a few clicks away.</p>
     </div>
 
 
