@@ -178,6 +178,18 @@ $_SESSION['signup-state']=false;
            <a target="_blank" href="https://github.com/0yato"> <i class="fa-brands fa-github"></i></a>
         </div>
     </div>
+    <div class="card">
+        <h2 class="name">Bisan </h2>
+        
+        <div class="ce">CE | 119</div>
+        <div class="line"></div>
+        <h2 class="social">social</h2>
+        <div class="icons">
+           <a target="_blank" href="https://www.facebook.com/profile.php?id=100002980662811"> <i class="fa-brands fa-facebook"></i></a>
+            <a target="_blank" href="https://x.com/thman91702?s=09"><i class="fa-brands fa-x-twitter"></i></a>
+           <a target="_blank" href="https://github.com/0yato"> <i class="fa-brands fa-github"></i></a>
+        </div>
+    </div>
 </div>
     <div class="copyright">
 <p>© car x | 2023-2024|,All rights reserved.</p>
