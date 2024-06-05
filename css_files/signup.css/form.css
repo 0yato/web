@@ -34,7 +34,7 @@ form > h2{
     margin: 10px;
     margin-bottom: 20px;
     color:var(--red) ;
-    background: linear-gradient(to top right ,#243748,#4b749f);
+    background: linear-gradient(to top right ,#243748, #4b749f);
     -webkit-background-clip: text; 
     color: transparent;
 }
