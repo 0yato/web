@@ -244,13 +244,22 @@ font-size: 20px;
 
 
 
-.btn{
+.btn {
     margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     color: aliceblue;
+}
+
+.remember-forget{
+   color: snow
+ 
+}
+
+.remember-forget a{
+color :rgb(191, 64, 64) ;
 }
 
 

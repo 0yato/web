@@ -33,14 +33,14 @@ session_start();
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car X</title>
-    <link rel="shortcut icon" type="x-icon" href="image/logo1.svg">
+    <title>Auto </title>
+    <link rel="shortcut icon" type="x-icon" href="image/logo00.svg">
 
    
 </head>
 <body>
     <div class="nav">
-        <img src="image/logo1.svg" alt="">
+        <img src="image/logo00.svg" alt="">
     
         <ul>
             <a href="#s"><li>home</li></a>
