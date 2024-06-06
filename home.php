@@ -14,19 +14,8 @@ include("nav.php")
     <title>Document</title>
     <style>
 
-.nav{
-            background-image: linear-gradient(180deg, #222222 10%, #333333 90%);
 
-}
-.nav ul a{
-    border: none;
-    box-shadow: 0px 0px 2px 0px snow;
-    background-color: #222;
-    border: 3px solid snow;
-}
-.nav ul a:hover{
-    background-color: rgba(128, 128, 128, 0.651);
-}
+
     #a1{
     background-color: gray;
 letter-spacing: 5px;

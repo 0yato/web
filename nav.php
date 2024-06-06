@@ -56,7 +56,7 @@ if($_SESSION['you-login'] ==false){
     <a href="home.php" id="a1" class="menu-item"><i class="fa-solid fa-house"></i><li>Home</li></a>
     <a href="profile.php" id="a2" class="menu-item"><i class="fa-solid fa-user"></i><li>Profile</li></a>
     <a href="cars.php" id="a3" class="menu-item"><i class="fa-solid fa-car"></i><li>Cars</li></a>
-    <a href="post.php" id="a4" class="menu-item"><i class="fa-solid fa-pen"></i><li>Create post</li></a>
+    <a href="post.php" id="a4" class="menu-item"><i class="fa-solid fa-pen"></i><li>Create</li></a>
     <a href="admin.php" class="menu-item" id="a5"  <?php 
     
     if( $_SESSION['user-state']=='admin'){
@@ -68,7 +68,7 @@ if($_SESSION['you-login'] ==false){
     }
     ?>
     
-    ><i class="fa-solid fa-screwdriver-wrench" ></i><li>Admin control</li></a>
+    ><i class="fa-solid fa-screwdriver-wrench" ></i><li>Admin </li></a>
     <a href="destroy.php" class="menu-item" ><i class="fa-solid fa-right-from-bracket"></i><li>Logout</li></a>
    </ul>
 </div>

@@ -36,42 +36,36 @@ body{
 
 
 hr{
+    display:none;
     width: 100%;
     border: 2px var(--dark) solid;
 }
 
 
 .nav{
-    width: 70px;
-    height: 100%;
+    width: 100%;
+    height: 15%;
     position: fixed;
-  
     transition: 500ms;
     background-color: var(--red);
     box-shadow: 0px 0px 10px 0px var(--dark);
     display: flex;
     justify-content: start;
     align-items: center;
-    flex-direction: column;
     overflow: hidden;
-    animation-name: a;
-    animation-duration: 2s;
+    background: rgba(255, 255, 255, 0.2);
+
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
 z-index: 10;
 }
 
-.nav:hover{
-    width:300px;
-}
 
 
-@keyframes a {
-    0%{
-width: 300px;
-    }
-    100%{
 
-    }
-}
+
 
 
 
@@ -118,7 +112,8 @@ width: 300px;
 
 
 .logo{
-    display: flex;
+
+    display: none;
     justify-content: center;
     align-items: center;
     
@@ -189,7 +184,7 @@ font-family:"Kanit" ;
 display: flex;
 justify-content: start;
 align-items: center;
-width: 100%;
+min-width: 23%;
 padding: 10px;
 overflow: hidden;
 height: 70px;
@@ -206,10 +201,14 @@ height: 70px;
     
 }
 
-
+.user img :hover h2{
+    transform: translateX(0);
+    opacity: 1;
+}
 
 .user h2{
-  opacity: 0;
+  opacity: 1;
+  
     color: aliceblue;
     width: 100%;
     text-align: center;
@@ -219,11 +218,7 @@ height: 70px;
 }
 
 
-.nav:hover .user h2{
-  opacity: 1;
 
-    transition: 1.5s;
-}
 
 
 /*    list           */
@@ -232,47 +227,45 @@ height: 70px;
 
 .nav ul{
     list-style: none;
-width: 100%;
+width: 77%;
+display:flex;
+justify-content: end;
+margin-right:40px;
+align-items: center;
 }
 
 .nav ul a{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 99%;
+    width: 50px;
     color: aliceblue;
     text-decoration: none;
-    background-color: aqua;
- padding: 10px;
-    border-radius: 10px;
-    margin: 7px 0px;
-    border: 3px var(--red) solid;
-    background-color: var(--red-back);
-    transition: 500ms;
-    box-shadow: 0px 0px 5px 0px var(--dark);
+  transition :0.3s;
+ padding: 5px;
+ 
+   
+    background-color: transparent;
+  
 }
 
 
 
-.nav ul a:last-child{
-    position: absolute;
-    color: var(--red);
-    bottom: 0;
-    background-color: aliceblue;
-    transition: 500ms;
+
+.menu-item:hover li {
+    display: block;
 }
 
-.nav ul a:nth-child(5):hover{
-    color: aliceblue;
-    transition: 100ms;
-}
+
+
+
 
 
 
 
 .nav ul a:hover{
 background-color: var(--darks);
-
+width :150px;
 }
 
 
@@ -283,36 +276,33 @@ background-color: var(--darks);
 
 
 .nav ul a i{
-    font-size: 30px;
-    margin: 5px;
+    font-size: 22px;
+    margin: 8px;
    
-    width: 50px;
+    
 }
 .nav ul a li{
-    width: 100%;
+    width: 50px;
     text-align: center;
-    font-size: 22px;
+    font-size: 18px;
     display: none;
-    transition: 1s;
+    transition: 0.5s;
     font-family:"Kanit" ;
- 
+    margin: 8px;
 }
 
 ul a:hover li{
-    letter-spacing: 4px;
-}
-
-.nav:hover ul a li{
-    display: block;
     
 }
+
+
 
 
 .unclicked{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 99%;
+    width: 20%;
     color: aliceblue;
     text-decoration: none;
     background-color: aqua;
@@ -329,7 +319,7 @@ ul a:hover li{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 99%;
+    width: 20%;
     color: aliceblue;
     text-decoration: none;
     background-color: aqua;

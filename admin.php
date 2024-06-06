@@ -8,19 +8,7 @@ include("nav.php");
 <head>
 <style>
 
-.nav{
-            background-color: #123;
 
-}
-.nav ul a{
-    border: none;
-    box-shadow: 0px 0px 2px 0px snow;
-    background-color: #123;
-    border: 3px solid snow;
-}
-.nav ul a:hover{
-  background-color:  rgba(255, 250, 250, 0.189);
-}
     #a5{
     background-color: #123;
 letter-spacing: 5px;

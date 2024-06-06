@@ -17,14 +17,7 @@ include("nav.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .nav{
-            background-image: linear-gradient(244deg, #e46962 16%, #b3261e 95%);
-
-}
-.nav ul a{
-    border: 3px var(--red) solid;
-    background-color: #b3261e;
-}
+     
 
 
     #a4{

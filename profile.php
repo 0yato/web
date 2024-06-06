@@ -19,21 +19,13 @@ include("nav.php");
     <title>Car X</title>
     <link rel="shortcut icon" type="x-icon" href="image/logo1.png">
     <style>
-        .nav{
-            background-image: linear-gradient(180deg, #1e3c72 10%, #2a5298 90%);
-
-}
-.nav ul a{
-    border: none;
-    background-color: #1e3c72;
-    border: 3px #243b5e solid;
-}
+   
 
 
     #a2{
     background-color: var(--darks);
 letter-spacing: 5px;
-border: 3px #243b5e solid;
+
 }
 
 #a2 > i{
