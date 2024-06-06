@@ -174,9 +174,10 @@ $_SESSION['signup-state']=false;
         <div class="line"></div>
         <h2 class="social">social</h2>
         <div class="icons">
-           <a target="_blank" href="https://www.facebook.com/profile.php?id=100002980662811"> <i class="fa-brands fa-facebook"></i></a>
-            <a target="_blank" href="https://x.com/thman91702?s=09"><i class="fa-brands fa-x-twitter"></i></a>
-           <a target="_blank" href="https://github.com/0yato"> <i class="fa-brands fa-github"></i></a>
+           <a target="_blank" href="https://www.facebook.com/bisan.dweikat6.5/"> <i class="fa-brands fa-facebook"></i></a>
+            <a target="_blank" href="https://x.com/BisanDweikat"><i class="fa-brands fa-x-twitter"></i></a>
+           <a target="_blank" href="https://github.com/BisanDweikat"> <i class="fa-brands fa-github"></i></a>
+           <a target="_blank" href=""><i class="fa-brands fa-instgram"></i></a>
         </div>
     </div>
     <div class="card">
