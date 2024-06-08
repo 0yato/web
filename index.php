@@ -6,10 +6,10 @@ session_start();
 <html lang="en">
 <head>
     <script src="https://kit.fontawesome.com/2861b4e4c1.js" crossorigin="anonymous"></script>
-
-
-
     
+    
+
+
 
 
     <link rel="stylesheet" href="css_files/index.css/footer.css">
@@ -39,6 +39,9 @@ session_start();
    
 </head>
 <body>
+    
+
+
     <div class="nav">
         <img src="image/logo0.svg" alt="">
     
@@ -178,6 +181,7 @@ $_SESSION['signup-state']=false;
             <a target="_blank" href="https://x.com/BisanDweikat"><i class="fa-brands fa-x-twitter"></i></a>
            <a target="_blank" href="https://github.com/BisanDweikat"> <i class="fa-brands fa-github"></i></a>
            <a target="_blank" href=""><i class="fa-brands fa-instgram"></i></a>
+           <a target="_blank" href="https://www.linkedin.com/in/bisan-dweikat-b0719b244/"><i class="fa-brands fa-LinkedIn"></i></a>
         </div>
     </div>
     <div class="card">
