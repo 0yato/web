@@ -10,13 +10,13 @@
 
 .cards{
     background-image: linear-gradient(180deg, #333333 5%, #222222 95%);
-
+    transition: translateX(-100px);
     display: flex;
     justify-content: space-evenly;
     flex-flow: row wrap;
     align-content: center;
-    width: 95.4%;
-    margin-left: 4em;
+  
+    
     padding: 1em;
     gap: 20px;
     
