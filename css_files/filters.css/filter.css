@@ -15,7 +15,9 @@
 }
 /*osam*/
 
-
+.fra333{
+    height: 100px;
+}
 form{
     z-index: 1;
     width: 94%;
@@ -24,7 +26,6 @@ form{
     justify-content: center;
     flex-direction: column;
     margin-left: 70px;
-  
    padding: 10px;
 }
 
