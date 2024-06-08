@@ -162,13 +162,9 @@ $_SESSION['signup-state']=false;
 
   
 
-
-
-
 <div class="footer" id="footer">
     <h2>Developers</h2>
     <div class="creator">
-
 
     <div class="card">
         <h2 class="name">Bisan Dweikat</h2>
@@ -196,9 +192,6 @@ $_SESSION['signup-state']=false;
            <a target="_blank" href="https://github.com/0yato"> <i class="fa-brands fa-github"></i></a>
         </div>
     </div>
-</div>
-    <div class="copyright">
-<p>© car x | 2023-2024|,All rights reserved.</p>
     </div>
 </div>
 
