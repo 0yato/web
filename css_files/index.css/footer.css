@@ -17,7 +17,7 @@
 
 
 .footer{
-    background-color:var(--dark);
+    background-color:yellow;
     position: absolute;
     
     width: 100%;
@@ -27,6 +27,7 @@
     flex-direction: column;
     
 }
+
 
 
 
@@ -207,7 +208,10 @@ color:aliceblue ;
 }
 
 
-
+.fa-instgram{
+    color: aliceblue;
+    background-color: rgba(124, 9, 43, 0.63);
+}
 
 
 

@@ -73,7 +73,7 @@ session_start();
         </ul>
     </div>
 
-
+\
 
 
 
@@ -102,7 +102,7 @@ session_start();
 <div class="about" id="about">
     <div class="text">
     <p>
-        <b id="cccc">CarX</b>Welcome to our premier car marketplace, where your dream car awaits.
+        <b id="cccc">Car Shop</b><br>Welcome to our premier car marketplace, where your dream car awaits.
         <br> Browse through our extensive collection of cars from around the world, find the perfect match at the best price, and easily connect with sellers directly through our seamless communication link in every listing.
         <br> Start your journey with us today and drive home your ideal car!
 
@@ -157,9 +157,6 @@ $_SESSION['signup-state']=false;
 
 
 
-
-
-
   
 
 <div class="footer" id="footer">
@@ -176,7 +173,7 @@ $_SESSION['signup-state']=false;
            <a target="_blank" href="https://www.facebook.com/bisan.dweikat6.5/"> <i class="fa-brands fa-facebook"></i></a>
             <a target="_blank" href="https://x.com/BisanDweikat"><i class="fa-brands fa-x-twitter"></i></a>
            <a target="_blank" href="https://github.com/BisanDweikat"> <i class="fa-brands fa-github"></i></a>
-           <a target="_blank" href=""><i class="fa-brands fa-instgram"></i></a>
+           <a target="_blank" href="https://www.instagram.com/accounts/login/two_factor?hl=en&next=%2F"><i class="fa-brands fa-instgram"></i></a>
            <a target="_blank" href="https://www.linkedin.com/in/bisan-dweikat-b0719b244/"><i class="fa-brands fa-LinkedIn"></i></a>
         </div>
     </div>
@@ -190,18 +187,16 @@ $_SESSION['signup-state']=false;
            <a target="_blank" href="https://www.facebook.com/profile.php?id=100002980662811"> <i class="fa-brands fa-facebook"></i></a>
             <a target="_blank" href="https://x.com/thman91702?s=09"><i class="fa-brands fa-x-twitter"></i></a>
            <a target="_blank" href="https://github.com/0yato"> <i class="fa-brands fa-github"></i></a>
+           <a target="_blank" href="https://www.instagram.com/accounts/login/two_factor?hl=en&next=%2F"><i class="fa-brands fa-instgram"></i></a>
+           <a target="_blank" href="https://www.linkedin.com/in/bisan-dweikat-b0719b244/"><i class="fa-brands fa-LinkedIn"></i></a>
         </div>
+     </div>
+     </div>
+
+
+    <div class="copyright">
+ <p>© car shop | 2023-2024|,All rights reserved. </p>
     </div>
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
 
 
@@ -210,5 +205,6 @@ $_SESSION['signup-state']=false;
 
 
     <script src="javascript/index-script/nav.js"></script>
+
 </body>
 </html>
