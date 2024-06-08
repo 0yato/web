@@ -17,21 +17,18 @@ $_SESSION['valid-user']=false;
     <link rel="stylesheet" href="css_files/login.css/animation.css">
     <link rel="stylesheet" href="css_files/login.css/login-form.css">
     <link rel="stylesheet" href="css_files/login.css/nav.css">
-    <link rel="shortcut icon" type="x-icon" href="image/logo1.svg">
+    <link rel="shortcut icon" type="x-icon" href="image/logo0.svg">
 
 
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Car X</title>
+    <title>Car Shop</title>
 </head>
 <body>
-   <div class="mute" id="cont">
-   <i class="fa-solid fa-volume-xmark" style="display: none;" id="mute"></i>
-   <i class="fa-solid fa-volume-high"  id="muted"></i>
-   </div>
-  <video class="vid1" id="vid1"   autoplay loop src="image/vid/login-vid.mp4"></video>
+  
+  <video class="vid1" id="vid1"   autoplay loop src="image\vid\login-vid.mp4"></video>
 
 
     <form action="login.php" method="post" class="login-form">
@@ -61,14 +58,7 @@ $_SESSION['valid-user']=false;
            
             
         </div>
-        <div class ="remember-forget">
-            <label ><input type="checkbox"> Remember me</label>
-            
-            <a href="#">Forgot Password ?</a>
-
-
-        </div>
-        
+      
 
         
             

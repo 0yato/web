@@ -36,9 +36,10 @@
 
 body{
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
     overflow: hidden;
+    
 }
 
 
@@ -52,15 +53,16 @@ body{
     height: 100%;
     overflow: hidden;
     background: rgba(0, 0, 0, 0.779);
-    position: relative;
+    position: center;
     width: 35%;
     padding: 30px;
 
     translate: 500px 0px;
     animation-fill-mode:forwards;
-animation-name: in;
-animation-delay: 3s;
-animation-duration: 2.5s;
+    animation-name: in;
+    
+    animation-duration: 2.5s;
+
 background:linear-gradient(135deg ,rgba(25,25,25,0.1), rgba(25,25,25,0));
 backdrop-filter: blur(10px);
 border: 1px solid rgba(255,255,255,0.18);
@@ -146,7 +148,7 @@ margin-top: 20px;
     width: 72%;
     height: 0px;
     position: absolute;
-    left: 90px;
+    left: 90px; 
     bottom: 26px;
     transition: 600ms;
     border-radius: 50% 50% 0px 0px;
