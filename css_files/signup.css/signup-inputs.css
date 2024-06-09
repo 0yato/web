@@ -14,11 +14,11 @@
 
 
 .profile-image .image{
-    box-shadow: 2px 2px 10px 0px #4b749f;
+    box-shadow: 2px 2px 10px 0px #c95613b9;
 height: 112px;
 width: 113px;
 border-radius: 50%;
-border: #4b749f 2px solid;
+border: orange 2px solid;
 overflow: hidden;
 display: flex;
 justify-content: center;
@@ -34,8 +34,8 @@ clip-path: circle();
 
 
 .profile-image label{
- background: linear-gradient(to top right ,#243748,#4b749f);
-box-shadow: 0px 2px 10px 2px  #4b749f;
+ background: linear-gradient(to top right ,orangered,rgb(240, 163, 21));
+box-shadow: 0px 2px 10px 2px  orangered;
 padding:10px 20px;
 position: absolute;
 clip-path: circle();
@@ -69,7 +69,7 @@ color: snow;
    
 }
 .id-div p b{
-    background: linear-gradient(to top right ,#243748,#4b749f);
+    background: linear-gradient(to top right ,orangered,#db984b);
 padding: 5px;
 border-radius: 5px;
 }
@@ -99,7 +99,7 @@ border-radius: 5px;
 }
 .input-div input:focus,
 .input-div input:valid{
-    border-left: 8px solid rgba(109, 168, 231, 0.692);
+    border-left: 8px solid rgba(230, 128, 88, 0.966);
     transition: 300ms;
 }
 
@@ -108,7 +108,7 @@ border-radius: 5px;
     left: 40px;
     font-size: 26px;
     cursor: pointer;
-    background: linear-gradient(to top right ,#243748,#4b749f);
+    background: linear-gradient(to top right ,orangered,orangered);
     -webkit-background-clip: text; 
     color: transparent;
 }
@@ -124,7 +124,7 @@ button{
     outline: none;
    border :2px solid;
     border-radius: 10px;
-     background: linear-gradient(to top right ,#243748,#4b749f);
+     background: linear-gradient(to top right ,orangered,rgb(240, 163, 21));
    color: snow;
 }
 
@@ -146,7 +146,7 @@ form > p > a{
     background-color: aqua;
     border-radius: 5px;
     padding: 4px;
-    background: linear-gradient(to top right ,#46637d,#4b749f);
+    background: linear-gradient(to top right ,orangered,rgb(240, 163, 21));
    color: snow;
 }
 
@@ -159,7 +159,7 @@ video{
 .fa-arrow-left{
     position: absolute;
     color: snow;
-    background: linear-gradient(to top right ,#243748,#4b749f);
+    background: linear-gradient(to top right ,orangered,#c0571a);
     width: 50px;
     height: 50px;
     display: flex;

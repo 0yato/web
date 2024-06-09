@@ -30,8 +30,8 @@ letter-spacing: 5px;
     <div class="body2">
     <div class="parallax">
 <video src="image/vid/car-loop-vid.mp4" loop autoplay width="100%"></video>
-<h1>carx</h1><h1>carx</h1><h1>carx</h1>
-<h1 id="real">carx</h1>
+<h1>SPOTLIGHT</h1><h1>SPOTLIGHT</h1><h1>SPOTLIGHT</h1>
+<h1 id="real">SPOTLIGHT</h1>
     </div>
 
 
