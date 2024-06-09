@@ -3,11 +3,11 @@
 :root{
     --dark: rgb(0, 1, 1);
     --darks: rgba(0, 1, 1, 0.543);
-    --red:rgb(173, 39, 39);
-    --white:rgb(238, 239, 240);
+    --red:rgb(55, 146, 207);
+    --white:rgb(157, 216, 255);
    
 
-    --reds:rgb(191, 64, 64);
+    --reds:rgb(112, 169, 207);
     
 }
 *{
@@ -52,21 +52,20 @@ body{
     flex-direction: column;
     height: 100%;
     overflow: hidden;
-    background: rgba(0, 0, 0, 0.779);
     position: center;
     
     padding: 30px;
 
-   /* translate: 500px 0px;*/
+   translate: 500px 0px;
     animation-fill-mode:forwards;
     animation-name: in;
     
-    animation-duration: 1.5s;
+    animation-duration: 3s;
     animation-delay: 1s;
     opacity: 0;
 width: 0px;
-background:linear-gradient(135deg ,rgba(25,25,25,0.1), rgba(25,25,25,0));
-backdrop-filter: blur(10px);
+background:linear-gradient(135deg ,rgba(13, 49, 73, 0.192),rgba(13, 49, 73, 0.192));
+backdrop-filter: blur(2px);
 border: 1px solid rgba(255,255,255,0.18);
 box-shadow: 0px 8px 32px 0px rgba(0,0,0,0.37);
 }
@@ -74,13 +73,19 @@ box-shadow: 0px 8px 32px 0px rgba(0,0,0,0.37);
     0%{
 
     }
+    50%{
+        width: 35%;
+    }
     70%{
+        
+        
+        opacity: 1;
         width: 35%;
     }
     100%{
-        opacity: 1;
+        translate: -250px 0px;
         width: 35%;
-        /*translate: -200px 0px;*/
+        opacity: 1;
     }
 }
 .login-form h2{
@@ -95,7 +100,7 @@ box-shadow: 0px 8px 32px 0px rgba(0,0,0,0.37);
     margin-bottom: 20px;
     opacity: 0;
     animation-name: inn;
-animation-duration: 1s;
+animation-duration: 1.5s;
 animation-delay: 2s;
 animation-fill-mode:forwards;
 }
@@ -116,7 +121,7 @@ position: relative;
 margin-top: 20px;
 opacity: 0;
 animation-name: inn;
-animation-duration: 1s;
+animation-duration: 2s;
 animation-delay: 3s;
 animation-fill-mode:forwards;
 
@@ -127,7 +132,7 @@ animation-fill-mode:forwards;
 
     }
     70%{
-        
+        opacity: 1;
     }
     100%{
         opacity: 1;
@@ -168,13 +173,13 @@ animation-fill-mode:forwards;
 
 .divcon input:focus,
 .divcon input:valid{
-    border-color:rgb(253, 102, 102) ;
+    border-color:rgb(176, 223, 255);
     color: aliceblue;
 }
 
 
 .slide{
-    background-color: rgba(173, 39, 39, 0.605);
+    background-color: rgb(28, 118, 179);
     width: 72%;
     height: 0px;
     position: absolute;
@@ -316,13 +321,14 @@ letter-spacing: 2px;
 margin: 10px;
 color: aliceblue;
 transition: 300ms;
-background-color: rgba(255, 0, 0, 0.237);
+background-color: rgb(100, 188, 246);
 }
   
 .btn button:hover{
     cursor: pointer;
     background-color: var(--red);
     letter-spacing: 6px;
+    border-radius: 10px;
 }
 
 
@@ -353,7 +359,7 @@ border-radius:5px ;
 
 
 .btn p a{
-    color: var(--red);
+    color: rgb(113, 198, 255);
     margin-left: 5px;
 }
 

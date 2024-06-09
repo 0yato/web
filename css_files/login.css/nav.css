@@ -2,11 +2,11 @@
 :root{
     --dark: rgb(0, 1, 1);
     --darks: rgba(0, 1, 1, 0.543);
-    --red:rgb(173, 39, 39);
+    --red:rgba(13, 49, 73, 1);
     --white:rgb(238, 239, 240);
    
 
-    --reds:rgb(191, 64, 64);
+    --reds:rgba(13, 49, 73, 1);
     
 }
 
