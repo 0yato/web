@@ -54,15 +54,17 @@ body{
     overflow: hidden;
     background: rgba(0, 0, 0, 0.779);
     position: center;
-    width: 35%;
+    
     padding: 30px;
 
-    translate: 500px 0px;
+   /* translate: 500px 0px;*/
     animation-fill-mode:forwards;
     animation-name: in;
     
-    animation-duration: 2.5s;
-
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+    opacity: 0;
+width: 0px;
 background:linear-gradient(135deg ,rgba(25,25,25,0.1), rgba(25,25,25,0));
 backdrop-filter: blur(10px);
 border: 1px solid rgba(255,255,255,0.18);
@@ -72,8 +74,13 @@ box-shadow: 0px 8px 32px 0px rgba(0,0,0,0.37);
     0%{
 
     }
+    70%{
+        width: 35%;
+    }
     100%{
-        translate: 0px 0px;
+        opacity: 1;
+        width: 35%;
+        /*translate: -200px 0px;*/
     }
 }
 .login-form h2{
@@ -86,6 +93,11 @@ box-shadow: 0px 8px 32px 0px rgba(0,0,0,0.37);
     letter-spacing: 10px;
     padding: 10px;
     margin-bottom: 20px;
+    opacity: 0;
+    animation-name: inn;
+animation-duration: 1s;
+animation-delay: 2s;
+animation-fill-mode:forwards;
 }
 
 
@@ -102,9 +114,27 @@ align-items: center;
 padding: 20px;
 position: relative;
 margin-top: 20px;
+opacity: 0;
+animation-name: inn;
+animation-duration: 1s;
+animation-delay: 3s;
+animation-fill-mode:forwards;
+
 }
 
+@keyframes inn {
+    0%{
 
+    }
+    70%{
+        
+    }
+    100%{
+        opacity: 1;
+     
+        /*translate: -200px 0px;*/
+    }
+}
 
 
 
@@ -178,6 +208,11 @@ transition: 500ms;
 text-transform: capitalize;
 font-family:"Open Sans" ;
 font-size: 20px;
+opacity: 0;
+animation-name: inn;
+animation-duration: 1s;
+animation-delay: 2.5s;
+animation-fill-mode:forwards;
 }
 
 
@@ -253,6 +288,11 @@ font-size: 20px;
     justify-content: center;
     flex-direction: column;
     color: aliceblue;
+    opacity: 0;
+animation-name: inn;
+animation-duration: 1s;
+animation-delay: 2.5s;
+animation-fill-mode:forwards;
 }
 
 .remember-forget{

@@ -27,7 +27,7 @@ $_SESSION['valid-user']=false;
     <title>Car Shop</title>
 </head>
 <body>
-  
+  <audio src="image\sounds\storm2.mp3" autoplay loop style="display: hidden;"></audio>
   <video class="vid1" id="vid1"   autoplay loop src="image\vid\login-vid.mp4"></video>
 
 

@@ -3,7 +3,8 @@ div .mute{
 }
 
 .vid1{
-    position: sta;
+ position: absolute;
+ width: 100%;
 }
 .ttt{
     position: absolute;
