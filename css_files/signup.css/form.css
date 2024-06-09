@@ -61,6 +61,24 @@ form > h2{
     background: linear-gradient(to top right ,orangered, #db984b);
     -webkit-background-clip: text; 
     color: transparent;
+    animation-name: inns;
+animation-duration: 1.5s;
+animation-delay: 2s;
+animation-fill-mode:forwards;
+}
+
+@keyframes inns {
+    0%{
+
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+     
+        /*translate: -200px 0px;*/
+    }
 }
 
 
