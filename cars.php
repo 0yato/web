@@ -117,6 +117,7 @@ $sql="SELECT * FROM `car` WHERE `type_id` = '$companyy' OR `fuel` LIKE '%$fuell%
 //
 //}
  //  }
+ 
    else{
     $sql = "SELECT * FROM car";
    }
