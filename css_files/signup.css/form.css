@@ -59,7 +59,7 @@ form > h2{
     margin-bottom: 20px;
     color:var(--red) ;
     background: linear-gradient(to top right ,orangered, #db984b);
-    -webkit-background-clip: text; 
+    background-clip: text; 
     color: transparent;
     animation-name: inns;
 animation-duration: 1.5s;
