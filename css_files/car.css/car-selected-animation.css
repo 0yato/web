@@ -9,7 +9,7 @@
         translate: 100px 0px ;
     }
     51%{
-        filter: blur(2px);
+        filter: blur(3px);
     }
     100%{
         filter: blur(0px);
