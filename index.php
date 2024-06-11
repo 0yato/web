@@ -33,8 +33,8 @@ session_start();
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Shop </title>
-    <link rel="shortcut icon" type="x-icon" href="image/logo0.svg">
+    <title>SPOTLIGHT </title>
+    <link rel="shortcut icon" type="x-icon" href="image/logo1.jpeg">
 
    
 </head>
@@ -43,7 +43,7 @@ session_start();
 
 
     <div class="nav">
-        <img src="image/logo0.svg" alt="">
+        <img src="image/logo1.jpeg" alt="">
     
         <ul>
             <a href="#s"><li>home</li></a>
@@ -102,14 +102,14 @@ session_start();
 <div class="about" id="about">
     <div class="text">
     <p>
-        <b id="cccc">Car Shop</b><br>Welcome to our premier car marketplace, where your dream car awaits.
+        <b id="cccc">SPOTLIGHT</b><br>Welcome to our premier car marketplace, where your dream car awaits.
         <br> Browse through our extensive collection of cars from around the world, find the perfect match at the best price, and easily connect with sellers directly through our seamless communication link in every listing.
         <br> Start your journey with us today and drive home your ideal car!
 
 
     </p>
 </div>
-    <img style="clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);" src="image/logo0.svg" alt="">
+    <img style="clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);" src="image/logo1.jpeg" alt="">
 </div>
 
 

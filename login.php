@@ -24,10 +24,10 @@ $_SESSION['valid-user']=false;
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Car Shop</title>
+    <title>SPOTLIGHT</title>
 </head>
 <body>
-  
+  <audio src="image\sounds\storm2.mp3" autoplay loop style="display: hidden;"></audio>
   <video class="vid1" id="vid1"   autoplay loop src="image\vid\login-vid.mp4"></video>
 
 

@@ -24,7 +24,7 @@ if($_SESSION['you-login'] ==false){
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car X</title>
+    <title>SPOTLIGHT</title>
     <link rel="shortcut icon" type="x-icon" href="image/logo1.svg">
 </head>
 <body>

@@ -25,6 +25,30 @@ form{
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255,255,255,0.18);
     box-shadow: 0px 8px 32px 0px rgba(0,0,0,0.37);
+    animation-fill-mode:forwards;
+    animation-name: ins;
+    
+    animation-duration: 3s;
+    animation-delay: 1s;
+    opacity: 0;
+}
+@keyframes ins {
+    0%{
+    }
+    50%{
+        
+        width: 35%;
+    }
+    70%{
+        
+        opacity: 1;
+        width: 35%;
+    }
+    100%{
+        translate: -300px 0px;
+        width: 35%;
+        opacity: 1;
+    }
 }
 
 form > h2{
@@ -34,9 +58,27 @@ form > h2{
     margin: 10px;
     margin-bottom: 20px;
     color:var(--red) ;
-    background: linear-gradient(to top right ,#243748, #4b749f);
-    -webkit-background-clip: text; 
+    background: linear-gradient(to top right ,orangered, #db984b);
+    background-clip: text; 
     color: transparent;
+    animation-name: inns;
+animation-duration: 1.5s;
+animation-delay: 2s;
+animation-fill-mode:forwards;
+}
+
+@keyframes inns {
+    0%{
+
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+     
+        /*translate: -200px 0px;*/
+    }
 }
 
 
@@ -47,7 +89,7 @@ form > h2{
         width: 60%;
     }
     video{
-        width: 170% !important;
+        width: 100% ;
     }
 }
 
@@ -57,6 +99,8 @@ form > h2{
         
     }
     video{
-        width: 220% !important;
+        position: absolute;
+  width: 100%;
+       
     }
 }

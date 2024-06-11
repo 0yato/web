@@ -14,6 +14,7 @@
 <i class="fa-solid fa-arrow-up"></i></a>
     <table style="width: 100%;">
         <tr>
+            
             <th style="width: 30%;">pic</th>
             <th style="width: 70%;">Edit Info</th>
         </tr>
