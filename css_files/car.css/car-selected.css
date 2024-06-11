@@ -13,3 +13,230 @@
 }
 
 
+
+.car-selected {
+    
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.103);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-selected {
+    width: 360px;
+    rotate: 6deg;
+    animation-duration: s;
+animation-delay: 0s;
+animation-fill-mode:forwards;
+    z-index: 1;
+    box-shadow: 0px 0px 15px 0px pink;
+}
+
+.info-card {
+    background-color: #f9f9f9;
+    min-height: 450px;
+    width: 350px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.car-logo-info {
+    position: absolute;
+top: 100px;
+    width: 60px;
+    height: auto;
+}
+
+.name-info-name {
+    text-transform: capitalize;
+    font-size: 28px;
+    color: #BF4044;
+    font-family: "Rubik";
+    flex-basis: 100px;
+}
+
+.info-selected {
+    width: 90%;
+}
+
+.type-info-rent {
+    background-color: #a6ff00;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 8px;
+    color: #040a01;
+    font-family: "Rubik";
+    font-size: 16px;
+    margin: 5px;
+    box-shadow: 0px 0px 5px 0px black;
+}
+
+.model-info,
+.driven-info,
+.fuel-info,
+.Engine-size-info,
+.color-info 
+.driven-info{
+    color: darkblue;
+    margin: 7px;
+    font-size: 22px;
+    font-family: "Rubik";
+}
+
+.driven-info b {
+    color: #f9f9f9;
+    padding: 5px;
+    border-radius: 4px;
+    background: linear-gradient(to top right, #222, rgba(83, 81, 81, 0.594));
+}
+
+.description-info {
+    color: #222;
+    margin: 10px;
+    background-color: rgba(128, 128, 128, 0.137);
+    box-shadow: 0px 0px 5px 0px black;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: "Rubik";
+    backdrop-filter: blur(5px);
+    text-align: center;
+}
+
+.pay-info {
+    font-family: "Rubik";
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 7px;
+    padding: 5px;
+}
+
+.mony-info {
+    background-color: #2f00ff;
+    font-size: 30px;
+    color: #f9f9f9;
+    font-family: "Rubik";
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.Vin-info {
+    color: #222;
+    margin: 7px;
+    font-size: 22px;
+    font-family: "Rubik";
+}
+
+.Vin-info b {
+    color: darkblue;
+}
+
+.btnnn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.id-info {
+    font-size: 22px;
+    font-family: "Rubik";
+}
+
+.id-info > b {
+    color: darkblue;
+}
+
+.continar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.continar h3 {
+    min-width: 35%;
+}
+
+.contact-info-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+    margin: 7px;
+}
+
+.contact-info-div h3 {
+    color: darkblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Rubik';
+    font-size: 22px;
+}
+
+.contact-info {
+    width: 300px;
+    text-align: center;
+    padding: 15px;
+    font-size: 22px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #f9f9f9;
+    border-radius: 10px;
+    transition: 400ms;
+    background-image: linear-gradient(45deg, rgb(12, 4, 56) 10%, #6c93e7 90%);
+}
+
+.contact-info:hover {
+    transform: scale(1.1);
+    letter-spacing: 2px;
+    background-color: darkred;
+}
+
+.owner-name {
+    order: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Rubik";
+}
+
+.owner-name > b {
+    font-size: 22px;
+    color: darkblue;
+}
+
+#close-btn {
+    color: snow;
+    position: absolute;
+    top: 280px;
+    right: 130px;
+    background-color: rgb(12, 4, 56) ;
+    padding: 15px;
+    transform: rotate(45deg);
+    font-size: 20px;
+    cursor: pointer;
+    clip-path: circle();
+}
