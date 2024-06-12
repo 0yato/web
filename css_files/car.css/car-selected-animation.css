@@ -1,62 +1,18 @@
 @keyframes open1 {
-    0%{
+    0% {
       filter: blur(5px);
     }
-    50%{
-        filter: blur(0px);
-        rotate: 0deg;
-        scale:1;
-        translate: 100px 0px ;
+    50% {
+      filter: blur(0px);
+      transform: rotate(0deg) scale(1) translate(100px, 0px);
     }
-    51%{
-        filter: blur(3px);
+    51% {
+      filter: blur(3px);
     }
-    100%{
-        filter: blur(0px);
-scale: 1;
-translate: 0px;
-rotate: 0deg;
+    100% {
+      filter: blur(0px);
+      transform: rotate(0deg) scale(1) translate(0px, 0px);
     }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.image-selected{
-    /*animation-name: open1;*/
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
     
-    rotate: 90deg;
-    translate: 100px 0px ;
-    scale:0;
-}
-.info-card{
-    width: 0px;
-    opacity: 0;
-    overflow: hidden;
-   /* animation-name: open2;*/
-    animation-delay: 1s;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes open2 {
-    0%{
-        
-    }
-    100%{
-       width: 550px;
-       opacity: 1;
-    }
-}
+  }
+  
