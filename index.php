@@ -87,9 +87,9 @@ session_start();
         <div class="ss">
         <div class="s1">
             <img src="image/car-slide1.jpg" alt="">
-            <img src="image/car-slide6.jpg" alt="">
-            <img src="image/car-slide8.jpg" alt="">
-            <img src="image/car-slide9.jpg" alt="">
+            <img src="image/car-slide2.jfif" alt="">
+            <img src="image/car-slide3.jfif" alt="">
+            <img src="image/car-slide4.jpg" alt="">
         </div>
         </div>
         </div>
@@ -195,7 +195,7 @@ $_SESSION['signup-state']=false;
 
 
     <div class="copyright">
- <p>© car shop | 2023-2024|,All rights reserved. </p>
+ <p>© SPOTLIGHT | 2023-2024|,All rights reserved. </p>
     </div>
 
 

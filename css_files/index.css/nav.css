@@ -6,8 +6,8 @@
     font-family: "Open Sans";
 }
 :root{
-    --dark: rgb(0, 1, 1);
-    --darks: rgba(0, 1, 1, 0.543);
+    --dark: rgb(218, 176, 138);
+    --darks: rgb(218, 176, 138);
     --red:rgb(173, 39, 39);
     --white:rgb(238, 239, 240);
    
@@ -28,9 +28,6 @@ html{
 
 
 
-body{
-   
-}
 
 
 
@@ -47,7 +44,7 @@ body{
    display: flex;
    justify-content: space-between;
    align-items: center;
-   background-color: var(--dark);
+   background-color: linear-gradient(to top right , rgb(218, 176, 138), #db984b);
    height: 100px;
    overflow: hidden;
 }
