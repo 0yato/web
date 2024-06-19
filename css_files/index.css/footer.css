@@ -1,6 +1,6 @@
 :root{
-    --dark: rgb(0, 1, 1);
-    --darks: rgba(0, 1, 1, 0.543);
+    --dark: rgb(218, 176, 138);
+    --darks: rgb(218, 176, 138);
     --red:rgb(173, 39, 39);
     --white:rgb(238, 239, 240);
    
@@ -17,7 +17,7 @@
 
 
 .footer{
-    background-color:black;
+    background-color:wheat;
     position: absolute;
     
     width: 100%;
@@ -33,7 +33,7 @@
 
 
 .footer > h2{
-color: var(--white);
+color: rgb(145, 120, 74);
 letter-spacing: 4px;
 font-size: 40px;
 margin-top: 30px;
@@ -59,7 +59,7 @@ justify-content: center;
 flex-direction: column;
 margin:15px  100px;
 min-width: 400px;
-border: 2px aliceblue solid;
+border: 2px aliceblue  solid transparent;
 border-radius: 20px;
 background-color: var(--dark);
 }
@@ -84,11 +84,11 @@ background-color: var(--dark);
 
 .card:hover{
     scale: 1.1;
-    box-shadow: 0px 0px 10px 0px var(--red);
-    border-color: var(--red);
+    box-shadow: 4px 3px 10px 5px rgb(88, 18, 18);
+    border-color: var(--brown);
 }
 .card:hover .name{
-    color: var(--red);
+    color: rgb(87, 31, 9);
 }
 
 
@@ -99,7 +99,7 @@ background-color: var(--dark);
 .card .name{
     text-transform: capitalize;
     font-size: 30px;
-    color: aliceblue;
+    color: rgb(145, 120, 74);
     margin:0px 40px;
     margin-top: 40px;
     transition: 700ms;
@@ -110,7 +110,7 @@ background-color: var(--dark);
 
 
 .card .ce{
-    color: var(--red);
+    color: rgb(139, 100, 47);
     margin-bottom: 20px;
     margin-top: 10px;
 }
@@ -121,13 +121,18 @@ background-color: var(--dark);
 
 
 .line{
-    background-color: aliceblue;
+    background-color: rgb(107, 122, 66);
     height: 3px;
     width: 90%;
     border-radius: 20px;
 }
 
+.line:hover{
+    background-color: orange;
+    border-radius: 5px;
 
+    
+}
 
 
 
@@ -137,7 +142,7 @@ background-color: var(--dark);
 letter-spacing: 3px;
 text-transform: uppercase;
 margin: 30px 0px;
-color:aliceblue ;
+color:rgb(96, 116, 41) ;
 }
 
 .icons{
@@ -178,8 +183,8 @@ color:aliceblue ;
 
 
 .fa-x-twitter{
-    color: var(--dark);
-    background-color: aliceblue;
+    color: white;
+    background-color: black;
 }
 
 
@@ -187,7 +192,7 @@ color:aliceblue ;
 
 
 .fa-github{
-    background-color: var(--dark);
+    background-color: black;
     color: aliceblue;
     border: aliceblue 2px solid;
 }
@@ -220,7 +225,7 @@ color:aliceblue ;
 
 
 .copyright p {
-    color: aliceblue;
+    color: rgb(79, 82, 46);
     font-size: 20px;
     text-transform: capitalize;
 }

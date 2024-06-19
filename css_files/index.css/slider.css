@@ -15,8 +15,8 @@
 
 
 :root{
-    --dark: rgb(0, 1, 1);
-    --darks: rgba(0, 1, 1, 0.543);
+    --dark: linear-gradient(to top right , rgb(218, 176, 138), #db984b;);
+    --darks: linear-gradient(to top right , rgb(218, 176, 138), #db984b;);
     --red:rgb(173, 39, 39);
     --white:rgb(238, 239, 240);
    
