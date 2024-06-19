@@ -1,39 +1,37 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Kanit:wght@300&family=Montserrat:ital,wght@0,400;1,500&family=Open+Sans:ital,wght@0,400;1,300&family=Roboto&family=Roboto+Mono:wght@500&family=Rubik:ital,wght@0,300;0,400;1,300;1,400&family=Space+Grotesk:wght@300;400;500&family=Vina+Sans&display=swap');
-*{
-font-family: "rubik";
-padding: 0px;
-margin: 0px;
-box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+* {
+    font-family: 'Rubik', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-.container{
-display: flex;
-justify-content: center;
-align-items: center;
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 94.5%;
     margin-left: 4em;
     flex-direction: column;
 }
 
-
-.dashboard{
+.dashboard {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 95%;
-    background-color: #0481ff;
+    background-color: #e0ebeb;
     padding: 10px;
     border-radius: 10px;
 }
 
-.dashboard p{
-font-size: 1.2rem;
-text-transform: capitalize;
-color: snow;
+.dashboard p {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    color: snow;
 }
 
-.dashboard i{
+.dashboard i {
     font-size: 1.5rem;
     color: snow;
 }
