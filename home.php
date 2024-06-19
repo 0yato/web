@@ -29,10 +29,11 @@ letter-spacing: 5px;
 <body>
     <div class="body2">
     <div class="parallax">
-<video src="image/vid/car-loop-vid.mp4" loop autoplay width="100%"></video>
+<video src="image/vid/homtop.mp4" loop autoplay width="100%" Height ="100%"></video>
 
 <h1>SPOTLIGHT</h1><h1>SPOTLIGHT</h1><h1>SPOTLIGHT</h1>
 <h1 id="real">SPOTLIGHT</h1>
+
     </div>
 
 
@@ -41,7 +42,7 @@ letter-spacing: 5px;
 
 
     <div class="info" >
-        <img id="info-img" src="image/home-image/info222.jpg" alt="">
+        <img id="info-img" src="image/home-image/info222.jfif" alt="">
 <p id="p1">In this time, cars have become a necessity in this life, but searching for the right car can sometimes be difficult, so here we are to save your time and find your personal car. <br>Discover a wide range of vehicles that cater to every taste and budget – your perfect match is just a few clicks away.</p>
     </div>
 
@@ -54,10 +55,10 @@ letter-spacing: 5px;
 
     <div class="car-card">
     
-    <img id="i1" src="image/car100.jpg" alt="" class="imgs">
-    <img id="i2" src="image/car101.jpg" alt="" class="imgs">
+    <img id="i1" src="image/car100.jfif" alt="" class="imgs">
+    <img id="i2" src="image/car101.jfif" alt="" class="imgs">
     <img id="i3" src="image/home-image/c4.jpg" alt="" class="imgs">
-    <img id="i4" src="image/home-image/c5.jpg" alt="" class="imgs">
+    <img id="i4" src="image/home-image/c5.jfif" alt="" class="imgs">
     </div>
 
 
@@ -104,9 +105,9 @@ $conn->close();
 
     <div class="final">
 
-    <video src="image/vid/car-loop-vid.mp4" loop autoplay width="100%"></video>
+    <video src="image/vid/car-loop-vid.mp4" loop autoplay width="100%" ></video>
         
-<img src="image/home-image/white-car.jpg" alt="">
+
 <a href="cars.php">Explore now</a>
     </div>
     </div>
