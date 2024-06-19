@@ -4,7 +4,7 @@
     text-transform: capitalize;
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
 :root {
@@ -137,6 +137,7 @@ form {
 }
 
 .card:hover .car-name {
+    color: snow;
     bottom: 20px;
 }
 
@@ -163,6 +164,7 @@ form {
     transition: 600ms;
 }
 .card:hover i {
+    background-color: var(--navy);
     bottom: 20px;
     right: 15px;
 }
