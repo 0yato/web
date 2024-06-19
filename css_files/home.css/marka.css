@@ -30,7 +30,7 @@
 }
 
 .marka-list .marka-list-item{
-    background-color: black;
+    background-color: rgb(172, 37, 37);
     display: flex;
     justify-content: center;
     align-items: center;
