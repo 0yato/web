@@ -15,7 +15,7 @@
 
 
 .car-selected {
-    position: fixed;
+    position: relative;
     
     z-index: -1;
     top: 50%;
@@ -43,7 +43,7 @@ animation-fill-mode:forwards;
 
 .info-card {
     background-color: #f9f9f9;
-    min-height: 450px;
+    height: 450px;
     width: 350px;
     border-radius: 10px;
     padding: 20px;
@@ -63,9 +63,11 @@ animation-fill-mode:forwards;
 }
 
 .car-logo-info {
-    position: absolute;
-top: 100px;
-    width: 60px;
+ 
+    position: center;
+    /*left: 20px;*/
+top: 150px;
+    width: 80px;
     height: auto;
 }
 
