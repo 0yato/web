@@ -19,7 +19,7 @@
 }
 
 .range label{
-    color: var(--red);
+    color: #fce850;
     font-size: 18px;
     font-weight: 600;
     margin-right:20px ;
@@ -33,7 +33,7 @@
 }
 
 .range .s2000{
-    color: var(--red);
+    color: snow;
     font-size: 18px;
     font-weight: 600;
     margin-right:20px ;
@@ -63,10 +63,10 @@
 }
 .reset{
 outline: none;
-border: 2px var(--red) solid;
+border: 2px #ddf516 solid;
 padding: 10px;
 width: 100px;
-color: var(--red);
+color: snow;
 background-color: transparent;
 margin: 10px;
 transition: 500ms;
@@ -77,8 +77,8 @@ font-size: 20px;
 
 
 .reset:hover{
-    color: snow;
-    background-color: var(--red);
+    color: black;
+    background-color: #ddf516;
     letter-spacing: 3px;
     }
 
@@ -86,19 +86,19 @@ font-size: 20px;
 
 
 .button button:hover{
-color: snow;
-background-color: var(--red);
+color: black;
+background-color: #ddf516;
 letter-spacing: 3px;
 }
 
 
 .button input{
     outline: none;
-    border: 2px var(--red) solid;
+    border: 2px #ddf516;
     padding: 10px;
     width: 100px;
-    color: snow;
-    background-color: var(--red);
+    color: black;
+    background-color: #fae3e3;
     margin: 10px;
     transition: 500ms;
     cursor: pointer;
@@ -106,7 +106,7 @@ letter-spacing: 3px;
 }
 
 .button input:hover{
-   background-color:  rgb(135, 31, 31);
+   background-color:  #ddf516;
    letter-spacing: 3px;
    
 }
