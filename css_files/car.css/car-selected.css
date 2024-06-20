@@ -22,7 +22,7 @@
     translate: -50% -50%;
     width: 100%;
     height: 100vh;
-    background-color:rgba(255, 255, 255, 0.103);
+    background-color:#522e24;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,7 +69,7 @@
 .name-info-name{
     text-transform: capitalize;
     font-size: 28px;
-    color:var(--red) ;
+    color:#5c2626 ;
     font-family: "Rubik";
     flex-basis: 100px;
 }
@@ -85,7 +85,7 @@
     width: 90%;
 }
 .type-info-rent{
-    background-color: orange;
+    background-color: #db5f29;
     width: fit-content;
     padding: 5px;
     border-radius: 8px;
@@ -170,7 +170,9 @@ background-color: rgba(128, 128, 128, 0.137);
 }
 .mony-info{
     font-size: 30px;
-    color: green;
+    color: #ffd6b6 !important;
+    background-color: #0e2e3b;
+    border: #70560d;
     font-family: "Rubik";
 }
 
@@ -181,7 +183,7 @@ background-color: rgba(128, 128, 128, 0.137);
         font-family: "Rubik";}
 
 .Vin-info b{
-    color: var(--red);
+    color: #0e2e3b;
 }
 
 
@@ -201,7 +203,7 @@ font-family: "Rubik";
 
 }
 .id-info > b{
-    color: var(--red);
+    color: #0e2e3b;
 }
 
 
@@ -235,7 +237,7 @@ font-family: "Rubik";
     margin: 7px;
 }
 .contact-info-div h3 {
-    color: var(--red);
+    color: #0e2e3b;
     display: flex;
     align-items: center;
     justify-content:center ;
@@ -252,10 +254,10 @@ padding: 15px;
 font-size: 22px;
 text-transform: capitalize;
 text-decoration: none;
-color: snow;
+color: #5e0606;
 border-radius: 10px;
 transition: 400ms;
-background-image: linear-gradient(45deg, #BF4044 10%, #c67171 90%);
+background-image: linear-gradient(45deg, #c3a655 10%, #efd99b 90%);
 }
 
 .contact-info:hover{
@@ -279,7 +281,7 @@ font-family: "rubik";
 
 .owner-name > b{
 font-size: 22px;
-color: var(--red);
+color: #0e2e3b;
 }
 
 
