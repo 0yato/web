@@ -195,7 +195,7 @@ $_SESSION['signup-state']=false;
 
 
     <div class="copyright">
- <p>© SPOTLIGHT | 2023-2024|,All rights reserved. </p>
+ <p>© SPOTLIGHT | 2024-2025|,All rights reserved. </p>
     </div>
 
 
