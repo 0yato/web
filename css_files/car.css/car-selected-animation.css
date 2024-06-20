@@ -9,12 +9,54 @@
       translate: 100px 0px ;
   }
   51%{
-      filter: blur(3px);
+      filter: blur(2px);
   }
   100%{
       filter: blur(0px);
 scale: 1;
 translate: 0px;
 rotate: 0deg;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.image-selected{
+  /*animation-name: open1;*/
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  
+  rotate: 90deg;
+  translate: 100px 0px ;
+  scale:0;
+}
+.info-card{
+  width: 0px;
+  opacity: 0;
+  overflow: hidden;
+ /* animation-name: open2;*/
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes open2 {
+  0%{
+      
+  }
+  100%{
+     width: 550px;
+     opacity: 1;
   }
 }
