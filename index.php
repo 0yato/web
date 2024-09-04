@@ -177,20 +177,7 @@ $_SESSION['signup-state']=false;
            <a target="_blank" href="https://www.linkedin.com/in/bisan-dweikat-b0719b244/"><i class="fa-brands fa-LinkedIn"></i></a>
         </div>
     </div>
-    <div class="card">
-        <h2 class="name">Faiha Odeh </h2>
-        
-        <div class="ce">CE | 119</div>
-        <div class="line"></div>
-        <h2 class="social">social</h2>
-        <div class="icons">
-           <a target="_blank" href="https://www.facebook.com/profile.php?id=100002980662811"> <i class="fa-brands fa-facebook"></i></a>
-            <a target="_blank" href="https://x.com/thman91702?s=09"><i class="fa-brands fa-x-twitter"></i></a>
-           <a target="_blank" href="https://github.com/0yato"> <i class="fa-brands fa-github"></i></a>
-           <a target="_blank" href="https://www.instagram.com/accounts/login/two_factor?hl=en&next=%2F"><i class="fa-brands fa-instgram"></i></a>
-           <a target="_blank" href="https://www.linkedin.com/in/bisan-dweikat-b0719b244/"><i class="fa-brands fa-LinkedIn"></i></a>
-        </div>
-     </div>
+   
      </div>
 
 
